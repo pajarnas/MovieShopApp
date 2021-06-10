@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ApplicationCore.Models
+namespace ApplicationCore.Models.Request
 {
-    class LoginRequestModel
+    public class LoginRequestModel
     {
         public string Email { get; set; }
 

@@ -25,6 +25,7 @@ namespace Infrastructure
             modelBuilder.Entity<Movie>(ConfigureMovie);
             modelBuilder.Entity<Review>(ConfigureReview);
             modelBuilder.Entity<UserRole>(ConfigureUserRole);
+            modelBuilder.Entity<User>(ConfigureUser);
         }
 
       
@@ -37,6 +38,7 @@ namespace Infrastructure
 
         //2. using Fluent API
         public DbSet<Movie> Movie { get; set; }
+        public DbSet<User> User { get; set; }
         public DbSet<MovieCast> MovieCast { get; set; }
         public DbSet<MovieGenre> MovieGenre { get; set; }
         public DbSet<MovieCrew> MovieCrew { get; set; }
@@ -156,6 +158,24 @@ namespace Infrastructure
             modelBuilder.HasKey(mc => new { mc.MovieId, mc.UserId });
             modelBuilder.Property(t => t.Rating).HasColumnType("decimal(3,2)").HasDefaultValue(3.0d);
             
+        }
+
+        private void ConfigureUser(EntityTypeBuilder<User> modelBuilder)
+        {
+            // specify your Fluent API rules.
+            modelBuilder.ToTable("User");
+            modelBuilder.HasKey(mc => mc.Id );
+            modelBuilder.Property(t => t.FirstName).HasMaxLength(128);
+            modelBuilder.Property(t => t.LastName).HasMaxLength(128);
+            modelBuilder.Property(t => t.Email).HasMaxLength(256);
+            modelBuilder.Property(t => t.HashedPassword).HasMaxLength(1024);
+            modelBuilder.Property(t => t.Salt).HasMaxLength(1024);
+            modelBuilder.Property(t => t.PhoneNumber).HasMaxLength(16);
+            modelBuilder.HasMany(m => m.Reviews).WithOne(t => t.User);
+            modelBuilder.HasMany(m => m.Purchases).WithOne(p => p.User);
+            modelBuilder.HasMany(m => m.Favorites).WithOne(p => p.User);
+            modelBuilder.HasMany(m => m.UserRoles).WithOne(p => p.User);
+       
         }
     }
 }

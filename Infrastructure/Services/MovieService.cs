@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ApplicationCore.Models;
+using ApplicationCore.Models.Request;
+using ApplicationCore.Models.Response;
 using ApplicationCore.Entities;
 using ApplicationCore.ServiceInterfaces;
 using ApplicationCore.RepositoryInterfaces;
@@ -28,7 +29,7 @@ namespace Infrastructure.Services
         }
         public async Task<List<MovieDetailResponseModel>> GetAllMovieModelList()
         {
-            var moviesAsync = await _movieRepository.ListAll();
+            var moviesAsync = await _movieRepository.ListAllAsync();
             var movies = moviesAsync.Take(30).ToList();
             List<MovieDetailResponseModel> models = new List<MovieDetailResponseModel>();
             foreach (var movie in movies)

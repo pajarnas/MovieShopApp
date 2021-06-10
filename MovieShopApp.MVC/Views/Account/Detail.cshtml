@@ -1,0 +1,24 @@
+﻿@model ApplicationCore.Models.Request.LoginRequestModel
+
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detail</h1>
+
+<div>
+    <h4>Login Successfully!</h4>
+    <hr />
+    <dl class="row">
+  
+        <dt class = "col-sm-2">
+            Your Email Address is :
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        
+    </dl>
+</div>
+

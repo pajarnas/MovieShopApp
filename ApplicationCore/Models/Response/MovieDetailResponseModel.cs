@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using ApplicationCore.Models;
 using ApplicationCore.Entities;
-namespace ApplicationCore.Models
+namespace ApplicationCore.Models.Response
 {
     public class MovieDetailResponseModel
     {

@@ -18,21 +18,35 @@ namespace Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
-        public virtual async Task<T> Add(T entity)
+        public virtual async Task<T> AddAsync(T entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Set<T>().Add(entity);
+            await _dbContext.SaveChangesAsync();
+            return  entity;
         }
 
-        public virtual async Task<T> Update(T entity)
+        public virtual async Task<T> UpdateAsync(T entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            await _dbContext.SaveChangesAsync();
+            return entity;
         }
-
-        public virtual Task Delete(T entity)
+        public async Task<IEnumerable<T>> ListAllWithIncludesAsync(Expression<Func<T, bool>> @where,
+          params Expression<Func<T, object>>[] includes)
         {
-            throw new NotImplementedException();
-        }
+            var query = _dbContext.Set<T>().AsQueryable();
 
+            if (includes != null)
+                foreach (Expression<Func<T, object>> navigationProperty in includes)
+                    query = query.Include(navigationProperty);
+
+            return await query.Where(@where).ToListAsync();
+        }
+        public virtual async Task DeleteAsync(T entity)
+        {
+            _dbContext.Set<T>().Remove(entity);
+            await _dbContext.SaveChangesAsync();
+        }
 
         public virtual async Task<T> GetById(int id)
         {
@@ -40,24 +54,31 @@ namespace Infrastructure.Repositories
             return entity;
         }
 
+        public virtual async Task<T> GetByIdAsync(int id)
+        {
+            return await _dbContext.Set<T>().FindAsync(id);
+        }
 
-        public virtual async Task<IEnumerable<T>> ListAll()
+        public async Task<IEnumerable<T>> ListAllAsync()
         {
             return await _dbContext.Set<T>().ToListAsync();
         }
 
-        public virtual async Task<IEnumerable<T>> List(Expression<Func<T, bool>> filter)
+        public async Task<IEnumerable<T>> ListAsync(Expression<Func<T, bool>> filter)
         {
             return await _dbContext.Set<T>().Where(filter).ToListAsync();
         }
 
-        public virtual async Task<int> GetCount(Expression<Func<T, bool>> filter)
+        public async Task<int> GetCountAsync(Expression<Func<T, bool>> filter)
         {
-            return await _dbContext.Set<T>().Where(filter).CountAsync();
+            if (filter != null)
+                return await _dbContext.Set<T>().Where(filter).CountAsync();
+            return await _dbContext.Set<T>().CountAsync();
         }
 
-        public virtual async Task<bool> GetExists(Expression<Func<T, bool>> filter)
+        public async Task<bool> GetExistsAsync(Expression<Func<T, bool>> filter)
         {
+            if (filter == null) return false;
             return await _dbContext.Set<T>().Where(filter).AnyAsync();
         }
     }

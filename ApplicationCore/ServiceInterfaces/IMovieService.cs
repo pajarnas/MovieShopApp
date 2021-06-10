@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ApplicationCore.Models;
+using ApplicationCore.Models.Response;
 using System.Threading.Tasks;
 namespace ApplicationCore.ServiceInterfaces
 {

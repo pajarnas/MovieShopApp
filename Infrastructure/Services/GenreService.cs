@@ -18,7 +18,7 @@ namespace Infrastructure.Services
         }
         public async Task<IEnumerable<Genre>> GetAllGenreList()
         {
-            return await _genreRepository.ListAll();
+            return await _genreRepository.ListAllAsync();
         }
     }
 }

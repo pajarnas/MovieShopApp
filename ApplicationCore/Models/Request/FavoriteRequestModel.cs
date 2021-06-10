@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ApplicationCore.Models
+namespace ApplicationCore.Models.Request
 {
-    class PurchaseDateTime
+    class FavoriteRequestModel
     {
         public int UserId { get; set; }
-        public string PurchaseNumber { get; set; }
-        public double TotalPrice { get; set; }
         public int MovieId { get; set; }
     }
 }
