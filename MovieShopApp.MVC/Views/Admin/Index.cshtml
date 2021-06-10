@@ -1,0 +1,27 @@
+﻿@model List<ApplicationCore.Models.Response.MovieDetailResponseModel>
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="rounded">
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <div class="col-6 col-lg-3 col-sm-4 col-xl-2">
+                <div class="card mb-4 shadow bg-light">
+                    <a asp-controller="admin" asp-action="CreateMovie">
+                        <img src="~/img/black-plus-icon-24.jpg" class="img-fluid align-self-md-center" alt="Add New Movie" />
+                    </a>
+                </div>
+            </div>
+            @foreach (var movie in Model)
+            {
+                <div class="col-6 col-lg-3 col-sm-4 col-xl-2">
+                    <partial name="_MovieDetail" model="movie" />
+                </div>
+            }
+        </div>
+    </div>
+</div>
