@@ -80,9 +80,23 @@ namespace Infrastructure.Services
             return movieDetailResponseModel;
         }
 
-        Task<List<MovieDetailResponseModel>> IMovieService.GetTopRevenueMovies()
+        public async Task<List<MovieDetailResponseModel>> GetTopRevenueMovies()
         {
-            throw new NotImplementedException();
+            var moviesAsync = await _movieRepository.ListAllAsync();
+            var movies = moviesAsync.OrderByDescending(m=>m.Revenue).Take(30).ToList();
+            List<MovieDetailResponseModel> models = new List<MovieDetailResponseModel>();
+            foreach (var movie in movies)
+            {
+                models.Add(new MovieDetailResponseModel
+                {
+                    Id = movie.Id,
+                    PosterUrl = movie.PosterUrl,
+                    ReleaseDate = movie.ReleaseDate,
+                    Title = movie.Title
+                });
+            }
+
+            return models;
         }
     }
 }

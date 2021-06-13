@@ -15,11 +15,12 @@ namespace Infrastructure.Repositories
      
         public MovieRepository(MovieShopDbContext dbcontext) : base(dbcontext)
         {
-
+            
         }
 
         public async Task<IEnumerable<Movie>> GetHighestRevenueMovies()
         {
+
             return await _dbContext.Set<Movie>().OrderByDescending(m=>m.Revenue).Take(30).ToListAsync();
         }
 

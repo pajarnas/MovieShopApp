@@ -11,7 +11,7 @@ namespace Infrastructure
     {
         public MovieShopDbContext(DbContextOptions<MovieShopDbContext> options) : base(options)
         {
-
+            
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

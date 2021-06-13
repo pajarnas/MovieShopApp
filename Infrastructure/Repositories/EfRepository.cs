@@ -15,6 +15,7 @@ namespace Infrastructure.Repositories
 
         public EfRepository(MovieShopDbContext dbContext)
         {
+            dbContext.Database.SetCommandTimeout(300); 
             _dbContext = dbContext;
         }
 
