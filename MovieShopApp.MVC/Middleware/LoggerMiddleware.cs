@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Serilog;
+using Microsoft.Extensions.Configuration;
 
 namespace MovieShopApp.MVC.Middleware
 {
@@ -22,6 +24,9 @@ namespace MovieShopApp.MVC.Middleware
 
         public Task Invoke(HttpContext httpContext)
         {
+
+           
+            
             _logger.LogInformation("Inside the Logger Middleware");
             var datetime = DateTime.Now;
             var ipAddress = httpContext.Connection?.RemoteIpAddress?.ToString();
@@ -54,6 +59,7 @@ namespace MovieShopApp.MVC.Middleware
 
             return _next(httpContext);
         }
+
     }
 
     // Extension method used to add the middleware to the HTTP request pipeline.

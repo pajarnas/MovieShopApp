@@ -62,6 +62,15 @@ namespace MovieShopApp.MVC.Middleware
                 InnerExceptionMessage = ex.InnerException,
                 ExceptionStackTrace = ex.StackTrace
             };
+
+            _logger.LogError("Exception Message: {0}", errorResponse.ExceptionMessage);
+            _logger.LogError("Exception happened on {0}", DateTime.Now);
+            _logger.LogError("StackTrace Of Exception {0}", errorResponse.ExceptionStackTrace);
+
+            // redirect to a error page
+            httpContext.Response.Redirect("/Home/Error");
+            await Task.CompletedTask;
+
         }
 
     }

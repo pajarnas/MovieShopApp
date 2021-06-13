@@ -17,6 +17,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using MovieShopApp.MVC.Middleware;
+using Serilog;
 namespace MovieShopApp.MVC
 {
     public class Startup
@@ -48,6 +49,8 @@ namespace MovieShopApp.MVC
             {
                 options.UseSqlServer(Configuration.GetConnectionString("MovieShopConnection"));
             });
+            
+
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
@@ -55,6 +58,14 @@ namespace MovieShopApp.MVC
                     options.ExpireTimeSpan = TimeSpan.FromHours(2);
                     options.LoginPath = "/Account/Login";
                 });
+           
+            var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json") .Build();
+
+            Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
+            services.AddSingleton(Log.Logger);
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -74,9 +85,13 @@ namespace MovieShopApp.MVC
             app.UseStaticFiles();
 
             app.UseRouting();
+            //app.UseSerilogRequestLogging();
+
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseMovieShopExceptionMiddleware();
             app.UseLoggerMiddleware();
+           
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
