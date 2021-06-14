@@ -50,7 +50,7 @@ namespace Infrastructure.Helpers
             // CreateMap<Role, RoleModel>();
             // CreateMap<Genre, GenreModel>().ReverseMap();
 
-            // CreateMap<MovieCreateRequest, Movie>();
+            // CreateMap<CreateMovieRequestModel, Movie>();
             //.ForMember( m => m.MovieGenres, opt => opt.MapFrom( src => GetMovieGenres(src.Genres)));
 
             // Request Models to Db Entities Mappings
