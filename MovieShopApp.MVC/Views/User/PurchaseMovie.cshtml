@@ -1,0 +1,59 @@
+﻿@model ApplicationCore.Models.Request.PurchaseRequestModel
+@inject ICurrentUserService CurrentUserService
+@using ApplicationCore.ServiceInterfaces
+ 
+@{
+    ViewData["Title"] = "Purchase Movie";
+}
+
+<h3>Purchase Movie</h3>
+
+<hr />
+<form method="post" asp-controller="User" asp-action="PurchaseMovie">
+    <div class="card mb-3 container shadow ">
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <img src="@ViewBag.Movie.PosterUrl" alt="@ViewBag.Movie.Title" class="card-img-top">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5>Order Summary</h5>
+                    <hr />
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="MovieId" class="control-label"></label>
+                            <input asp-for="MovieId" class="form-control" value="@ViewBag.Movie.Id" readonly />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="MovieId" class="control-label"></label>
+                            <input asp-for="MovieId" class="form-control" value="@ViewBag.Movie.Id" readonly />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="control-label"> Movie Title</label>
+                            <input class="form-control" value="@ViewBag.Movie.Title" disabled />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="control-label"> Movie Price</label>
+                            <input class="form-control" value="  $@ViewBag.Movie.Price" disabled />
+                        </div>
+                      
+                        <div class="form-group col-md-6">
+                            <label asp-for="UserId" class="control-label"></label>
+                            <input asp-for="UserId" class="form-control" value="@CurrentUserService.UserId" readonly />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="TotalPrice" class="control-label"></label>
+                            <input asp-for="TotalPrice" class="form-control" value="@ViewBag.Movie.Price" readonly />
+                        </div>
+
+                        <div class="col-12">
+                            <input type="submit" value="Confirm Purchase" class="btn btn-primary btn-lg btn-block" />
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

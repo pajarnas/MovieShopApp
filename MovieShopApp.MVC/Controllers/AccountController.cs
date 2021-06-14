@@ -99,5 +99,11 @@ namespace MovieShop.MVC.Controllers
             await HttpContext.SignOutAsync();
             return RedirectToAction("Login");
         }
+
+        public async Task<IActionResult> Profile()
+        {
+            return View();
+        }
+
     }
 }

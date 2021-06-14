@@ -5,31 +5,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ApplicationCore.ServiceInterfaces;
+using ApplicationCore.Models.Request;
 namespace MovieShopApp.MVC.Controllers
 {
     
     public class UserController : Controller
     {
-        private readonly ICurrentUserService _currentUserService;
-
-        public UserController(ICurrentUserService currentUserService)
+         
+        private readonly IUserService _userService;
+        private readonly IMovieService _movieService;
+        public UserController(IUserService userService, IMovieService movieService)
         {
-            _currentUserService = currentUserService;
+            _userService = userService;
+            _movieService = movieService;
         }
+
         [Authorize]
         [HttpGet]
-        public IActionResult GetUserPurchase()
+        public async Task<IActionResult> PurchaseMovie(int Id)
         {
-            var userId = _currentUserService.UserId;
+            var movie = await _movieService.GetMovieDetailsById(Id);
+            ViewBag.Movie = movie;
             return View();
         }
 
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> PurchaseMovie()
+        public async Task<IActionResult> PurchaseMovie(PurchaseRequestModel purchaseRequestModel)
         {
             // get userid from CurrentUser and create a row in Purchase Table
-            return View();
+            await _userService.PurchaseMovie(purchaseRequestModel);
+
+            return Ok();
         }
+
+        
     }
 }

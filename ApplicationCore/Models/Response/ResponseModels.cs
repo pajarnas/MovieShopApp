@@ -13,6 +13,11 @@ namespace ApplicationCore.Models.Response
 
     public class UserProfileResponseModel
     {
+        public int Id { get; set; }
+        public string Email { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        
     }
 
     public class UserLoginResponseModel
@@ -23,7 +28,15 @@ namespace ApplicationCore.Models.Response
         public string LastName { get; set; }
         public DateTime? DateOfBirth { get; set; }
         public List<RoleModel> Roles { get; set; }
+
+        public string PhoneNumber { get; set; }
+         
+        public DateTime? LastLoginDateTime { get; set; }
+        public List<ReviewResponseModel> Reviewes { get; set; }
+        
+        public List<PurchaseResponseModel> Purchases { get; set; }
     }
+
 
     public class RoleModel
     {

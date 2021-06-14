@@ -1,0 +1,487 @@
+2021-06-14 00:03:09.559 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 00:03:10.889 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 00:03:10.890 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 00:03:10.890 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 00:03:10.890 -05:00 [INF] Hosting environment: Development
+2021-06-14 00:03:10.890 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 00:03:12.591 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 00:03:12.726 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:03:12.732 -05:00 [INF] Date Time the request came: 6/14/2021 12:03:12 AM
+2021-06-14 00:03:12.732 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:03:12.734 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:03:12.734 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:03:12.735 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:03:12.820 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 00:03:12.869 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 00:03:14.733 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:03:15.627 -05:00 [INF] Executed DbCommand (65ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:03:15.727 -05:00 [INF] Executed ViewResult - view Index executed in 2862.4804ms.
+2021-06-14 00:03:15.733 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2907.5078ms
+2021-06-14 00:03:15.733 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:03:15.778 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 3190.5210ms
+2021-06-14 00:03:21.295 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2021-06-14 00:03:21.331 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2021-06-14 00:03:21.333 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 38.0491ms
+2021-06-14 00:03:21.346 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2021-06-14 00:03:21.371 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2021-06-14 00:03:21.371 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 25.3665ms
+2021-06-14 00:03:43.566 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 00:03:44.434 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 00:03:44.434 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 00:03:44.435 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 00:03:44.435 -05:00 [INF] Hosting environment: Development
+2021-06-14 00:03:44.435 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 00:03:45.554 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 00:03:45.710 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:03:45.712 -05:00 [INF] Date Time the request came: 6/14/2021 12:03:45 AM
+2021-06-14 00:03:45.712 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:03:45.714 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:03:45.714 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:03:45.715 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:03:45.809 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 00:03:45.853 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 00:03:47.387 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:03:48.077 -05:00 [INF] Executed DbCommand (42ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:03:48.148 -05:00 [INF] Executed ViewResult - view Index executed in 2305.8741ms.
+2021-06-14 00:03:48.149 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2339.3014ms
+2021-06-14 00:03:48.150 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:03:48.180 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2629.5476ms
+2021-06-14 00:04:04.895 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2021-06-14 00:04:04.934 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2021-06-14 00:04:04.942 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2021-06-14 00:04:04.948 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 52.8654ms
+2021-06-14 00:04:04.956 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2021-06-14 00:04:04.957 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 22.5830ms
+2021-06-14 00:05:15.343 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 00:05:16.020 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 00:05:16.020 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 00:05:16.020 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 00:05:16.020 -05:00 [INF] Hosting environment: Development
+2021-06-14 00:05:16.020 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 00:05:17.207 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 00:05:17.336 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:05:17.338 -05:00 [INF] Date Time the request came: 6/14/2021 12:05:17 AM
+2021-06-14 00:05:17.338 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:05:17.340 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:05:17.340 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:05:17.341 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:05:17.427 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 00:05:17.475 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 00:05:18.964 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:05:19.668 -05:00 [INF] Executed DbCommand (39ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:05:19.736 -05:00 [INF] Executed ViewResult - view Index executed in 2269.1857ms.
+2021-06-14 00:05:19.738 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2309.5857ms
+2021-06-14 00:05:19.738 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:05:19.795 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2593.8042ms
+2021-06-14 00:05:56.389 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:05:56.393 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:05:56.397 -05:00 [INF] Date Time the request came: 6/14/2021 12:05:56 AM
+2021-06-14 00:05:56.398 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:05:56.398 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:05:56.398 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:05:56.400 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 404 0 - 10.3701ms
+2021-06-14 00:13:44.712 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 00:13:45.561 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 00:13:45.562 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 00:13:45.562 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 00:13:45.562 -05:00 [INF] Hosting environment: Development
+2021-06-14 00:13:45.562 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 00:13:46.962 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 00:13:47.094 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:13:47.096 -05:00 [INF] Date Time the request came: 6/14/2021 12:13:47 AM
+2021-06-14 00:13:47.096 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:13:47.097 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:13:47.097 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:13:47.098 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:13:47.188 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 00:13:47.241 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 00:13:48.559 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:13:49.304 -05:00 [INF] Executed DbCommand (47ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:13:49.379 -05:00 [INF] Executed ViewResult - view Index executed in 2159.0256ms.
+2021-06-14 00:13:49.380 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2190.6952ms
+2021-06-14 00:13:49.380 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:13:49.393 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2444.3076ms
+2021-06-14 00:13:55.449 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:13:55.452 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:13:55.452 -05:00 [INF] Date Time the request came: 6/14/2021 12:13:55 AM
+2021-06-14 00:13:55.452 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:13:55.452 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:13:55.452 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:13:55.452 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:13:55.458 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:13:55.463 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:13:55.647 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:13:55.664 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:13:55.667 -05:00 [INF] Executed ViewResult - view Profile executed in 20.9697ms.
+2021-06-14 00:13:55.667 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 209.3536ms
+2021-06-14 00:13:55.667 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:13:55.668 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 218.6606ms
+2021-06-14 00:15:35.883 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 00:15:36.814 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 00:15:36.815 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 00:15:36.815 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 00:15:36.815 -05:00 [INF] Hosting environment: Development
+2021-06-14 00:15:36.815 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 00:15:38.397 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 00:15:38.514 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:15:38.517 -05:00 [INF] Date Time the request came: 6/14/2021 12:15:38 AM
+2021-06-14 00:15:38.517 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:15:38.519 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:15:38.519 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:15:38.520 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:15:38.635 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 00:15:38.689 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 00:15:40.417 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:15:41.151 -05:00 [INF] Executed DbCommand (40ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:15:41.225 -05:00 [INF] Executed ViewResult - view Index executed in 2542.9064ms.
+2021-06-14 00:15:41.233 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2596.946ms
+2021-06-14 00:15:41.234 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:15:41.274 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2893.3830ms
+2021-06-14 00:16:03.027 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:16:03.037 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:16:03.037 -05:00 [INF] Date Time the request came: 6/14/2021 12:16:03 AM
+2021-06-14 00:16:03.037 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:16:03.037 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:16:03.037 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:16:03.038 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:16:03.043 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:16:03.044 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:16:03.257 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:16:03.283 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:16:03.288 -05:00 [INF] Executed ViewResult - view Profile executed in 31.7446ms.
+2021-06-14 00:16:03.288 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 245.0695ms
+2021-06-14 00:16:03.288 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:16:03.288 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 261.3671ms
+2021-06-14 00:16:56.275 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:16:56.286 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:16:56.286 -05:00 [INF] Date Time the request came: 6/14/2021 12:16:56 AM
+2021-06-14 00:16:56.286 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:16:56.286 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:16:56.286 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:16:56.286 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:16:56.286 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:16:56.325 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:16:56.330 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:16:56.335 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:16:56.336 -05:00 [INF] Executed ViewResult - view Profile executed in 5.4726ms.
+2021-06-14 00:16:56.336 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 49.9792ms
+2021-06-14 00:16:56.336 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:16:56.336 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 66.5596ms
+2021-06-14 00:16:56.474 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2021-06-14 00:16:56.494 -05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\favicon.ico'
+2021-06-14 00:16:56.494 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 200 32038 image/x-icon 21.2751ms
+2021-06-14 00:16:57.214 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:16:57.215 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:16:57.215 -05:00 [INF] Date Time the request came: 6/14/2021 12:16:57 AM
+2021-06-14 00:16:57.215 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:16:57.215 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:16:57.215 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:16:57.215 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:16:57.215 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:16:57.218 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:16:57.226 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:16:57.228 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:16:57.229 -05:00 [INF] Executed ViewResult - view Profile executed in 3.5639ms.
+2021-06-14 00:16:57.230 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 14.6378ms
+2021-06-14 00:16:57.230 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:16:57.230 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 15.6604ms
+2021-06-14 00:16:57.337 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2021-06-14 00:16:57.351 -05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\favicon.ico'
+2021-06-14 00:16:57.353 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 200 32038 image/x-icon 16.6146ms
+2021-06-14 00:16:57.869 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:16:57.870 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:16:57.870 -05:00 [INF] Date Time the request came: 6/14/2021 12:16:57 AM
+2021-06-14 00:16:57.870 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:16:57.870 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:16:57.870 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:16:57.870 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:16:57.870 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:16:57.871 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:16:57.871 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:16:57.872 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:16:57.873 -05:00 [INF] Executed ViewResult - view Profile executed in 2.2623ms.
+2021-06-14 00:16:57.873 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 2.9334ms
+2021-06-14 00:16:57.873 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:16:57.874 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 6.2917ms
+2021-06-14 00:16:57.984 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2021-06-14 00:16:57.986 -05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\favicon.ico'
+2021-06-14 00:16:57.986 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 200 32038 image/x-icon 2.1400ms
+2021-06-14 00:16:58.104 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:16:58.104 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:16:58.104 -05:00 [INF] Date Time the request came: 6/14/2021 12:16:58 AM
+2021-06-14 00:16:58.104 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:16:58.104 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:16:58.104 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:16:58.104 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:16:58.104 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:16:58.105 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:16:58.105 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:16:58.106 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:16:58.106 -05:00 [INF] Executed ViewResult - view Profile executed in 1.7165ms.
+2021-06-14 00:16:58.106 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 2.2154ms
+2021-06-14 00:16:58.107 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:16:58.107 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 3.1538ms
+2021-06-14 00:16:58.202 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2021-06-14 00:16:58.204 -05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\favicon.ico'
+2021-06-14 00:16:58.205 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 200 32038 image/x-icon 2.5444ms
+2021-06-14 00:17:01.412 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:17:01.412 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:17:01.412 -05:00 [INF] Date Time the request came: 6/14/2021 12:17:01 AM
+2021-06-14 00:17:01.412 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:17:01.412 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:17:01.412 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:17:01.412 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:17:01.413 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:17:01.413 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:17:01.413 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:17:01.414 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:17:01.415 -05:00 [INF] Executed ViewResult - view Profile executed in 1.8307ms.
+2021-06-14 00:17:01.415 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 2.3914ms
+2021-06-14 00:17:01.415 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:17:01.415 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 3.2200ms
+2021-06-14 00:17:20.931 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 00:17:21.772 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 00:17:21.772 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 00:17:21.773 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 00:17:21.773 -05:00 [INF] Hosting environment: Development
+2021-06-14 00:17:21.773 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 00:17:23.207 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 00:17:23.320 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:17:23.322 -05:00 [INF] Date Time the request came: 6/14/2021 12:17:23 AM
+2021-06-14 00:17:23.322 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:17:23.324 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:17:23.324 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:17:23.324 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:17:23.429 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 00:17:23.489 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 00:17:24.809 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:17:25.575 -05:00 [INF] Executed DbCommand (39ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:17:25.641 -05:00 [INF] Executed ViewResult - view Index executed in 2161.9682ms.
+2021-06-14 00:17:25.643 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2211.2278ms
+2021-06-14 00:17:25.643 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:17:25.701 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2495.5728ms
+2021-06-14 00:17:37.865 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:17:37.874 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:17:37.874 -05:00 [INF] Date Time the request came: 6/14/2021 12:17:37 AM
+2021-06-14 00:17:37.874 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:17:37.874 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:17:37.874 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:17:37.875 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:17:37.898 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:17:37.900 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:17:38.051 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:17:38.077 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:17:38.080 -05:00 [INF] Executed ViewResult - view Profile executed in 29.6498ms.
+2021-06-14 00:17:38.080 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 181.6531ms
+2021-06-14 00:17:38.080 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:17:38.080 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 215.1644ms
+2021-06-14 00:18:15.870 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 00:18:16.915 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 00:18:16.915 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 00:18:16.916 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 00:18:16.916 -05:00 [INF] Hosting environment: Development
+2021-06-14 00:18:16.916 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 00:18:18.853 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 00:18:19.258 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:18:19.259 -05:00 [INF] Date Time the request came: 6/14/2021 12:18:19 AM
+2021-06-14 00:18:19.260 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:18:19.262 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:18:19.262 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:18:19.264 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:18:19.342 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 00:18:19.402 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 00:18:21.035 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:18:21.922 -05:00 [INF] Executed DbCommand (42ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:18:21.992 -05:00 [INF] Executed ViewResult - view Index executed in 2606.0887ms.
+2021-06-14 00:18:21.996 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2651.0805ms
+2021-06-14 00:18:21.996 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:18:22.028 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 3179.1929ms
+2021-06-14 00:18:32.675 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:18:32.678 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:18:32.678 -05:00 [INF] Date Time the request came: 6/14/2021 12:18:32 AM
+2021-06-14 00:18:32.679 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:18:32.679 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:18:32.679 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:18:32.679 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:18:32.687 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:18:32.691 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:18:32.861 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:18:32.875 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:18:32.877 -05:00 [INF] Executed ViewResult - view Profile executed in 17.4065ms.
+2021-06-14 00:18:32.877 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 190.1815ms
+2021-06-14 00:18:32.877 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:18:32.878 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 202.7082ms
+2021-06-14 00:20:37.467 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 00:20:38.335 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 00:20:38.335 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 00:20:38.335 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 00:20:38.335 -05:00 [INF] Hosting environment: Development
+2021-06-14 00:20:38.335 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 00:20:40.315 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 00:20:40.450 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:20:40.452 -05:00 [INF] Date Time the request came: 6/14/2021 12:20:40 AM
+2021-06-14 00:20:40.452 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:20:40.454 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:20:40.454 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:20:40.454 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:20:40.554 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 00:20:40.615 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 00:20:41.932 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:20:42.740 -05:00 [INF] Executed DbCommand (80ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:20:42.819 -05:00 [INF] Executed ViewResult - view Index executed in 2219.4501ms.
+2021-06-14 00:20:42.821 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2266.0185ms
+2021-06-14 00:20:42.821 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:20:42.847 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2541.4892ms
+2021-06-14 00:20:57.148 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:20:57.151 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:20:57.151 -05:00 [INF] Date Time the request came: 6/14/2021 12:20:57 AM
+2021-06-14 00:20:57.151 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:20:57.152 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:20:57.152 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:20:57.152 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:20:57.167 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:20:57.169 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:20:57.380 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:20:57.410 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:20:57.414 -05:00 [INF] Executed ViewResult - view Profile executed in 35.1347ms.
+2021-06-14 00:20:57.414 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 247.4729ms
+2021-06-14 00:20:57.414 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:20:57.415 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 267.0396ms
+2021-06-14 00:22:39.696 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 00:22:40.465 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 00:22:40.465 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 00:22:40.465 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 00:22:40.465 -05:00 [INF] Hosting environment: Development
+2021-06-14 00:22:40.466 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 00:22:48.541 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 00:22:48.694 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:22:48.702 -05:00 [INF] Date Time the request came: 6/14/2021 12:22:48 AM
+2021-06-14 00:22:48.702 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:22:48.704 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:22:48.704 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:22:48.704 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:22:48.779 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 00:22:48.839 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 00:22:50.267 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:22:50.993 -05:00 [INF] Executed DbCommand (43ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:22:51.067 -05:00 [INF] Executed ViewResult - view Index executed in 2245.5966ms.
+2021-06-14 00:22:51.070 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2289.5236ms
+2021-06-14 00:22:51.070 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:22:51.102 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2546.6660ms
+2021-06-14 00:23:13.415 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:23:13.421 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:23:13.421 -05:00 [INF] Date Time the request came: 6/14/2021 12:23:13 AM
+2021-06-14 00:23:13.421 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:23:13.421 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:23:13.421 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:23:13.421 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:23:13.429 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:23:13.430 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:23:13.632 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:23:13.661 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:23:13.664 -05:00 [INF] Executed ViewResult - view Profile executed in 32.129ms.
+2021-06-14 00:23:13.664 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 235.089ms
+2021-06-14 00:23:13.664 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:23:13.665 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 249.7871ms
+2021-06-14 00:25:17.145 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 00:25:17.958 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 00:25:17.958 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 00:25:17.958 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 00:25:17.958 -05:00 [INF] Hosting environment: Development
+2021-06-14 00:25:17.958 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 00:25:19.657 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 00:25:19.825 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:25:19.827 -05:00 [INF] Date Time the request came: 6/14/2021 12:25:19 AM
+2021-06-14 00:25:19.828 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:25:19.831 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:25:19.831 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:25:19.832 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:25:19.912 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 00:25:19.963 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 00:25:21.530 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:25:22.459 -05:00 [INF] Executed DbCommand (58ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:25:22.538 -05:00 [INF] Executed ViewResult - view Index executed in 2587.3425ms.
+2021-06-14 00:25:22.544 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2630.9316ms
+2021-06-14 00:25:22.544 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 00:25:22.565 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2916.2950ms
+2021-06-14 00:25:34.379 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Account/Profile - -
+2021-06-14 00:25:34.382 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 00:25:34.383 -05:00 [INF] Date Time the request came: 6/14/2021 12:25:34 AM
+2021-06-14 00:25:34.383 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 00:25:34.383 -05:00 [INF] Email Address saigezhang17@gmail.com
+2021-06-14 00:25:34.383 -05:00 [INF] Name: Shiqi Zhang 
+2021-06-14 00:25:34.383 -05:00 [INF] Executing endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:25:34.392 -05:00 [INF] Route matched with {action = "Profile", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller MovieShop.MVC.Controllers.AccountController (MovieShopApp.MVC).
+2021-06-14 00:25:34.393 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 00:25:34.558 -05:00 [INF] Executing ViewResult, running view Profile.
+2021-06-14 00:25:34.568 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Purchase] AS [p]
+WHERE [p].[UserId] = @__id_0
+2021-06-14 00:25:34.570 -05:00 [INF] Executed ViewResult - view Profile executed in 12.7199ms.
+2021-06-14 00:25:34.571 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 178.8498ms
+2021-06-14 00:25:34.571 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
+2021-06-14 00:25:34.571 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 192.2252ms

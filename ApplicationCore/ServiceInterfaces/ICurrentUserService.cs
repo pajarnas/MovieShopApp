@@ -8,11 +8,13 @@ namespace ApplicationCore.ServiceInterfaces
 {
     public interface ICurrentUserService
     {
-        int UserId { get; }
-        bool IsAuthenticated { get; }
+        int? UserId { get; }
+        bool? IsAuthenticated { get; }
+        int MyMoviesCount { get; }
         string Email { get; }
         string FullName { get; }
-        bool IsAdmin { get; }
+        bool? IsAdmin { get; }
         IEnumerable<string> Roles { get; }
+        
     }
 }

@@ -36,6 +36,8 @@ namespace Infrastructure
         //Table name will come from DbSet Property name
         public DbSet<Role> Role { get; set; }
 
+        public DbSet<Purchase> Purchase { get; set; }
+
         //2. using Fluent API
         public DbSet<Movie> Movie { get; set; }
         public DbSet<User> User { get; set; }

@@ -18,6 +18,7 @@ using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using MovieShopApp.MVC.Middleware;
 using Serilog;
+using Infrastructure.Helpers;
 namespace MovieShopApp.MVC
 {
     public class Startup
@@ -33,22 +34,13 @@ namespace MovieShopApp.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<IMovieService, MovieService>();
-            services.AddScoped<IMovieRepository, MovieRepository>();
-            services.AddScoped<IGenreRepository, GenreRepository>();
-            services.AddScoped<IGenreService, GenreService>();
-            services.AddScoped<ICastRepository, CastRepository>();
-            services.AddScoped<ICastService, CastService>();
-            services.AddScoped<IReviewRepository, ReviewRepository>();
-            services.AddScoped<IReviewService, ReviewService>();
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IUserService, UserService>();
-            services.AddScoped<ICurrentUserService, CurrentUserService>();
-            services.AddHttpContextAccessor();
             services.AddDbContext<MovieShopDbContext>(options =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("MovieShopConnection"));
-            });
+                        options.UseSqlServer(Configuration
+                            .GetConnectionString("MovieShopDbConnection")));
+            services.AddAutoMapper(typeof(Startup), typeof(MovieShopMappingProfile));
+            ConfigureDependencyInjection(services);
+            services.AddHttpContextAccessor();
+           
             
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -68,12 +60,23 @@ namespace MovieShopApp.MVC
 
         }
 
+        private void ConfigureDependencyInjection(IServiceCollection services)
+        {
+           // var connectionString = Configuration.GetValue<string>("AzureBlobStorage");
+            // var containerName = Configuration.GetValue<string>("MovieShopBlobContainer");
+            
+            services.AddRepositories();
+            services.AddServices();
+        }
+
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseMovieShopExceptionMiddleware();
             }
             else
             {
@@ -86,10 +89,10 @@ namespace MovieShopApp.MVC
 
             app.UseRouting();
             //app.UseSerilogRequestLogging();
-
+           
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseMovieShopExceptionMiddleware();
+            
             app.UseLoggerMiddleware();
            
             app.UseEndpoints(endpoints =>

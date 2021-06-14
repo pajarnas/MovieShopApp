@@ -19,7 +19,7 @@ namespace MovieShopApp.MVC.Controllers
         // GET: MovieController
         public async Task<ActionResult> Index()
         {
-            var details = await _movieService.GetTopRevenueMovies();
+            var details = await _movieService.GetTopRevenueMovies();           
             return View(details);
         }
 

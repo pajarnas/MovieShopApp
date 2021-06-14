@@ -1,22 +1,31 @@
 ﻿using System;
+using System.Net;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using ApplicationCore.Entities;
+using ApplicationCore.Exceptions;
 using ApplicationCore.Models.Request;
 using ApplicationCore.Models.Response;
 using ApplicationCore.RepositoryInterfaces;
 using ApplicationCore.ServiceInterfaces;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
-
+using AutoMapper;
 namespace Infrastructure.Services
 {
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
-
-        public UserService(IUserRepository userRepository)
+        private readonly IPurchaseRepository _purchaseRepository;
+        private readonly IMovieService _movieService;
+        private readonly ICurrentUserService _currentUserService;
+        private readonly IMapper _mapper;
+        public UserService(IUserRepository userRepository,IPurchaseRepository purchaseRepository, IMovieService movieService, ICurrentUserService currentUserService, IMapper mapper)
         {
             _userRepository = userRepository;
+            _purchaseRepository = purchaseRepository;
+            _movieService = movieService;
+            _currentUserService = currentUserService;
+            _mapper = mapper;
         }
 
         public async Task<UserRegisterResponseModel> RegisterUser(UserRegisterRequestModel userRegisterRequestModel)
@@ -117,5 +126,36 @@ namespace Infrastructure.Services
                 256 / 8));
             return hashed;
         }
+
+        public async Task PurchaseMovie(PurchaseRequestModel purchaseRequest)
+        {
+            //check if is it current user
+            // set request user id
+            // check if is it already purchased
+            // get movie price
+            // purchaserequestmodel already has purchase datetime, guid
+
+            if (_currentUserService.UserId != purchaseRequest.UserId)
+                throw new HttpException(HttpStatusCode.Unauthorized, "You are not Authorized to purchase");
+            if (_currentUserService.UserId != null) purchaseRequest.UserId = _currentUserService.UserId.Value;
+            // See if Movie is already purchased.
+            if (await IsMoviePurchased(purchaseRequest))
+                throw new ConflictException("Movie already Purchased");
+            // Get Movie Price from Movie Table
+            var movie = await _movieService.GetMovieDetailsById(purchaseRequest.MovieId);
+            purchaseRequest.TotalPrice = movie.Price;
+
+            var purchase = _mapper.Map<Purchase>(purchaseRequest);
+            await _purchaseRepository.AddAsync(purchase);
+
+        }
+
+        public async Task<bool> IsMoviePurchased(PurchaseRequestModel purchaseRequest)
+        {
+            return await _purchaseRepository.GetExistsAsync(p =>
+                p.UserId == purchaseRequest.UserId && p.MovieId == purchaseRequest.MovieId);
+        }
+
+    
     }
 }
