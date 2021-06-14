@@ -17,7 +17,19 @@ namespace ApplicationCore.Models.Response
         public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        
+        public DateTime? DateOfBirth { get; set; }
+        public string PhoneNumber { get; set; }
+        public DateTime? LastLoginDateTime { get; set; }
+
+        public List<PurchasedMovieResponseModel> PurchasedMovies { get; set; }
+
+        public class PurchasedMovieResponseModel : MovieResponseModel
+        {
+            public DateTime PurchaseDateTime { get; set; }
+
+            public int MovieId { get; set; }
+            public decimal Price { get; set; }
+        }
     }
 
     public class UserLoginResponseModel
@@ -26,15 +38,7 @@ namespace ApplicationCore.Models.Response
         public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime? DateOfBirth { get; set; }
-        public List<RoleModel> Roles { get; set; }
-
-        public string PhoneNumber { get; set; }
-         
-        public DateTime? LastLoginDateTime { get; set; }
-        public List<ReviewResponseModel> Reviewes { get; set; }
-        
-        public List<PurchaseResponseModel> Purchases { get; set; }
+   
     }
 
 

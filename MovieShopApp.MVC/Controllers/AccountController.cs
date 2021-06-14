@@ -102,7 +102,8 @@ namespace MovieShop.MVC.Controllers
 
         public async Task<IActionResult> Profile()
         {
-            return View();
+            var userProfileResponseModel = await _userService.GetUserProfile();
+            return View(userProfileResponseModel);
         }
 
     }

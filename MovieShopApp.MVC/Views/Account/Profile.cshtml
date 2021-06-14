@@ -1,17 +1,17 @@
-﻿@Model 
- 
+﻿@model ApplicationCore.Models.Response.UserProfileResponseModel
+
 <div class="col-12">
     <div class="card">
 
         <div class="card-body">
             <div class="card-title mb-4">
                 <div class="d-flex justify-content-start">
-                   
+
                     <div class="userData ml-3">
-                        <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="javascript:void(0);">Some Name</a></h2>
-                     
+                        <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold">@Model.FirstName @Model.LastName</h2>
+
                     </div>
-                  
+
                 </div>
             </div>
 
@@ -31,10 +31,20 @@
 
                             <div class="row">
                                 <div class="col-sm-3 col-md-2 col-5">
-                                    <label asp-for="" style="font-weight:bold;">F</label>
+                                    <label style="font-weight:bold;">First Name</label>
                                 </div>
                                 <div class="col-md-8 col-6">
-                                    Jamshaid Kamran
+                                    @Model.FirstName
+                                </div>
+                            </div>
+                            <hr />
+
+                            <div class="row">
+                                <div class="col-sm-3 col-md-2 col-5">
+                                    <label style="font-weight:bold;">Last Name</label>
+                                </div>
+                                <div class="col-md-8 col-6">
+                                    @Model.LastName
                                 </div>
                             </div>
                             <hr />
@@ -44,7 +54,7 @@
                                     <label style="font-weight:bold;">Birth Date</label>
                                 </div>
                                 <div class="col-md-8 col-6">
-                                    March 22, 1994.
+                                   @Model.DateOfBirth
                                 </div>
                             </div>
                             <hr />
@@ -52,28 +62,30 @@
 
                             <div class="row">
                                 <div class="col-sm-3 col-md-2 col-5">
-                                    <label style="font-weight:bold;">Something</label>
+                                    <label style="font-weight:bold;">Email</label>
                                 </div>
                                 <div class="col-md-8 col-6">
-                                    Something
+                                    @Model.Email
+                                </div>
+                            </div>
+                            <hr />
+
+                            <div class="row">
+                                <div class="col-sm-3 col-md-2 col-5">
+                                    <label style="font-weight:bold;">Last Login Date Time</label>
+                                </div>
+                                <div class="col-md-8 col-6">
+                                    @(Model.LastLoginDateTime == null ? "" : Model.LastLoginDateTime)
                                 </div>
                             </div>
                             <hr />
                             <div class="row">
                                 <div class="col-sm-3 col-md-2 col-5">
-                                    <label style="font-weight:bold;">Something</label>
+                                    <label style="font-weight:bold;">Purchased Movies</label>
                                 </div>
                                 <div class="col-md-8 col-6">
-                                    Something
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="row">
-                                <div class="col-sm-3 col-md-2 col-5">
-                                    <label style="font-weight:bold;">Something</label>
-                                </div>
-                                <div class="col-md-8 col-6">
-                                    Something
+                                    <partial name="_PurchasedMovieList" model="@Model.PurchasedMovies" />
+                                   
                                 </div>
                             </div>
                             <hr />

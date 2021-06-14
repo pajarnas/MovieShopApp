@@ -1,0 +1,35 @@
+﻿@model IEnumerable<ApplicationCore.Models.Response.UserProfileResponseModel.PurchasedMovieResponseModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Purchased Time
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Title)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PurchaseDateTime)
+    </td>
+    <td>
+        <a class="btn btn-light btn-lg btn-block btn-sm" asp-route-id="@item.Id" asp-controller="Movie" asp-action="Details">
+            DETAIL
+        </a>
+    </td>
+</tr>
+}
+    </tbody>
+</table>

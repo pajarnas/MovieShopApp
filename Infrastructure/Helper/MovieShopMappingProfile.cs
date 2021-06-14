@@ -26,26 +26,31 @@ namespace Infrastructure.Helpers
                 .ForMember(p => p.PurchasedMovies, opt => opt.MapFrom(src => GetPurchasedMovies(src)))
                 .ForMember(p => p.UserId, opt => opt.MapFrom(src => src.FirstOrDefault().UserId));
 
-         //   CreateMap<IEnumerable<Favorite>, FavoriteResponseModel>()
-              //  .ForMember(p => p.FavoriteMovies, opt => opt.MapFrom(src => GetFavoriteMovies(src)))
+            CreateMap<IEnumerable<Purchase>, UserProfileResponseModel>().
+                
+                ForMember(p => p.PurchasedMovies, opt => opt.MapFrom(src => GetPurchasedMoviesForProfile(src)));
+            CreateMap<User, UserProfileResponseModel>();
+            //   CreateMap<IEnumerable<Favorite>, FavoriteResponseModel>()
+            //  .ForMember(p => p.FavoriteMovies, opt => opt.MapFrom(src => GetFavoriteMovies(src)))
             //    .ForMember(p => p.UserId, opt => opt.MapFrom(src => src.FirstOrDefault().UserId));
 
-           // CreateMap<IEnumerable<Review>, ReviewResponseModel>()
-             //   .ForMember(r => r.MovieReviews, opt => opt.MapFrom(src => GetUserReviewedMovies(src)))
-             //   .ForMember(r => r.UserId, opt => opt.MapFrom(src => src.FirstOrDefault().UserId));
+            // CreateMap<IEnumerable<Review>, ReviewResponseModel>()
+            //   .ForMember(r => r.MovieReviews, opt => opt.MapFrom(src => GetUserReviewedMovies(src)))
+            //   .ForMember(r => r.UserId, opt => opt.MapFrom(src => src.FirstOrDefault().UserId));
 
-         //   CreateMap<Review, ReviewMovieResponseModel>()
-             //   .ForMember(r => r.Name, opt => opt.MapFrom(src => src.User.FirstName + " " + src.User.LastName));
+            //   CreateMap<Review, ReviewMovieResponseModel>()
+            //   .ForMember(r => r.Name, opt => opt.MapFrom(src => src.User.FirstName + " " + src.User.LastName));
 
             CreateMap<Purchase, MovieResponseModel>().ForMember(p => p.Id, opt => opt.MapFrom(src => src.Movie.Id))
                 .ForMember(p => p.Title, opt => opt.MapFrom(src => src.Movie.Title))
                 .ForMember(p => p.PosterUrl, opt => opt.MapFrom(src => src.Movie.PosterUrl));
 
-          //  CreateMap<User, UserLoginResponseModel>();
-           // CreateMap<Role, RoleModel>();
-           // CreateMap<Genre, GenreModel>().ReverseMap();
+            CreateMap<User, UserLoginResponseModel>();
+            
+            // CreateMap<Role, RoleModel>();
+            // CreateMap<Genre, GenreModel>().ReverseMap();
 
-           // CreateMap<MovieCreateRequest, Movie>();
+            // CreateMap<MovieCreateRequest, Movie>();
             //.ForMember( m => m.MovieGenres, opt => opt.MapFrom( src => GetMovieGenres(src.Genres)));
 
             // Request Models to Db Entities Mappings
@@ -119,6 +124,28 @@ namespace Infrastructure.Helpers
 
             return purchaseResponse.PurchasedMovies;
         }
+
+        private List<UserProfileResponseModel.PurchasedMovieResponseModel> GetPurchasedMoviesForProfile(IEnumerable<Purchase> purchases)
+        {
+            var userProfileResponseModel = new UserProfileResponseModel
+            {
+                PurchasedMovies =
+                    new List<UserProfileResponseModel.PurchasedMovieResponseModel>()
+            };
+            foreach (var purchase in purchases)
+                userProfileResponseModel.PurchasedMovies.Add(new UserProfileResponseModel.PurchasedMovieResponseModel
+                {
+                    PosterUrl = purchase.Movie.PosterUrl,
+                    PurchaseDateTime = purchase.PurchaseDateTime,
+                    Id = purchase.MovieId,
+                    Title = purchase.Movie.Title
+
+                });
+
+            return userProfileResponseModel.PurchasedMovies;
+        }
+
+
         /*
                 private List<MovieResponseModel> GetMoviesForCast(IEnumerable<MovieCast> srcMovieCasts)
                 {

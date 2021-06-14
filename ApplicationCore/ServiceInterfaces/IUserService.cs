@@ -13,8 +13,8 @@ namespace ApplicationCore.ServiceInterfaces
         Task<UserLoginResponseModel> Login(string email, string password);
 
         Task PurchaseMovie(PurchaseRequestModel purchase);
+        Task<UserProfileResponseModel> GetUserProfile();
 
-   
 
         // delete
         // EditUser

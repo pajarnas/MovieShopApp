@@ -14,10 +14,10 @@ namespace Infrastructure.Repositories
         {
         }
 
-        public async Task<IEnumerable<Purchase>> GetAllPurchases(int pageSize = 30, int pageIndex = 1)
+        public async Task<IEnumerable<Purchase>> GetAllPurchases(int userId)
         {
-            var purchases = await _dbContext.Purchase.Include(m => m.Movie).OrderByDescending(p => p.PurchaseDateTime)
-                .Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
+            var purchases = await _dbContext.Purchase.Include(m => m.Movie).Where(m=>m.UserId== userId)
+                .ToListAsync();
             return purchases;
         }
    

@@ -9,6 +9,7 @@ using ApplicationCore.Models.Response;
 using ApplicationCore.RepositoryInterfaces;
 using ApplicationCore.ServiceInterfaces;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using System.Collections.Generic;
 using AutoMapper;
 namespace Infrastructure.Services
 {
@@ -90,7 +91,8 @@ namespace Infrastructure.Services
                 if (hashedPassword == user.HashedPassword)
                 {
                     // user entered correct password
-
+                    user.LastLoginDateTime = DateTime.Now;
+                    await _userRepository.UpdateAsync(user);
                     var loginResponseModel = new UserLoginResponseModel
                     {
                         Id = user.Id,
@@ -154,6 +156,17 @@ namespace Infrastructure.Services
         {
             return await _purchaseRepository.GetExistsAsync(p =>
                 p.UserId == purchaseRequest.UserId && p.MovieId == purchaseRequest.MovieId);
+        }
+
+        public async Task<UserProfileResponseModel> GetUserProfile()
+        {
+            
+            var user = await _userRepository.GetByIdAsync(_currentUserService.UserId.Value);
+            var userRespones = _mapper.Map<User, UserProfileResponseModel>(user);
+            var moviePurchased = await _purchaseRepository.GetAllPurchases(user.Id);
+            /* Pass the created destination to the second map call: */
+            var userRespones2 = _mapper.Map<IEnumerable<Purchase>, UserProfileResponseModel>(moviePurchased, userRespones);
+            return userRespones2;
         }
 
     
