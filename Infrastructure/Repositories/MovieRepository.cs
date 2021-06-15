@@ -7,7 +7,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
-
+using Infrastructure.DataContext;
 namespace Infrastructure.Repositories
 {
     public class MovieRepository : EfRepository<Movie>, IMovieRepository

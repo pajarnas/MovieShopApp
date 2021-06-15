@@ -6,7 +6,7 @@ using System.Text;
 using ApplicationCore.RepositoryInterfaces;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-
+using Infrastructure.DataContext;
 namespace Infrastructure.Repositories
 {
     public class EfRepository<T> : IAsyncRepository<T> where T : class

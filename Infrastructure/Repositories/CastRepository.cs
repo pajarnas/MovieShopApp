@@ -6,7 +6,7 @@ using System.Linq;
 using ApplicationCore.RepositoryInterfaces;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-
+using Infrastructure.DataContext;
 namespace Infrastructure.Repositories
 {
     public class CastRepository : EfRepository<Cast>, ICastRepository

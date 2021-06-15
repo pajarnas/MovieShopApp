@@ -33,6 +33,7 @@ Global
 		{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

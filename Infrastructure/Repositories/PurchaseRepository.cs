@@ -5,7 +5,7 @@ using ApplicationCore.Entities;
 using ApplicationCore.RepositoryInterfaces;
  
 using Microsoft.EntityFrameworkCore;
-
+using Infrastructure.DataContext;
 namespace Infrastructure.Repositories
 {
     public class PurchaseRepository : EfRepository<Purchase>, IPurchaseRepository
