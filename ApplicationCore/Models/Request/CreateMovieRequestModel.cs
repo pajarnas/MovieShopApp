@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ApplicationCore.Entities;
+using ApplicationCore.Models.Response;
+
 namespace ApplicationCore.Models.Request
 {
     public class CreateMovieRequestModel
@@ -26,9 +28,8 @@ namespace ApplicationCore.Models.Request
         public DateTime? UpdatedDate { get; set; }
         public string UpdatedBy { get; set; }
         public string CreatedBy { get; set; }
-        
 
-        public IList<int> Genres { get; set; }
+        public List<AssignedGenreModel> Genres { get; set; }
 
     }
 }

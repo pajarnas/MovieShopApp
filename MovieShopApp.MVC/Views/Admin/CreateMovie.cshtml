@@ -92,24 +92,49 @@
                 <input asp-for="CreatedBy" class="form-control" />
                 <span asp-validation-for="CreatedBy" class="text-danger"></span>
             </div>
-         
-            <div class="form-check col-md-4">
-
-                @foreach (var genre in ViewBag.Genres)
-                {
-                    <input name="genre" type="checkbox" value="@genre.Id" />
-                    @genre.Name<br />
-                }
-            </div>
 
 
+            <table>
+                <tr>
+                    @{
+                        int cnt = 0;
+                        List<ApplicationCore.Models.Response.AssignedGenreModel> genres = ViewBag.Genres;
 
-            <div class="form-group">
-                <input type="submit" id="submit" value="Create" class="btn btn-primary" />
-            </div>
+                        foreach (var genre in genres)
+                        {
+                            if (cnt++ % 3 == 0)
+                            {
+                            @:</tr><tr>
+                            }
+                            @:<td>
+                                <input type="checkbox"
+                                       name="selectedGenere"
+                                       value="@genre.Id"
+                                       @(Html.Raw(genre.Assigned ? "checked=\"checked\"" : "")) />
+                                @genre.Name @: </td>
+                        }
+                    @:</tr>
+                    }
+                </table>
 
 
-        </form>
+                @*<div class="form-check col-md-4">
+
+                    @foreach (var genre in ViewBag.Genres)
+                    {
+                        <input name="genre" type="checkbox" value="@genre.Id" />
+                        @genre.Name<br />
+                    }
+                </div>*@
+
+
+
+                <div class="form-group">
+                    <input type="submit" id="submit" value="Create" class="btn btn-primary" />
+                </div>
+
+
+            </form>
     </div>
 </div>
 

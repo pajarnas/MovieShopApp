@@ -103,7 +103,22 @@ namespace ApplicationCore.Models.Response
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        
     }
+
+    public class AssignedGenreModel
+    {
+        public AssignedGenreModel()
+        {
+            Assigned = false;
+        }
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        public bool Assigned { get; set; }
+    }
+
 
     public class MovieChartResponseModel
     {

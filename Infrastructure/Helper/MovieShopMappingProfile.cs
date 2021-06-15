@@ -46,9 +46,12 @@ namespace Infrastructure.Helpers
                 .ForMember(p => p.PosterUrl, opt => opt.MapFrom(src => src.Movie.PosterUrl));
 
             CreateMap<User, UserLoginResponseModel>();
-            
+
             // CreateMap<Role, RoleModel>();
-            // CreateMap<Genre, GenreModel>().ReverseMap();
+            CreateMap<Genre, AssignedGenreModel>();
+            /*CreateMap<Genre, AssignedGenreModel>().ForMember(p=>p.Assigned,opt=>opt.MapFrom(src=>false))
+                .ForMember(p=>p.Id,opt=>opt.MapFrom(src=>src.Id))
+                .ForMember(p=>p.Name,opt=>opt.MapFrom(src=>src.Name));*/
 
             // CreateMap<CreateMovieRequestModel, Movie>();
             //.ForMember( m => m.MovieGenres, opt => opt.MapFrom( src => GetMovieGenres(src.Genres)));

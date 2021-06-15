@@ -6,7 +6,7 @@ using System.Linq;
 using ApplicationCore.RepositoryInterfaces;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-
+using ApplicationCore.Models.Response;
 namespace Infrastructure.Repositories
 {
     public class GenreRepository : EfRepository<Genre>,IGenreRepository
@@ -25,5 +25,7 @@ namespace Infrastructure.Repositories
             return genres;
             
         }
+
+       
     }
 }

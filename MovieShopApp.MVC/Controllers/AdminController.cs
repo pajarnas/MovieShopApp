@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ApplicationCore.ServiceInterfaces;
 using ApplicationCore.Models.Request;
+using AutoMapper;
 /*
  * Create AdminController for creating A Movie with Genres, 
  * and it should have submit button that will post to AccounController/CreateMovie method, 
@@ -18,7 +19,7 @@ namespace MovieShopApp.MVC.Controllers
     {
         private readonly IMovieService _movieService;
         private readonly IGenreService _genreService;
-
+        
         public AdminController(IMovieService movieService, IGenreService genreService)
         {
             _movieService = movieService;
@@ -42,14 +43,17 @@ namespace MovieShopApp.MVC.Controllers
         // GET: AdminController/CreateMovie
         public async Task<IActionResult> CreateMovie()
         {
-            ViewBag.Genres = await _genreService.GetAllGenreList();
+            
+
+            ViewBag.Genres = await _genreService.GetAssignedGenreModelAsync();
+            
             return View();
         }
 
-        // POST: AdminController/Create
+        // POST: AdminController/Create, string[] selectedCourses
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult CreateMovie(CreateMovieRequestModel createMovieRequestModel)
+        public ActionResult CreateMovie( CreateMovieRequestModel createMovieRequestModel, string[] selectedGenere)
         {
             try
             {

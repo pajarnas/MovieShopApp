@@ -825,3 +825,844 @@ WHERE [p].[UserId] = @__id_0
 2021-06-14 01:51:07.084 -05:00 [INF] Executed action MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC) in 242.927ms
 2021-06-14 01:51:07.084 -05:00 [INF] Executed endpoint 'MovieShop.MVC.Controllers.AccountController.Profile (MovieShopApp.MVC)'
 2021-06-14 01:51:07.085 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Account/Profile - - - 200 - text/html;+charset=utf-8 246.2987ms
+2021-06-14 18:57:50.474 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 18:57:51.749 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 18:57:51.750 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 18:57:51.750 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 18:57:51.750 -05:00 [INF] Hosting environment: Development
+2021-06-14 18:57:51.750 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 18:57:53.046 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 18:57:53.135 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 18:57:53.187 -05:00 [INF] Date Time the request came: 6/14/2021 6:57:53 PM
+2021-06-14 18:57:53.187 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 18:57:53.206 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 18:57:53.293 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 18:57:53.343 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 18:57:55.493 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 18:57:55.593 -05:00 [INF] Executed ViewResult - view Index executed in 2272.4255ms.
+2021-06-14 18:57:55.595 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2301.0961ms
+2021-06-14 18:57:55.595 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 18:57:55.648 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2606.4550ms
+2021-06-14 18:57:55.681 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/site.css - -
+2021-06-14 18:57:55.682 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-06-14 18:57:55.682 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-06-14 18:57:55.682 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-14 18:57:55.682 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-14 18:57:55.691 -05:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2021-06-14 18:57:55.691 -05:00 [INF] The file /lib/font-awesome/css/all.min.css was not modified
+2021-06-14 18:57:55.691 -05:00 [INF] The file /css/site.css was not modified
+2021-06-14 18:57:55.691 -05:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2021-06-14 18:57:55.691 -05:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2021-06-14 18:57:55.693 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 304 - text/css 11.3207ms
+2021-06-14 18:57:55.693 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 11.5654ms
+2021-06-14 18:57:55.693 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/css/site.css - - - 304 - text/css 11.4329ms
+2021-06-14 18:57:55.692 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 10.2660ms
+2021-06-14 18:57:55.693 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2021-06-14 18:57:55.693 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 11.0164ms
+2021-06-14 18:57:55.693 -05:00 [INF] The file /js/site.js was not modified
+2021-06-14 18:57:55.693 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 0.4559ms
+2021-06-14 18:57:56.032 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2021-06-14 18:57:56.063 -05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\favicon.ico'
+2021-06-14 18:57:56.063 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 200 32038 image/x-icon 31.6244ms
+2021-06-14 18:57:58.850 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 18:57:58.855 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 18:57:58.855 -05:00 [INF] Date Time the request came: 6/14/2021 6:57:58 PM
+2021-06-14 18:57:58.855 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 18:57:58.855 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 18:57:58.867 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 18:57:58.868 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 18:58:00.464 -05:00 [INF] Executed DbCommand (160ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 18:58:01.380 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 18:58:01.404 -05:00 [INF] Executed ViewResult - view Index executed in 23.7071ms.
+2021-06-14 18:58:01.405 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 2537.9789ms
+2021-06-14 18:58:01.406 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 18:58:01.413 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 2563.1829ms
+2021-06-14 18:58:01.500 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/img/black-plus-icon-24.jpg - -
+2021-06-14 18:58:01.519 -05:00 [INF] Sending file. Request path: '/img/black-plus-icon-24.jpg'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\img\black-plus-icon-24.jpg'
+2021-06-14 18:58:01.519 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/img/black-plus-icon-24.jpg - - - 200 39668 image/jpeg 19.4919ms
+2021-06-14 18:58:02.864 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 18:58:02.867 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 18:58:02.867 -05:00 [INF] Date Time the request came: 6/14/2021 6:58:02 PM
+2021-06-14 18:58:02.867 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 18:58:02.867 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 18:58:02.869 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 18:58:02.908 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 18:58:03.007 -05:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 18:58:03.045 -05:00 [INF] Executing ViewResult, running view CreateMovie.
+2021-06-14 18:58:03.764 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 895.1898ms
+2021-06-14 18:58:03.765 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 18:58:03.903 -05:00 [INF] Some Exception happened, caught in this middleware: 
+2021-06-14 18:58:03.904 -05:00 [ERR] Starting Exception Logging: 
+2021-06-14 18:58:04.083 -05:00 [ERR] Exception Message: Cannot implicitly convert type 'System.Collections.Generic.List<ApplicationCore.Entities.Genre>' to 'System.Collections.Generic.List<ApplicationCore.Models.Response.AssignedGenreModel>'
+2021-06-14 18:58:04.083 -05:00 [ERR] Exception happened on "2021-06-14T18:58:04.0838671-05:00"
+2021-06-14 18:58:04.084 -05:00 [ERR] StackTrace Of Exception    at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Admin_CreateMovie.<ExecuteAsync>b__18_0() in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Views\Admin\CreateMovie.cshtml:line 101
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Admin_CreateMovie.ExecuteAsync() in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Views\Admin\CreateMovie.cshtml:line 7
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MovieShopApp.MVC.Middleware.MovieShopExceptionMiddleware.Invoke(HttpContext httpContext) in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Middleware\MovieShopExceptionMiddleware.cs:line 28
+2021-06-14 18:58:04.085 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 302 0 text/html;+charset=utf-8 1221.5594ms
+2021-06-14 18:58:04.089 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Error - -
+2021-06-14 18:58:04.090 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 18:58:04.090 -05:00 [INF] Date Time the request came: 6/14/2021 6:58:04 PM
+2021-06-14 18:58:04.090 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 18:58:04.090 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 18:58:04.094 -05:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 18:58:04.096 -05:00 [INF] Executing ViewResult, running view Error.
+2021-06-14 18:58:04.101 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 18:58:04.102 -05:00 [INF] Executed ViewResult - view Error executed in 6.4504ms.
+2021-06-14 18:58:04.102 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC) in 7.8545ms
+2021-06-14 18:58:04.102 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 18:58:04.102 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Home/Error - - - 200 - text/html;+charset=utf-8 12.7016ms
+2021-06-14 20:04:38.135 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 20:04:38.995 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 20:04:39.002 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 20:04:39.003 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 20:04:39.003 -05:00 [INF] Hosting environment: Development
+2021-06-14 20:04:39.003 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 20:04:40.128 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 20:04:40.208 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:04:40.210 -05:00 [INF] Date Time the request came: 6/14/2021 8:04:40 PM
+2021-06-14 20:04:40.210 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:04:40.210 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:04:40.278 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:04:40.311 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:04:41.642 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:04:41.709 -05:00 [INF] Executed ViewResult - view Index executed in 1401.6399ms.
+2021-06-14 20:04:41.712 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1433.1487ms
+2021-06-14 20:04:41.712 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:04:41.798 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 1671.0918ms
+2021-06-14 20:04:43.895 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 20:04:43.897 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:04:43.897 -05:00 [INF] Date Time the request came: 6/14/2021 8:04:43 PM
+2021-06-14 20:04:43.897 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:04:43.897 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:04:43.910 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:04:43.912 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:04:44.733 -05:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 20:04:45.410 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:04:45.428 -05:00 [INF] Executed ViewResult - view Index executed in 18.445ms.
+2021-06-14 20:04:45.432 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 1522.5019ms
+2021-06-14 20:04:45.433 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:04:45.435 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 1540.8154ms
+2021-06-14 20:04:46.637 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 20:04:46.645 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:04:46.645 -05:00 [INF] Date Time the request came: 6/14/2021 8:04:46 PM
+2021-06-14 20:04:46.645 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:04:46.645 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:04:46.648 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:04:46.682 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:04:46.731 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 20:04:46.951 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 303.3285ms
+2021-06-14 20:04:46.951 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:04:47.093 -05:00 [INF] Some Exception happened, caught in this middleware: 
+2021-06-14 20:04:47.095 -05:00 [ERR] Starting Exception Logging: 
+2021-06-14 20:04:47.252 -05:00 [ERR] Exception Message: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AssignedGenreModel
+System.Object -> ApplicationCore.Models.Response.AssignedGenreModel
+2021-06-14 20:04:47.252 -05:00 [ERR] Exception happened on "2021-06-14T20:04:47.2524717-05:00"
+2021-06-14 20:04:47.252 -05:00 [ERR] StackTrace Of Exception    at lambda_method211(Closure , Object , AssignedGenreModel , ResolutionContext )
+   at Infrastructure.Services.GenreService.GetAssignedGenreModelAsync() in C:\Users\saige\Source\Repos\MovieShopApp\Infrastructure\Services\GenreService.cs:line 30
+   at MovieShopApp.MVC.Controllers.AdminController.CreateMovie() in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Controllers\AdminController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MovieShopApp.MVC.Middleware.MovieShopExceptionMiddleware.Invoke(HttpContext httpContext) in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Middleware\MovieShopExceptionMiddleware.cs:line 28
+2021-06-14 20:04:47.253 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 302 0 - 618.4419ms
+2021-06-14 20:04:47.264 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Error - -
+2021-06-14 20:04:47.264 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:04:47.264 -05:00 [INF] Date Time the request came: 6/14/2021 8:04:47 PM
+2021-06-14 20:04:47.264 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:04:47.264 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 20:04:47.266 -05:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:04:47.267 -05:00 [INF] Executing ViewResult, running view Error.
+2021-06-14 20:04:47.271 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:04:47.272 -05:00 [INF] Executed ViewResult - view Error executed in 4.8625ms.
+2021-06-14 20:04:47.272 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC) in 6.0523ms
+2021-06-14 20:04:47.272 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 20:04:47.272 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Home/Error - - - 200 - text/html;+charset=utf-8 8.3633ms
+2021-06-14 20:07:29.561 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 20:07:30.297 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 20:07:30.298 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 20:07:30.298 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 20:07:30.298 -05:00 [INF] Hosting environment: Development
+2021-06-14 20:07:30.298 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 20:07:31.805 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 20:07:31.940 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:07:31.945 -05:00 [INF] Date Time the request came: 6/14/2021 8:07:31 PM
+2021-06-14 20:07:31.945 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:07:31.948 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:07:32.037 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:07:32.087 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:07:34.013 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:07:34.086 -05:00 [INF] Executed ViewResult - view Index executed in 2011.8535ms.
+2021-06-14 20:07:34.090 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 2052.7546ms
+2021-06-14 20:07:34.091 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:07:34.167 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2359.0695ms
+2021-06-14 20:07:36.476 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 20:07:36.483 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:07:36.483 -05:00 [INF] Date Time the request came: 6/14/2021 8:07:36 PM
+2021-06-14 20:07:36.484 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:07:36.484 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:07:36.502 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:07:36.504 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:07:37.756 -05:00 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 20:07:38.829 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:07:38.862 -05:00 [INF] Executed ViewResult - view Index executed in 34.1326ms.
+2021-06-14 20:07:38.865 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 2363.3256ms
+2021-06-14 20:07:38.866 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:07:38.873 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 2397.1825ms
+2021-06-14 20:07:40.103 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 20:07:40.109 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:07:40.109 -05:00 [INF] Date Time the request came: 6/14/2021 8:07:40 PM
+2021-06-14 20:07:40.109 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:07:40.109 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:07:40.112 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:07:40.157 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:08:00.859 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 20:08:03.634 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 23522.4148ms
+2021-06-14 20:08:03.634 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:08:03.788 -05:00 [INF] Some Exception happened, caught in this middleware: 
+2021-06-14 20:08:03.789 -05:00 [ERR] Starting Exception Logging: 
+2021-06-14 20:08:03.846 -05:00 [ERR] Exception Message: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AssignedGenreModel
+System.Object -> ApplicationCore.Models.Response.AssignedGenreModel
+2021-06-14 20:08:03.846 -05:00 [ERR] Exception happened on "2021-06-14T20:08:03.8465834-05:00"
+2021-06-14 20:08:03.846 -05:00 [ERR] StackTrace Of Exception    at lambda_method211(Closure , Object , AssignedGenreModel , ResolutionContext )
+   at Infrastructure.Services.GenreService.GetAssignedGenreModelAsync() in C:\Users\saige\Source\Repos\MovieShopApp\Infrastructure\Services\GenreService.cs:line 30
+   at MovieShopApp.MVC.Controllers.AdminController.CreateMovie() in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Controllers\AdminController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MovieShopApp.MVC.Middleware.MovieShopExceptionMiddleware.Invoke(HttpContext httpContext) in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Middleware\MovieShopExceptionMiddleware.cs:line 28
+2021-06-14 20:08:03.847 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 302 0 - 23744.6777ms
+2021-06-14 20:08:03.851 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Error - -
+2021-06-14 20:08:03.858 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:08:03.858 -05:00 [INF] Date Time the request came: 6/14/2021 8:08:03 PM
+2021-06-14 20:08:03.858 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:08:03.858 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 20:08:03.859 -05:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:08:03.861 -05:00 [INF] Executing ViewResult, running view Error.
+2021-06-14 20:08:03.865 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:08:03.865 -05:00 [INF] Executed ViewResult - view Error executed in 4.8696ms.
+2021-06-14 20:08:03.866 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC) in 6.1429ms
+2021-06-14 20:08:03.866 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 20:08:03.866 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Home/Error - - - 200 - text/html;+charset=utf-8 14.4918ms
+2021-06-14 20:09:21.755 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 20:09:22.607 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 20:09:22.607 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 20:09:22.608 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 20:09:22.608 -05:00 [INF] Hosting environment: Development
+2021-06-14 20:09:22.608 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 20:09:24.231 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 20:09:24.400 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:09:24.407 -05:00 [INF] Date Time the request came: 6/14/2021 8:09:24 PM
+2021-06-14 20:09:24.408 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:09:24.409 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:09:24.549 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:09:24.618 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:09:26.024 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:09:26.095 -05:00 [INF] Executed ViewResult - view Index executed in 1489.6111ms.
+2021-06-14 20:09:26.097 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1545.2883ms
+2021-06-14 20:09:26.097 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:09:26.132 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 1893.4994ms
+2021-06-14 20:09:28.903 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 20:09:28.909 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:09:28.909 -05:00 [INF] Date Time the request came: 6/14/2021 8:09:28 PM
+2021-06-14 20:09:28.909 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:09:28.909 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:09:28.928 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:09:28.930 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:09:29.695 -05:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 20:09:30.389 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:09:30.409 -05:00 [INF] Executed ViewResult - view Index executed in 21.3629ms.
+2021-06-14 20:09:30.414 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 1485.7715ms
+2021-06-14 20:09:30.414 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:09:30.417 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 1513.5799ms
+2021-06-14 20:09:31.646 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 20:09:31.648 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:09:31.649 -05:00 [INF] Date Time the request came: 6/14/2021 8:09:31 PM
+2021-06-14 20:09:31.649 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:09:31.649 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:09:31.651 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:09:31.690 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:09:35.258 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 20:09:37.641 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 5989.3583ms
+2021-06-14 20:09:37.641 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:09:37.799 -05:00 [INF] Some Exception happened, caught in this middleware: 
+2021-06-14 20:09:37.800 -05:00 [ERR] Starting Exception Logging: 
+2021-06-14 20:09:37.854 -05:00 [ERR] Exception Message: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AssignedGenreModel
+System.Object -> ApplicationCore.Models.Response.AssignedGenreModel
+2021-06-14 20:09:37.854 -05:00 [ERR] Exception happened on "2021-06-14T20:09:37.8543483-05:00"
+2021-06-14 20:09:37.854 -05:00 [ERR] StackTrace Of Exception    at lambda_method211(Closure , Object , AssignedGenreModel , ResolutionContext )
+   at Infrastructure.Services.GenreService.GetAssignedGenreModelAsync() in C:\Users\saige\Source\Repos\MovieShopApp\Infrastructure\Services\GenreService.cs:line 30
+   at MovieShopApp.MVC.Controllers.AdminController.CreateMovie() in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Controllers\AdminController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MovieShopApp.MVC.Middleware.MovieShopExceptionMiddleware.Invoke(HttpContext httpContext) in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Middleware\MovieShopExceptionMiddleware.cs:line 28
+2021-06-14 20:09:37.855 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 302 0 - 6209.3571ms
+2021-06-14 20:09:37.859 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Error - -
+2021-06-14 20:09:37.859 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:09:37.859 -05:00 [INF] Date Time the request came: 6/14/2021 8:09:37 PM
+2021-06-14 20:09:37.859 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:09:37.860 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 20:09:37.861 -05:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:09:37.863 -05:00 [INF] Executing ViewResult, running view Error.
+2021-06-14 20:09:37.868 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:09:37.868 -05:00 [INF] Executed ViewResult - view Error executed in 5.3153ms.
+2021-06-14 20:09:37.868 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC) in 6.9419ms
+2021-06-14 20:09:37.868 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 20:09:37.868 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Home/Error - - - 200 - text/html;+charset=utf-8 9.3330ms
+2021-06-14 20:12:00.464 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 20:12:01.346 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 20:12:01.347 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 20:12:01.347 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 20:12:01.347 -05:00 [INF] Hosting environment: Development
+2021-06-14 20:12:01.347 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 20:12:02.906 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 20:12:03.037 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:12:03.039 -05:00 [INF] Date Time the request came: 6/14/2021 8:12:03 PM
+2021-06-14 20:12:03.039 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:12:03.041 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:12:03.124 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:12:03.177 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:12:04.492 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:12:04.531 -05:00 [INF] Executed ViewResult - view Index executed in 1371.3691ms.
+2021-06-14 20:12:04.538 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1412.1274ms
+2021-06-14 20:12:04.538 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:12:04.579 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 1657.9498ms
+2021-06-14 20:12:06.693 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 20:12:06.696 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:12:06.696 -05:00 [INF] Date Time the request came: 6/14/2021 8:12:06 PM
+2021-06-14 20:12:06.696 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:12:06.696 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:12:06.714 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:12:06.716 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:12:07.503 -05:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 20:12:08.297 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:12:08.313 -05:00 [INF] Executed ViewResult - view Index executed in 17.6498ms.
+2021-06-14 20:12:08.314 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 1600.2807ms
+2021-06-14 20:12:08.315 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:12:08.317 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 1623.8341ms
+2021-06-14 20:12:09.114 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 20:12:09.117 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:12:09.117 -05:00 [INF] Date Time the request came: 6/14/2021 8:12:09 PM
+2021-06-14 20:12:09.117 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:12:09.117 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:12:09.123 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:12:09.161 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:12:13.042 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 20:12:14.079 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 4955.5469ms
+2021-06-14 20:12:14.079 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:12:14.238 -05:00 [INF] Some Exception happened, caught in this middleware: 
+2021-06-14 20:12:14.239 -05:00 [ERR] Starting Exception Logging: 
+2021-06-14 20:12:14.316 -05:00 [ERR] Exception Message: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AssignedGenreModel
+System.Object -> ApplicationCore.Models.Response.AssignedGenreModel
+2021-06-14 20:12:14.316 -05:00 [ERR] Exception happened on "2021-06-14T20:12:14.3168330-05:00"
+2021-06-14 20:12:14.317 -05:00 [ERR] StackTrace Of Exception    at lambda_method211(Closure , Object , AssignedGenreModel , ResolutionContext )
+   at Infrastructure.Services.GenreService.GetAssignedGenreModelAsync() in C:\Users\saige\Source\Repos\MovieShopApp\Infrastructure\Services\GenreService.cs:line 30
+   at MovieShopApp.MVC.Controllers.AdminController.CreateMovie() in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Controllers\AdminController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MovieShopApp.MVC.Middleware.MovieShopExceptionMiddleware.Invoke(HttpContext httpContext) in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Middleware\MovieShopExceptionMiddleware.cs:line 28
+2021-06-14 20:12:14.317 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 302 0 - 5203.2748ms
+2021-06-14 20:12:14.321 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Error - -
+2021-06-14 20:12:14.322 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:12:14.322 -05:00 [INF] Date Time the request came: 6/14/2021 8:12:14 PM
+2021-06-14 20:12:14.322 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:12:14.322 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 20:12:14.324 -05:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:12:14.327 -05:00 [INF] Executing ViewResult, running view Error.
+2021-06-14 20:12:14.333 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:12:14.334 -05:00 [INF] Executed ViewResult - view Error executed in 7.6972ms.
+2021-06-14 20:12:14.334 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC) in 10.2611ms
+2021-06-14 20:12:14.334 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 20:12:14.335 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Home/Error - - - 200 - text/html;+charset=utf-8 13.8772ms
+2021-06-14 20:14:32.952 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 20:14:33.682 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 20:14:33.682 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 20:14:33.686 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 20:14:33.686 -05:00 [INF] Hosting environment: Development
+2021-06-14 20:14:33.686 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 20:14:35.204 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 20:14:35.331 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:14:35.333 -05:00 [INF] Date Time the request came: 6/14/2021 8:14:35 PM
+2021-06-14 20:14:35.333 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:14:35.334 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:14:35.434 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:14:35.536 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:14:37.023 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:14:37.070 -05:00 [INF] Executed ViewResult - view Index executed in 1577.3564ms.
+2021-06-14 20:14:37.073 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1637.4691ms
+2021-06-14 20:14:37.073 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:14:37.088 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 1887.3138ms
+2021-06-14 20:14:38.757 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 20:14:38.763 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:14:38.763 -05:00 [INF] Date Time the request came: 6/14/2021 8:14:38 PM
+2021-06-14 20:14:38.763 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:14:38.763 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:14:38.782 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:14:38.784 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:14:39.701 -05:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 20:14:40.484 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:14:40.500 -05:00 [INF] Executed ViewResult - view Index executed in 17.0342ms.
+2021-06-14 20:14:40.501 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 1719.3637ms
+2021-06-14 20:14:40.502 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:14:40.505 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 1747.8358ms
+2021-06-14 20:14:41.714 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 20:14:41.718 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:14:41.718 -05:00 [INF] Date Time the request came: 6/14/2021 8:14:41 PM
+2021-06-14 20:14:41.718 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:14:41.719 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:14:41.721 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:14:41.760 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:14:45.592 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 20:16:54.096 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 20:16:54.684 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 20:16:54.684 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 20:16:54.684 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 20:16:54.685 -05:00 [INF] Hosting environment: Development
+2021-06-14 20:16:54.685 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 20:16:56.512 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 20:16:56.620 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:16:56.626 -05:00 [INF] Date Time the request came: 6/14/2021 8:16:56 PM
+2021-06-14 20:16:56.627 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:16:56.630 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:16:56.718 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:16:56.769 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:16:58.101 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:16:58.195 -05:00 [INF] Executed ViewResult - view Index executed in 1434.6025ms.
+2021-06-14 20:16:58.198 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1479.0873ms
+2021-06-14 20:16:58.198 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:16:58.254 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 1748.1856ms
+2021-06-14 20:17:01.803 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 20:17:01.805 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:17:01.805 -05:00 [INF] Date Time the request came: 6/14/2021 8:17:01 PM
+2021-06-14 20:17:01.805 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:17:01.805 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:17:01.819 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:17:01.820 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:17:02.585 -05:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 20:17:03.259 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:17:03.280 -05:00 [INF] Executed ViewResult - view Index executed in 22.3093ms.
+2021-06-14 20:17:03.282 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 1462.8278ms
+2021-06-14 20:17:03.282 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:17:03.285 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 1482.5740ms
+2021-06-14 20:17:04.704 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 20:17:04.709 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:17:04.709 -05:00 [INF] Date Time the request came: 6/14/2021 8:17:04 PM
+2021-06-14 20:17:04.709 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:17:04.709 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:17:04.712 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:17:04.751 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:17:12.303 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 20:17:13.730 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 9018.1767ms
+2021-06-14 20:17:13.730 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:17:13.859 -05:00 [INF] Some Exception happened, caught in this middleware: 
+2021-06-14 20:17:13.860 -05:00 [ERR] Starting Exception Logging: 
+2021-06-14 20:17:13.929 -05:00 [ERR] Exception Message: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AssignedGenreModel
+System.Object -> ApplicationCore.Models.Response.AssignedGenreModel
+2021-06-14 20:17:13.929 -05:00 [ERR] Exception happened on "2021-06-14T20:17:13.9298271-05:00"
+2021-06-14 20:17:13.930 -05:00 [ERR] StackTrace Of Exception    at lambda_method211(Closure , Object , AssignedGenreModel , ResolutionContext )
+   at Infrastructure.Services.GenreService.GetAssignedGenreModelAsync() in C:\Users\saige\Source\Repos\MovieShopApp\Infrastructure\Services\GenreService.cs:line 30
+   at MovieShopApp.MVC.Controllers.AdminController.CreateMovie() in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Controllers\AdminController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MovieShopApp.MVC.Middleware.MovieShopExceptionMiddleware.Invoke(HttpContext httpContext) in C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\Middleware\MovieShopExceptionMiddleware.cs:line 28
+2021-06-14 20:17:13.930 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 302 0 - 9226.5821ms
+2021-06-14 20:17:13.934 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Home/Error - -
+2021-06-14 20:17:13.935 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:17:13.935 -05:00 [INF] Date Time the request came: 6/14/2021 8:17:13 PM
+2021-06-14 20:17:13.935 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:17:13.935 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 20:17:13.936 -05:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:17:13.938 -05:00 [INF] Executing ViewResult, running view Error.
+2021-06-14 20:17:13.943 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:17:13.943 -05:00 [INF] Executed ViewResult - view Error executed in 5.8308ms.
+2021-06-14 20:17:13.943 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC) in 7.546ms
+2021-06-14 20:17:13.944 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Error (MovieShopApp.MVC)'
+2021-06-14 20:17:13.944 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Home/Error - - - 200 - text/html;+charset=utf-8 9.5171ms
+2021-06-14 20:20:25.220 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 20:20:25.807 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 20:20:25.807 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 20:20:25.807 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 20:20:25.807 -05:00 [INF] Hosting environment: Development
+2021-06-14 20:20:25.807 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 20:20:27.296 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 20:20:27.411 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:20:27.414 -05:00 [INF] Date Time the request came: 6/14/2021 8:20:27 PM
+2021-06-14 20:20:27.414 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:20:27.417 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:20:27.511 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:20:27.560 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:20:29.078 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:20:29.131 -05:00 [INF] Executed ViewResult - view Index executed in 1587.1768ms.
+2021-06-14 20:20:29.135 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1623.4808ms
+2021-06-14 20:20:29.135 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:20:29.178 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 1885.3895ms
+2021-06-14 20:20:30.637 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 20:20:30.639 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:20:30.639 -05:00 [INF] Date Time the request came: 6/14/2021 8:20:30 PM
+2021-06-14 20:20:30.639 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:20:30.639 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:20:30.650 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:20:30.655 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:20:31.423 -05:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 20:20:32.113 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:20:32.132 -05:00 [INF] Executed ViewResult - view Index executed in 20.3206ms.
+2021-06-14 20:20:32.134 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 1484.1241ms
+2021-06-14 20:20:32.135 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:20:32.140 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 1503.0321ms
+2021-06-14 20:20:33.267 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 20:20:33.273 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:20:33.273 -05:00 [INF] Date Time the request came: 6/14/2021 8:20:33 PM
+2021-06-14 20:20:33.273 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:20:33.273 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:20:33.276 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:20:33.317 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:20:35.323 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 20:20:43.016 -05:00 [INF] Executing ViewResult, running view CreateMovie.
+2021-06-14 20:20:43.170 -05:00 [INF] Executed ViewResult - view CreateMovie executed in 155.5584ms.
+2021-06-14 20:20:43.171 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 9894.0079ms
+2021-06-14 20:20:43.171 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:20:43.171 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 200 - text/html;+charset=utf-8 9904.3547ms
+2021-06-14 20:20:43.219 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.min.js - -
+2021-06-14 20:20:43.219 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - -
+2021-06-14 20:20:43.272 -05:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2021-06-14 20:20:43.272 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.min.js - - - 200 23264 application/javascript 54.3784ms
+2021-06-14 20:20:43.303 -05:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'
+2021-06-14 20:20:43.303 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - - 200 5871 application/javascript 83.5201ms
+2021-06-14 20:21:15.729 -05:00 [INF] Request starting HTTP/2 POST https://localhost:5001/Admin/CreateMovie application/x-www-form-urlencoded 485
+2021-06-14 20:21:15.734 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:21:15.734 -05:00 [INF] Date Time the request came: 6/14/2021 8:21:15 PM
+2021-06-14 20:21:15.734 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:21:15.734 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:21:15.750 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateMovie(ApplicationCore.Models.Request.CreateMovieRequestModel) on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:21:15.762 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:21:15.818 -05:00 [INF] Executing RedirectResult, redirecting to /Admin.
+2021-06-14 20:21:15.818 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 68.2557ms
+2021-06-14 20:21:15.818 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:21:15.818 -05:00 [INF] Request finished HTTP/2 POST https://localhost:5001/Admin/CreateMovie application/x-www-form-urlencoded 485 - 302 0 - 89.0164ms
+2021-06-14 20:21:15.827 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/Admin - -
+2021-06-14 20:21:15.827 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:21:15.827 -05:00 [INF] Date Time the request came: 6/14/2021 8:21:15 PM
+2021-06-14 20:21:15.827 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:21:15.827 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:21:15.827 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:21:15.827 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:21:15.937 -05:00 [INF] Executed DbCommand (108ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 20:21:16.491 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:21:16.493 -05:00 [INF] Executed ViewResult - view Index executed in 1.4601ms.
+2021-06-14 20:21:16.493 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 665.7871ms
+2021-06-14 20:21:16.493 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:21:16.493 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/Admin - - - 200 - text/html;+charset=utf-8 666.5283ms
+2021-06-14 20:21:21.401 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 20:21:21.401 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:21:21.402 -05:00 [INF] Date Time the request came: 6/14/2021 8:21:21 PM
+2021-06-14 20:21:21.402 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:21:21.402 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:21:21.402 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:21:21.402 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:23:41.457 -05:00 [INF] Executed DbCommand (127ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 20:23:46.387 -05:00 [INF] Executing ViewResult, running view CreateMovie.
+2021-06-14 20:23:46.391 -05:00 [INF] Executed ViewResult - view CreateMovie executed in 4.6414ms.
+2021-06-14 20:23:46.391 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 144989.6781ms
+2021-06-14 20:23:46.391 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:23:46.392 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 200 - text/html;+charset=utf-8 144990.6210ms
+2021-06-14 20:23:50.638 -05:00 [INF] Request starting HTTP/2 POST https://localhost:5001/Admin/CreateMovie application/x-www-form-urlencoded 485
+2021-06-14 20:23:50.638 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:23:50.638 -05:00 [INF] Date Time the request came: 6/14/2021 8:23:50 PM
+2021-06-14 20:23:50.638 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:23:50.638 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:23:50.639 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateMovie(ApplicationCore.Models.Request.CreateMovieRequestModel) on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:23:50.641 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:29:00.768 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 20:29:01.629 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 20:29:01.629 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 20:29:01.630 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 20:29:01.630 -05:00 [INF] Hosting environment: Development
+2021-06-14 20:29:01.630 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 20:29:03.110 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 20:29:03.199 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:29:03.201 -05:00 [INF] Date Time the request came: 6/14/2021 8:29:03 PM
+2021-06-14 20:29:03.201 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:29:03.202 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:29:03.369 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 20:29:03.420 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:29:04.771 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:29:04.834 -05:00 [INF] Executed ViewResult - view Index executed in 1419.154ms.
+2021-06-14 20:29:04.837 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1467.0645ms
+2021-06-14 20:29:04.837 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 20:29:04.878 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 1764.8876ms
+2021-06-14 20:29:07.038 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 20:29:07.040 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:29:07.040 -05:00 [INF] Date Time the request came: 6/14/2021 8:29:07 PM
+2021-06-14 20:29:07.040 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:29:07.040 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:29:07.053 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:29:07.055 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:29:07.842 -05:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 20:29:08.536 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 20:29:08.555 -05:00 [INF] Executed ViewResult - view Index executed in 18.6795ms.
+2021-06-14 20:29:08.555 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 1502.0504ms
+2021-06-14 20:29:08.556 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 20:29:08.561 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 1523.3520ms
+2021-06-14 20:29:09.739 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 20:29:09.759 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:29:09.759 -05:00 [INF] Date Time the request came: 6/14/2021 8:29:09 PM
+2021-06-14 20:29:09.759 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:29:09.759 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:29:09.766 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:29:09.798 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 20:29:09.845 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 20:29:09.883 -05:00 [INF] Executing ViewResult, running view CreateMovie.
+2021-06-14 20:29:09.990 -05:00 [INF] Executed ViewResult - view CreateMovie executed in 107.3771ms.
+2021-06-14 20:29:09.990 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 223.7365ms
+2021-06-14 20:29:09.990 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:29:09.991 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 200 - text/html;+charset=utf-8 251.7844ms
+2021-06-14 20:29:48.713 -05:00 [INF] Request starting HTTP/2 POST https://localhost:5001/Admin/CreateMovie application/x-www-form-urlencoded 522
+2021-06-14 20:29:48.721 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 20:29:48.721 -05:00 [INF] Date Time the request came: 6/14/2021 8:29:48 PM
+2021-06-14 20:29:48.721 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 20:29:48.721 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 20:29:48.738 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateMovie(ApplicationCore.Models.Request.CreateMovieRequestModel, System.String[]) on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 20:29:48.750 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 21:05:10.208 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 21:05:10.831 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 21:05:10.832 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 21:05:10.832 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 21:05:10.832 -05:00 [INF] Hosting environment: Development
+2021-06-14 21:05:10.832 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 21:05:12.214 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 21:05:12.317 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 21:05:12.319 -05:00 [INF] Date Time the request came: 6/14/2021 9:05:12 PM
+2021-06-14 21:05:12.319 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 21:05:12.320 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 21:05:12.400 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 21:05:12.452 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 21:05:14.150 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 21:05:14.207 -05:00 [INF] Executed ViewResult - view Index executed in 1770.9382ms.
+2021-06-14 21:05:14.248 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1841.9831ms
+2021-06-14 21:05:14.249 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 21:05:14.269 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/site.css - -
+2021-06-14 21:05:14.273 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 2065.4390ms
+2021-06-14 21:05:14.294 -05:00 [INF] The file /css/site.css was not modified
+2021-06-14 21:05:14.300 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/css/site.css - - - 304 - text/css 30.8800ms
+2021-06-14 21:05:16.011 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 21:05:16.017 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 21:05:16.017 -05:00 [INF] Date Time the request came: 6/14/2021 9:05:16 PM
+2021-06-14 21:05:16.017 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 21:05:16.017 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 21:05:16.037 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 21:05:16.039 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 21:05:17.077 -05:00 [INF] Executed DbCommand (180ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 21:05:17.815 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 21:05:17.834 -05:00 [INF] Executed ViewResult - view Index executed in 19.3121ms.
+2021-06-14 21:05:17.835 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 1797.9726ms
+2021-06-14 21:05:17.835 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 21:05:17.838 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 1827.0025ms
+2021-06-14 21:05:18.913 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 21:05:18.920 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 21:05:18.920 -05:00 [INF] Date Time the request came: 6/14/2021 9:05:18 PM
+2021-06-14 21:05:18.920 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 21:05:18.920 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 21:05:18.923 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 21:05:18.960 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 21:05:19.027 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 21:05:19.079 -05:00 [INF] Executing ViewResult, running view CreateMovie.
+2021-06-14 21:05:19.248 -05:00 [INF] Executed ViewResult - view CreateMovie executed in 169.206ms.
+2021-06-14 21:05:19.248 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 325.1668ms
+2021-06-14 21:05:19.248 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 21:05:19.249 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 200 - text/html;+charset=utf-8 336.6117ms
+2021-06-14 21:07:11.902 -05:00 [INF] User profile is available. Using 'C:\Users\saige\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-14 21:07:12.624 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-14 21:07:12.625 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-14 21:07:12.625 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-14 21:07:12.625 -05:00 [INF] Hosting environment: Development
+2021-06-14 21:07:12.625 -05:00 [INF] Content root path: C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC
+2021-06-14 21:07:14.099 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-14 21:07:14.214 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 21:07:14.218 -05:00 [INF] Date Time the request came: 6/14/2021 9:07:14 PM
+2021-06-14 21:07:14.219 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 21:07:14.220 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 21:07:14.299 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-14 21:07:14.338 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 21:07:15.723 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 21:07:15.776 -05:00 [INF] Executed ViewResult - view Index executed in 1448.7792ms.
+2021-06-14 21:07:15.781 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1478.3909ms
+2021-06-14 21:07:15.781 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-14 21:07:15.834 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 1744.7560ms
+2021-06-14 21:07:26.532 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin - -
+2021-06-14 21:07:26.535 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 21:07:26.535 -05:00 [INF] Date Time the request came: 6/14/2021 9:07:26 PM
+2021-06-14 21:07:26.535 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 21:07:26.535 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 21:07:26.547 -05:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 21:07:26.549 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 21:07:27.407 -05:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+2021-06-14 21:07:28.398 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-14 21:07:28.426 -05:00 [INF] Executed ViewResult - view Index executed in 29.1868ms.
+2021-06-14 21:07:28.427 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC) in 1879.9882ms
+2021-06-14 21:07:28.428 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.Index (MovieShopApp.MVC)'
+2021-06-14 21:07:28.431 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin - - - 200 - text/html;+charset=utf-8 1898.3542ms
+2021-06-14 21:07:30.132 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/admin/CreateMovie - -
+2021-06-14 21:07:30.139 -05:00 [INF] Inside the Logger Middleware
+2021-06-14 21:07:30.139 -05:00 [INF] Date Time the request came: 6/14/2021 9:07:30 PM
+2021-06-14 21:07:30.139 -05:00 [INF] Ip Address Of User: ::1
+2021-06-14 21:07:30.140 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 21:07:30.145 -05:00 [INF] Route matched with {action = "CreateMovie", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateMovie() on controller MovieShopApp.MVC.Controllers.AdminController (MovieShopApp.MVC).
+2021-06-14 21:07:30.186 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-14 21:07:30.238 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT [g].[Id], [g].[Name]
+FROM [Genre] AS [g]
+2021-06-14 21:07:30.289 -05:00 [INF] Executing ViewResult, running view CreateMovie.
+2021-06-14 21:07:30.504 -05:00 [INF] Executed ViewResult - view CreateMovie executed in 215.9497ms.
+2021-06-14 21:07:30.504 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC) in 358.5497ms
+2021-06-14 21:07:30.504 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.AdminController.CreateMovie (MovieShopApp.MVC)'
+2021-06-14 21:07:30.505 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/admin/CreateMovie - - - 200 - text/html;+charset=utf-8 372.2916ms
+2021-06-14 21:07:32.447 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2021-06-14 21:07:32.495 -05:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2021-06-14 21:07:32.592 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2021-06-14 21:07:32.592 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 145.5821ms
+2021-06-14 21:07:32.602 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\saige\Source\Repos\MovieShopApp\MovieShopApp.MVC\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2021-06-14 21:07:32.602 -05:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 106.3799ms
