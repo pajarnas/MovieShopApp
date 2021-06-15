@@ -37,7 +37,7 @@ namespace MovieShopApp.API
             });
             services.AddDbContext<MovieShopDbContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("MovieShopConnection"));
+                options.UseSqlServer(Configuration.GetConnectionString("MovieShopDbConnection"));
                 //Injecting SqlConnection string DbContext.             
             });
             services.AddAutoMapper(typeof(Startup), typeof(MovieShopMappingProfile));
