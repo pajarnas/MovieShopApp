@@ -15,7 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Infrastructure.Helpers;
 using Microsoft.Extensions.DependencyInjection;
-
+using Infrastructure.DataContext;
 namespace MovieShopApp.API
 {
     public class Startup

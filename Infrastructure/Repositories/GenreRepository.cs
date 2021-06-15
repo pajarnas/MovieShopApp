@@ -7,6 +7,7 @@ using ApplicationCore.RepositoryInterfaces;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ApplicationCore.Models.Response;
+using Infrastructure.DataContext;
 namespace Infrastructure.Repositories
 {
     public class GenreRepository : EfRepository<Genre>,IGenreRepository

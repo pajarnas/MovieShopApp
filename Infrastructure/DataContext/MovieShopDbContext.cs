@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using ApplicationCore.Entities;
 
-namespace Infrastructure
+namespace Infrastructure.DataContext
 {
     public class MovieShopDbContext : DbContext
     {
