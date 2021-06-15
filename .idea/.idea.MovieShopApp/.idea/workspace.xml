@@ -5,11 +5,19 @@
     <projectFile>MovieShopApp.MVC/MovieShopApp.MVC.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment="" />
+    <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment=" Stash" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="master" />
+    <option name="OPTIONS">
+      <set>
+        <option value="NO_FF" />
+      </set>
+    </option>
   </component>
   <component name="Git.Settings">
     <excluded-from-favorite>
@@ -42,8 +50,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/saige/RiderProjects/MovieShopApp/MovieShopApp.API/Controllers/MoviesController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/saige/RiderProjects/MovieShopApp/MovieShopApp.API/Controllers/MoviesController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -151,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623778391451</updated>
       <workItem from="1623778409576" duration="1558000" />
-      <workItem from="1623779986109" duration="13228000" />
+      <workItem from="1623779986109" duration="13976000" />
     </task>
     <task id="LOCAL-00001" summary="Migrant To MAC">
       <created>1623797480045</created>
@@ -160,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623797480046</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" Stash">
+      <created>1623800294043</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623800294043</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +196,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/branch1" />
                       </list>
                     </value>
                   </entry>
@@ -195,6 +212,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="master" />
@@ -215,6 +237,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Migrant To MAC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrant To MAC" />
+    <MESSAGE value=" Stash" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Stash" />
   </component>
 </project>
