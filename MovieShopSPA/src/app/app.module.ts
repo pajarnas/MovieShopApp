@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -28,6 +28,7 @@ import { MovieListComponent } from './movies/movie-list/movie-list.component';
     MovieCardComponent,
     HeaderComponent,
     FooterComponent,
+    
     CreateMovieComponent,
     CreateCastComponent,
     UpdateMovieComponent,
@@ -42,9 +43,10 @@ import { MovieListComponent } from './movies/movie-list/movie-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
