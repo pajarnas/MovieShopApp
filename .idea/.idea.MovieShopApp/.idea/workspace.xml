@@ -5,7 +5,12 @@
     <projectFile>MovieShopApp.MVC/MovieShopApp.MVC.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment=" Stash" />
+    <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/Success.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/ApplicationData\LogFiles\log20210615.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/ApplicationData\LogFiles\log20210615.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/UserController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +57,7 @@
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/saige/RiderProjects/MovieShopApp/MovieShopApp.API/Controllers/MoviesController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/obj/Debug/net5.0/Razor/Views/Shared/Success.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/saige/RiderProjects/MovieShopApp/MovieShopApp.API/Controllers/MoviesController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,6 +78,10 @@
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Startup.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/appsettings.json" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/_SuccessPage.cshtml" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/Error.cshtml" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/UserController.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/Success.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tziZQWKEnxpl0t3SqjOQBy9epa" />
@@ -83,11 +93,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="sqlserver" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35016286" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MovieShopApp.MVC">

@@ -30,13 +30,20 @@ namespace MovieShopApp.MVC.Controllers
         }
 
         [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> Success()
+        {
+            return View("Success");
+        }
+        
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> PurchaseMovie(PurchaseRequestModel purchaseRequestModel)
         {
             // get userid from CurrentUser and create a row in Purchase Table
             await _userService.PurchaseMovie(purchaseRequestModel);
 
-            return Ok();
+            return RedirectToAction("Success");
         }
 
         
