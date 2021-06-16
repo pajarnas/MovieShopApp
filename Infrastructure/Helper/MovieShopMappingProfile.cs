@@ -12,14 +12,18 @@ namespace Infrastructure.Helpers
     {
         public MovieShopMappingProfile()
         {
-            //CreateMap<Movie, MovieResponseModel>();
+            //CreateMap<Movie, MovieDetailResponseModel>();
             //CreateMap<Cast, CastDetailsResponseModel>()
                 //.ForMember(c => c.Movies, opt => opt.MapFrom(src => GetMoviesForCast(src.MovieCasts)));
+                
+       
+                CreateMap<Movie, MovieDetailResponseModel>()
+                    .ForMember(md => md.Casts, opt => opt.MapFrom(src => GetCasts(src.MovieCasts)))
+                    .ForMember(md => md.Genres, opt => opt.MapFrom(src => GetGenres(src.MovieGenres)));
 
-           // CreateMap<Movie, MovieDetailsResponseModel>()
-               // .ForMember(md => md.Casts, opt => opt.MapFrom(src => GetCasts(src.MovieCasts)));
-            //  .ForMember(md => md.Genres, opt => opt.MapFrom(src => GetMovieGenres(src.MovieGenres)));
-
+           
+            
+            
            // CreateMap<User, UserRegisterResponseModel>();
 
            CreateMap<IEnumerable<Purchase>, PurchaseResponseModel>()
@@ -61,6 +65,38 @@ namespace Infrastructure.Helpers
             //  CreateMap<FavoriteRequestModel, Favorite>();
             //  CreateMap<ReviewRequestModel, Review>();
 
+        }
+        
+        private static List<MovieDetailsResponseModel.CastResponseModel> GetCasts(IEnumerable<MovieCast> srcMovieCasts)
+        {
+            var movieCast = new List<MovieDetailsResponseModel.CastResponseModel>();
+            foreach (var cast in srcMovieCasts)
+                movieCast.Add(new MovieDetailsResponseModel.CastResponseModel
+                {
+                    Id = cast.CastId,
+                    Gender = cast.Cast.Gender,
+                    Name = cast.Cast.Name,
+                    ProfilePath = cast.Cast.ProfilePath,
+                    TmdbUrl = cast.Cast.TmdbUrl,
+                    Character = cast.Character
+                });
+
+            return movieCast;
+        }
+        
+        private static List<MovieDetailResponseModel.GenreResponseModel> GetGenres(IEnumerable<MovieGenre> srcMovieGenres)
+        {
+            var movieGenres = new List<MovieDetailResponseModel.GenreResponseModel>();
+            foreach (var genre in srcMovieGenres)
+                movieGenres.Add(new MovieDetailResponseModel.GenreResponseModel
+                {
+                    Id = genre.GenreId,
+                   
+                    Name = genre.Genre.Name,
+                    
+                });
+
+            return movieGenres;
         }
 
         //private List<Genre> GetMovieGenres(IEnumerable<MovieGenre> srcGenres)
@@ -163,22 +199,7 @@ namespace Infrastructure.Helpers
 
                     return castMovies;
                 }*/
-        /*
-                private static List<MovieDetailsResponseModel.CastResponseModel> GetCasts(IEnumerable<MovieCast> srcMovieCasts)
-                {
-                    var movieCast = new List<MovieDetailsResponseModel.CastResponseModel>();
-                    foreach (var cast in srcMovieCasts)
-                        movieCast.Add(new MovieDetailsResponseModel.CastResponseModel
-                        {
-                            Id = cast.CastId,
-                            Gender = cast.Cast.Gender,
-                            Name = cast.Cast.Name,
-                            ProfilePath = cast.Cast.ProfilePath,
-                            TmdbUrl = cast.Cast.TmdbUrl,
-                            Character = cast.Character
-                        });
-
-                    return movieCast;
-                }*/
+        
+               
     }
 }

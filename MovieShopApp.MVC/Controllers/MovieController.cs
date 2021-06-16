@@ -17,9 +17,9 @@ namespace MovieShopApp.MVC.Controllers
         }
 
         // GET: MovieController
-        public async Task<ActionResult> Index()
+        public async Task<ActionResult> Index(int pageSize=30,int pageNumber = 1)
         {
-            var details = await _movieService.GetTopRevenueMovies();           
+            var details = await _movieService.GetMoviesPaginatedList(pageSize,pageNumber);           
             return View(details);
         }
 

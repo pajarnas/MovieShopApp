@@ -5,11 +5,22 @@
     <projectFile>MovieShopApp.MVC/MovieShopApp.MVC.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/Success.cshtml" afterDir="false" />
+    <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment="Adding Success Page">
+      <change afterPath="$PROJECT_DIR$/ApplicationCore/Helpers/PaginatedList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApplicationCore/Helpers/PaginatedResultSet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Models/Response/MovieDetailResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Models/Response/MovieDetailResponseModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IAsyncRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IAsyncRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IMovieService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IMovieService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Repositories/EfRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repositories/EfRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Services/MovieService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/MovieService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/ApplicationData\LogFiles\log20210615.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/ApplicationData\LogFiles\log20210615.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/Success.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/Success.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/_MovieDetail.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/_MovieDetail.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +68,6 @@
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/saige/RiderProjects/MovieShopApp/MovieShopApp.API/Controllers/MoviesController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/obj/Debug/net5.0/Razor/Views/Shared/Success.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/saige/RiderProjects/MovieShopApp/MovieShopApp.API/Controllers/MoviesController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,7 +77,6 @@
       <option value="$PROJECT_DIR$/Infrastructure/DataContext/MovieShopDbContext.cs" />
       <option value="$PROJECT_DIR$/Infrastructure/Repositories/AdminRepository.cs" />
       <option value="$PROJECT_DIR$/Infrastructure/Repositories/CastRepository.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Repositories/EfRepository.cs" />
       <option value="$PROJECT_DIR$/Infrastructure/Repositories/GenreRepository.cs" />
       <option value="$PROJECT_DIR$/Infrastructure/Repositories/MovieRepository.cs" />
       <option value="$PROJECT_DIR$/Infrastructure/Repositories/PurchaseRepository.cs" />
@@ -75,17 +84,30 @@
       <option value="$PROJECT_DIR$/Infrastructure/Repositories/UserRepository.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.API/Startup.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" />
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Startup.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/appsettings.json" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/_SuccessPage.cshtml" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/Error.cshtml" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/UserController.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/Success.cshtml" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IAsyncRepository.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Repositories/EfRepository.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/_MovieDetail.cshtml" />
+      <option value="$PROJECT_DIR$/ApplicationCore/Helpers/PaginatedList.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IMovieService.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" />
+      <option value="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/Models/Response/MovieDetailResponseModel.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/Helpers/PaginatedResultSet.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Services/MovieService.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Index.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tziZQWKEnxpl0t3SqjOQBy9epa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -189,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623800294043</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding Success Page">
+      <created>1623805638214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623805638215</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +279,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Migrant To MAC" />
     <MESSAGE value=" Stash" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Stash" />
+    <MESSAGE value="Adding Success Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Success Page" />
   </component>
 </project>

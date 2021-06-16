@@ -10,6 +10,7 @@ using System.Linq;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using ApplicationCore.Helpers;
 
 namespace Infrastructure.Services
 {
@@ -20,12 +21,13 @@ namespace Infrastructure.Services
         private readonly ICastRepository _castRepository;
         private readonly IReviewRepository _reviewRepository;
         private readonly IMapper _mapper;
-        public MovieService(IMovieRepository movieRepository,IGenreRepository genreRepository, ICastRepository castRepository,IReviewRepository reviewRepository)
+        public MovieService(IMovieRepository movieRepository,IGenreRepository genreRepository, ICastRepository castRepository,IReviewRepository reviewRepository,IMapper mapper)
         {
             _movieRepository = movieRepository;
             _genreRepository = genreRepository;
             _castRepository = castRepository;
             _reviewRepository = reviewRepository;
+            _mapper = mapper;
         }
         public async Task<List<MovieDetailResponseModel>> GetAllMovieModelList()
         {
@@ -43,40 +45,21 @@ namespace Infrastructure.Services
             return models;
         }
 
-   
+        public async Task<PaginatedList<MovieDetailResponseModel>> GetMoviesPaginatedList(int pageSize = 30, int page = 1,
+            string title = "")
+        {
+            //get PaginatedList<Movie>
+            var pagedData = await _movieRepository.GetPagedData(page, pageSize);
+            //mapping it to PaginatedList<MovieDetailResponseModel>
+            var mappedPagedData = _mapper.Map<PaginatedList<MovieDetailResponseModel>>(pagedData);
+            var pagedModels = new PaginatedList<MovieDetailResponseModel>(mappedPagedData,count:pagedData.TotalCount,page=page,pageSize=pageSize);
+            return pagedModels;
+        }
 
         public async Task<MovieDetailResponseModel> GetMovieDetailsById(int id)
         {
             var movie = await _movieRepository.GetMovieWithRelatedData(id);
-            var casts = await _castRepository.GetCastsByMovie(id);
-            var genres = await _genreRepository.GetGenresByMovie(id);
-            var rating = await _reviewRepository.GetAvgReviewRatingByMovie(id);
-            MovieDetailResponseModel movieDetailResponseModel = new MovieDetailResponseModel
-            {
-                Id = movie.Id,
-                PosterUrl = movie.PosterUrl,
-                ReleaseDate = movie.ReleaseDate,
-                Title = movie.Title,
-                Overview = movie.Overview,
-                Tagline = movie.Tagline,
-                Budget = movie.Budget,
-                Revenue = movie.Revenue,
-                ImdbUrl = movie.ImdbUrl,
-                TmdbUrl = movie.TmdbUrl,
-                BackdropUrl = movie.BackdropUrl,
-                OriginalLanguage = movie.OriginalLanguage,
-                RunTime = movie.RunTime,
-                Price = movie.Price,
-                CreatedBy = movie.CreatedBy,
-                UpdatedBy = movie.UpdatedBy,
-                CreatedDate = movie.CreatedDate,
-                UpdatedDate = movie.UpdatedDate,
-                MovieCasts = movie.MovieCasts,
-                Casts = casts,
-                Genres = genres,
-                Rating = rating
-
-            };
+            var movieDetailResponseModel = _mapper.Map<MovieDetailResponseModel>(movie);
             return movieDetailResponseModel;
         }
 

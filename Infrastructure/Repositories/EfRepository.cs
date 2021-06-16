@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using ApplicationCore.RepositoryInterfaces;
 using System.Threading.Tasks;
+using ApplicationCore.Helpers;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.DataContext;
 namespace Infrastructure.Repositories
@@ -47,6 +48,15 @@ namespace Infrastructure.Repositories
         {
             _dbContext.Set<T>().Remove(entity);
             await _dbContext.SaveChangesAsync();
+        }
+
+        public virtual async Task<PaginatedList<T>> GetPagedData(int pageIndex, int pageSize,
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderedQuery = null,
+            Expression<Func<T, bool>> filter = null, params Expression<Func<T, object>>[] includes)
+        {
+            var pagedList =
+                await PaginatedList<T>.GetPaged(_dbContext.Set<T>(), pageIndex, pageSize, orderedQuery, filter, includes);
+            return pagedList;
         }
 
         public virtual async Task<T> GetById(int id)

@@ -27,10 +27,24 @@ namespace ApplicationCore.Models.Response
         public string CreatedBy { get; set; }
         public decimal? Rating { get; set; }
   
-        public IEnumerable<MovieCast> MovieCasts { get; set; }
+        public IEnumerable<CastResponseModel> Casts { get; set; }
+        
+        public class CastResponseModel
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public string Gender { get; set; }
+            public string TmdbUrl { get; set; }
+            public string ProfilePath { get; set; }
+            public string Character { get; set; }
+        }
+        public IEnumerable<GenreResponseModel> Genres { get; set; }
+        public class GenreResponseModel
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
 
-        public IEnumerable<Cast> Casts { get; set; }
-
-        public IEnumerable<Genre> Genres { get; set; }
+        
+        }
     }
 }
