@@ -1,0 +1,732 @@
+2021-06-16 03:32:06.229 -05:00 [INF] User profile is available. Using '/Users/saige/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-06-16 03:32:07.320 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-16 03:32:07.324 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-16 03:32:07.327 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-16 03:32:07.328 -05:00 [INF] Hosting environment: Development
+2021-06-16 03:32:07.328 -05:00 [INF] Content root path: /Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC
+2021-06-16 03:32:08.910 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 03:32:09.076 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 03:32:09.083 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 03:32:09.087 -05:00 [INF] Date Time the request came: 06/16/2021 03:32:09
+2021-06-16 03:32:09.087 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 03:32:09.090 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 03:32:09.205 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 03:32:09.262 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 03:32:10.633 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 03:32:10.811 -05:00 [INF] Executed ViewResult - view Index executed in 1569.845ms.
+2021-06-16 03:32:10.820 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1611.173ms
+2021-06-16 03:32:10.820 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 03:32:13.037 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-06-16 03:32:13.042 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 03:32:13.043 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-06-16 03:32:13.052 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 03:32:13.416 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - -
+2021-06-16 03:32:13.416 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 4354.8649ms
+2021-06-16 03:32:13.585 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 03:32:13.593 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/js/site.js'
+2021-06-16 03:32:13.593 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 03:32:13.624 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 611.4436ms
+2021-06-16 03:32:13.624 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - - - 200 226 application/javascript 209.2005ms
+2021-06-16 03:32:14.644 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2021-06-16 03:32:14.644 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 03:32:14.644 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/jquery/dist/jquery.min.js'
+2021-06-16 03:32:14.669 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 1661.0900ms
+2021-06-16 03:32:14.669 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 1656.3994ms
+2021-06-16 03:32:14.670 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78635 application/javascript 1659.4822ms
+2021-06-16 03:32:14.799 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 03:32:14.800 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 1241.0330ms
+2021-06-16 03:32:18.763 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/movie - -
+2021-06-16 03:32:18.806 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 03:32:18.808 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 03:32:18.808 -05:00 [INF] Date Time the request came: 06/16/2021 03:32:18
+2021-06-16 03:32:18.808 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 03:32:18.809 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 03:32:18.854 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 03:32:18.868 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 03:32:20.075 -05:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 03:32:20.148 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 03:32:20.149 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 03:32:20.298 -05:00 [INF] Executed DbCommand (64ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 03:32:20.711 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC) in 1856.5596ms
+2021-06-16 03:32:20.713 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 03:32:20.716 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.MovieService.GetMoviesPaginatedList(Int32 pageSize, Int32 page, String title) in /Users/saige/RiderProjects/MovieShopApp/Infrastructure/Services/MovieService.cs:line 53
+   at MovieShopApp.MVC.Controllers.MovieController.Index(Int32 pageSize, Int32 pageNumber) in /Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/Controllers/MovieController.cs:line 22
+   at lambda_method37(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-16 03:32:20.837 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/movie - - - 500 - text/html;+charset=utf-8 2074.9013ms
+2021-06-16 03:38:22.521 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 03:38:22.539 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 03:38:22.540 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 03:38:22.544 -05:00 [INF] Date Time the request came: 06/16/2021 03:38:22
+2021-06-16 03:38:22.545 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 03:38:22.545 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 03:38:22.549 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 03:38:22.559 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 03:38:22.683 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 03:38:22.726 -05:00 [INF] Executed ViewResult - view Index executed in 169.1773ms.
+2021-06-16 03:38:22.727 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 178.2045ms
+2021-06-16 03:38:22.727 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 03:38:22.729 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 208.9812ms
+2021-06-16 03:38:22.892 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 03:38:24.409 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 03:38:24.408 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 03:38:24.556 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-06-16 03:38:24.556 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-06-16 03:38:24.741 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - -
+2021-06-16 03:38:25.027 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/js/site.js'
+2021-06-16 03:38:25.028 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2021-06-16 03:38:25.028 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - - - 200 226 application/javascript 286.8120ms
+2021-06-16 03:38:25.028 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78635 application/javascript 495.8395ms
+2021-06-16 03:38:25.079 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 03:38:25.079 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 03:38:25.151 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/jquery/dist/jquery.min.js'
+2021-06-16 03:38:25.151 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 767.1887ms
+2021-06-16 03:38:25.151 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 895.5831ms
+2021-06-16 03:38:25.199 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 645.0187ms
+2021-06-16 03:38:25.276 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 03:38:25.276 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 2452.7129ms
+2021-06-16 03:38:26.466 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/movie - -
+2021-06-16 03:38:26.476 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 03:38:26.476 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 03:38:26.476 -05:00 [INF] Date Time the request came: 06/16/2021 03:38:26
+2021-06-16 03:38:26.476 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 03:38:26.477 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 03:38:26.478 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 03:38:26.484 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 03:38:26.558 -05:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 03:38:26.577 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 03:41:10.977 -05:00 [INF] User profile is available. Using '/Users/saige/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-06-16 03:41:11.949 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-16 03:41:12.123 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-16 03:41:12.256 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-16 03:41:12.257 -05:00 [INF] Hosting environment: Development
+2021-06-16 03:41:12.259 -05:00 [INF] Content root path: /Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC
+2021-06-16 03:41:13.292 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 03:41:13.428 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 03:41:13.434 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 03:41:13.438 -05:00 [INF] Date Time the request came: 06/16/2021 03:41:13
+2021-06-16 03:41:13.438 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 03:41:13.440 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 03:41:13.530 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 03:41:13.583 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 03:41:14.972 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 03:41:15.133 -05:00 [INF] Executed ViewResult - view Index executed in 1568.5022ms.
+2021-06-16 03:41:15.152 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1614.8398ms
+2021-06-16 03:41:15.153 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 03:41:17.192 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-06-16 03:41:17.192 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-06-16 03:41:17.195 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 03:41:17.195 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 03:41:17.298 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 3938.0428ms
+2021-06-16 03:41:17.306 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - -
+2021-06-16 03:41:17.408 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 03:41:17.570 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 03:41:17.570 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/js/site.js'
+2021-06-16 03:41:17.625 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 387.9107ms
+2021-06-16 03:41:17.625 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - - - 200 226 application/javascript 269.2069ms
+2021-06-16 03:41:18.613 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 03:41:18.616 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2021-06-16 03:41:18.672 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78635 application/javascript 1435.1751ms
+2021-06-16 03:41:18.672 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 1435.3248ms
+2021-06-16 03:41:18.917 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/jquery/dist/jquery.min.js'
+2021-06-16 03:41:18.939 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 1752.4890ms
+2021-06-16 03:41:19.016 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 03:41:19.016 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 1608.1038ms
+2021-06-16 03:41:19.069 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico - -
+2021-06-16 03:41:19.213 -05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/favicon.ico'
+2021-06-16 03:41:19.213 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/favicon.ico - - - 200 32038 image/x-icon 145.1839ms
+2021-06-16 03:41:25.465 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/movie - -
+2021-06-16 03:41:25.523 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 03:41:25.525 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 03:41:25.525 -05:00 [INF] Date Time the request came: 06/16/2021 03:41:25
+2021-06-16 03:41:25.525 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 03:41:25.525 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 03:41:25.585 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 03:41:25.605 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 03:41:27.174 -05:00 [INF] Executed DbCommand (116ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 03:41:27.265 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 03:41:27.267 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 03:41:27.394 -05:00 [INF] Executed DbCommand (32ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 03:41:38.658 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC) in 13069.8017ms
+2021-06-16 03:41:38.660 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 03:41:38.664 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.MovieService.GetMoviesPaginatedList(Int32 pageSize, Int32 page, String title) in /Users/saige/RiderProjects/MovieShopApp/Infrastructure/Services/MovieService.cs:line 53
+   at MovieShopApp.MVC.Controllers.MovieController.Index(Int32 pageSize, Int32 pageNumber) in /Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/Controllers/MovieController.cs:line 22
+   at lambda_method37(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-16 03:41:38.837 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/movie - - - 500 - text/html;+charset=utf-8 13372.0534ms
+2021-06-16 03:41:44.735 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 03:41:44.743 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 03:41:44.743 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 03:41:44.745 -05:00 [INF] Date Time the request came: 06/16/2021 03:41:44
+2021-06-16 03:41:44.745 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 03:41:44.748 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 03:41:44.750 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 03:41:44.753 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 03:41:44.787 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 03:41:44.796 -05:00 [INF] Executed ViewResult - view Index executed in 43.4848ms.
+2021-06-16 03:41:44.796 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 45.5846ms
+2021-06-16 03:41:44.796 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 03:41:44.797 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 61.5480ms
+2021-06-16 03:41:45.039 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 03:41:45.815 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 03:41:45.815 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 03:41:45.815 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 847.1308ms
+2021-06-16 03:41:45.816 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 03:41:45.816 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 03:41:45.817 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 2.6125ms
+2021-06-16 03:41:45.973 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 03:41:45.973 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 156.3702ms
+2021-06-16 03:41:46.825 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/movie - -
+2021-06-16 03:41:46.828 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 03:41:46.828 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 03:41:46.828 -05:00 [INF] Date Time the request came: 06/16/2021 03:41:46
+2021-06-16 03:41:46.828 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 03:41:46.828 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 03:41:46.829 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 03:41:46.832 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 03:41:46.889 -05:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 03:41:46.902 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 04:14:04.349 -05:00 [INF] User profile is available. Using '/Users/saige/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-06-16 04:14:05.237 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-16 04:14:05.311 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-16 04:14:05.314 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-16 04:14:05.315 -05:00 [INF] Hosting environment: Development
+2021-06-16 04:14:05.315 -05:00 [INF] Content root path: /Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC
+2021-06-16 04:14:07.484 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 04:14:07.654 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:14:07.661 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:14:07.665 -05:00 [INF] Date Time the request came: 06/16/2021 04:14:07
+2021-06-16 04:14:07.665 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:14:07.667 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:14:07.755 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 04:14:07.812 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:14:09.192 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:14:10.712 -05:00 [INF] Executed ViewResult - view Index executed in 1603.6516ms.
+2021-06-16 04:14:11.624 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:14:11.624 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-06-16 04:14:11.623 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:14:11.624 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-06-16 04:14:11.625 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:14:11.630 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 3870.5343ms
+2021-06-16 04:14:11.631 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:14:11.664 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 4180.2237ms
+2021-06-16 04:14:11.759 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:14:11.982 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 286.9031ms
+2021-06-16 04:14:12.320 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - -
+2021-06-16 04:14:12.848 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2021-06-16 04:14:12.848 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/jquery/dist/jquery.min.js'
+2021-06-16 04:14:12.848 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/js/site.js'
+2021-06-16 04:14:12.849 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:14:12.883 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - - - 200 226 application/javascript 613.3831ms
+2021-06-16 04:14:12.883 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 1260.1968ms
+2021-06-16 04:14:12.883 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78635 application/javascript 1261.0465ms
+2021-06-16 04:14:12.884 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 1260.2218ms
+2021-06-16 04:14:13.182 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:14:13.183 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 1561.0571ms
+2021-06-16 04:14:13.251 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico - -
+2021-06-16 04:14:13.332 -05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/favicon.ico'
+2021-06-16 04:14:13.335 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/favicon.ico - - - 200 32038 image/x-icon 81.8265ms
+2021-06-16 04:14:15.769 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/movie - -
+2021-06-16 04:14:15.784 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:14:15.785 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:14:15.786 -05:00 [INF] Date Time the request came: 06/16/2021 04:14:15
+2021-06-16 04:14:15.786 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:14:15.786 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:14:15.836 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 04:14:15.850 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:14:17.517 -05:00 [INF] Executed DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 04:14:17.589 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:14:17.591 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:14:17.717 -05:00 [INF] Executed DbCommand (38ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 04:15:12.433 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:15:12.564 -05:00 [INF] Executed ViewResult - view Index executed in 151.5463ms.
+2021-06-16 04:15:12.567 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC) in 56730.875ms
+2021-06-16 04:15:12.568 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:15:12.581 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/movie - - - 200 - text/html;+charset=utf-8 56807.7942ms
+2021-06-16 04:15:12.676 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:15:12.678 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:15:12.682 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:15:13.229 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:15:13.229 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:15:13.255 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 552.1602ms
+2021-06-16 04:15:13.255 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 567.0538ms
+2021-06-16 04:15:13.307 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:15:13.307 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 629.0890ms
+2021-06-16 04:16:36.461 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 04:16:36.474 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:16:36.475 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:16:36.479 -05:00 [INF] Date Time the request came: 06/16/2021 04:16:36
+2021-06-16 04:16:36.479 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:16:36.479 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:16:36.482 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 04:16:36.488 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:16:36.556 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:16:36.582 -05:00 [INF] Executed ViewResult - view Index executed in 94.3116ms.
+2021-06-16 04:16:36.583 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 100.6727ms
+2021-06-16 04:16:36.584 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:16:36.590 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 127.9977ms
+2021-06-16 04:16:36.645 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:16:36.991 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:16:36.992 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 347.0089ms
+2021-06-16 04:16:36.993 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:16:37.020 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:16:37.021 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 27.4396ms
+2021-06-16 04:16:37.023 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:16:37.077 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:16:37.084 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 54.4728ms
+2021-06-16 04:16:38.683 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/movie - -
+2021-06-16 04:16:38.733 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:16:38.734 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:16:38.734 -05:00 [INF] Date Time the request came: 06/16/2021 04:16:38
+2021-06-16 04:16:38.734 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:16:38.734 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:16:38.734 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 04:16:38.747 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:16:38.910 -05:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 04:16:39.326 -05:00 [INF] Executed DbCommand (324ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 04:28:26.732 -05:00 [INF] User profile is available. Using '/Users/saige/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-06-16 04:28:27.949 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-16 04:28:27.953 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-16 04:28:28.028 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-16 04:28:28.029 -05:00 [INF] Hosting environment: Development
+2021-06-16 04:28:28.029 -05:00 [INF] Content root path: /Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC
+2021-06-16 04:28:29.952 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 04:28:30.105 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:28:30.111 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:28:30.115 -05:00 [INF] Date Time the request came: 06/16/2021 04:28:30
+2021-06-16 04:28:30.115 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:28:30.117 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:28:30.211 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 04:28:30.269 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:28:31.607 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:28:31.767 -05:00 [INF] Executed ViewResult - view Index executed in 1520.4569ms.
+2021-06-16 04:28:31.776 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1561.028ms
+2021-06-16 04:28:31.777 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:28:33.975 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:28:33.975 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - -
+2021-06-16 04:28:33.975 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-06-16 04:28:33.975 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-06-16 04:28:33.975 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:28:33.986 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 4032.5277ms
+2021-06-16 04:28:34.036 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:28:34.054 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:28:34.054 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/js/site.js'
+2021-06-16 04:28:34.057 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - - - 200 226 application/javascript 83.0762ms
+2021-06-16 04:28:34.057 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 82.8686ms
+2021-06-16 04:28:35.047 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2021-06-16 04:28:35.047 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:28:35.075 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 1101.5831ms
+2021-06-16 04:28:35.075 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78635 application/javascript 1101.4287ms
+2021-06-16 04:28:35.305 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/jquery/dist/jquery.min.js'
+2021-06-16 04:28:35.353 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 1358.4169ms
+2021-06-16 04:28:35.410 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:28:35.410 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 1374.2247ms
+2021-06-16 04:28:35.468 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico - -
+2021-06-16 04:28:35.614 -05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/favicon.ico'
+2021-06-16 04:28:35.615 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/favicon.ico - - - 200 32038 image/x-icon 146.7207ms
+2021-06-16 04:28:40.242 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/movie - -
+2021-06-16 04:28:40.287 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:28:40.288 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:28:40.289 -05:00 [INF] Date Time the request came: 06/16/2021 04:28:40
+2021-06-16 04:28:40.289 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:28:40.289 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:28:40.337 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 04:28:40.355 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:28:41.979 -05:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 04:28:42.061 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:28:42.063 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:28:42.184 -05:00 [INF] Executed DbCommand (33ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 04:29:32.661 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:29:32.795 -05:00 [INF] Executed ViewResult - view Index executed in 141.4838ms.
+2021-06-16 04:29:32.799 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC) in 52460.9723ms
+2021-06-16 04:29:32.800 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:29:32.808 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/movie - - - 200 - text/html;+charset=utf-8 52564.0014ms
+2021-06-16 04:29:32.923 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:29:32.924 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:29:32.932 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:29:33.315 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:29:33.315 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:29:33.316 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 393.0567ms
+2021-06-16 04:29:33.316 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 391.2861ms
+2021-06-16 04:29:33.394 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:29:33.394 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 471.4086ms
+2021-06-16 04:30:53.655 -05:00 [INF] User profile is available. Using '/Users/saige/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-06-16 04:30:54.706 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-16 04:30:54.755 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-16 04:30:54.757 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-16 04:30:54.757 -05:00 [INF] Hosting environment: Development
+2021-06-16 04:30:54.758 -05:00 [INF] Content root path: /Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC
+2021-06-16 04:30:56.880 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 04:30:57.026 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:30:57.034 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:30:57.038 -05:00 [INF] Date Time the request came: 06/16/2021 04:30:57
+2021-06-16 04:30:57.038 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:30:57.040 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:30:57.133 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 04:30:57.196 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:30:58.501 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:30:58.659 -05:00 [INF] Executed ViewResult - view Index executed in 1479.3651ms.
+2021-06-16 04:30:59.005 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1597.2511ms
+2021-06-16 04:30:59.540 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:31:01.106 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:31:01.107 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-06-16 04:31:01.106 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:31:01.106 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-06-16 04:31:01.212 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - -
+2021-06-16 04:31:01.224 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 4313.7595ms
+2021-06-16 04:31:01.384 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:31:01.384 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/js/site.js'
+2021-06-16 04:31:01.714 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - - - 200 226 application/javascript 250.0747ms
+2021-06-16 04:31:02.429 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:31:02.429 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:31:02.434 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 1356.3435ms
+2021-06-16 04:31:02.434 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 1049.6255ms
+2021-06-16 04:31:02.531 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/jquery/dist/jquery.min.js'
+2021-06-16 04:31:02.531 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2021-06-16 04:31:02.585 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 1482.9027ms
+2021-06-16 04:31:02.585 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78635 application/javascript 1483.3140ms
+2021-06-16 04:31:02.612 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:31:02.612 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 1536.3785ms
+2021-06-16 04:31:04.660 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/movie - -
+2021-06-16 04:31:04.680 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:31:04.681 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:31:04.682 -05:00 [INF] Date Time the request came: 06/16/2021 04:31:04
+2021-06-16 04:31:04.682 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:31:04.683 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:31:04.730 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 04:31:04.744 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:31:06.415 -05:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 04:31:06.488 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:31:06.490 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:31:06.630 -05:00 [INF] Executed DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 04:31:37.828 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:31:37.959 -05:00 [INF] Executed ViewResult - view Index executed in 143.1477ms.
+2021-06-16 04:31:37.962 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC) in 33231.5012ms
+2021-06-16 04:31:37.967 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:31:37.983 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/movie - - - 200 - text/html;+charset=utf-8 33322.4457ms
+2021-06-16 04:31:38.145 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:31:38.149 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:31:38.198 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:31:38.513 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:31:38.513 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 368.6719ms
+2021-06-16 04:31:38.590 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:31:38.665 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 470.3821ms
+2021-06-16 04:31:38.743 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:31:38.744 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 599.3803ms
+2021-06-16 04:31:53.700 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Movie?pagenumber=1%2B1 - -
+2021-06-16 04:31:53.718 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:31:53.719 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:31:53.719 -05:00 [INF] Date Time the request came: 06/16/2021 04:31:53
+2021-06-16 04:31:53.719 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:31:53.719 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:31:53.723 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 04:31:53.752 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:31:53.833 -05:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 04:31:53.844 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 04:32:10.936 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:32:10.956 -05:00 [INF] Executed ViewResult - view Index executed in 22.5734ms.
+2021-06-16 04:32:10.957 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC) in 17233.8925ms
+2021-06-16 04:32:10.957 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:32:10.959 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/Movie?pagenumber=1%2B1 - - - 200 - text/html;+charset=utf-8 17259.2862ms
+2021-06-16 04:32:11.902 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:32:12.155 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:32:12.155 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:32:12.207 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:32:12.292 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:32:12.292 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 364.5541ms
+2021-06-16 04:32:12.314 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:32:12.314 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 159.3256ms
+2021-06-16 04:32:12.315 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 159.4688ms
+2021-06-16 04:32:17.612 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Movie?pagenumber=1%2B1 - -
+2021-06-16 04:32:17.614 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:32:17.614 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:32:17.615 -05:00 [INF] Date Time the request came: 06/16/2021 04:32:17
+2021-06-16 04:32:17.615 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:32:17.615 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:32:17.616 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 04:32:17.625 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:32:17.680 -05:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 04:32:17.687 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 04:32:18.792 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:32:18.796 -05:00 [INF] Executed ViewResult - view Index executed in 3.7869ms.
+2021-06-16 04:32:18.796 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC) in 1180.3085ms
+2021-06-16 04:32:18.796 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:32:18.796 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/Movie?pagenumber=1%2B1 - - - 200 - text/html;+charset=utf-8 1184.3147ms
+2021-06-16 04:33:24.764 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Movie?pagenumber=1%2B1 - -
+2021-06-16 04:33:24.768 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:33:24.769 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:33:24.769 -05:00 [INF] Date Time the request came: 06/16/2021 04:33:24
+2021-06-16 04:33:24.769 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:33:24.769 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:33:24.770 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 04:33:24.855 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:38:20.966 -05:00 [INF] User profile is available. Using '/Users/saige/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-06-16 04:38:21.907 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-16 04:38:22.275 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-16 04:38:22.421 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-16 04:38:22.423 -05:00 [INF] Hosting environment: Development
+2021-06-16 04:38:22.424 -05:00 [INF] Content root path: /Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC
+2021-06-16 04:38:23.396 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 04:38:23.577 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:38:23.582 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:38:23.586 -05:00 [INF] Date Time the request came: 06/16/2021 04:38:23
+2021-06-16 04:38:23.586 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:38:23.589 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:38:23.699 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 04:38:23.766 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:38:42.413 -05:00 [INF] User profile is available. Using '/Users/saige/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-06-16 04:38:43.407 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-16 04:38:43.648 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-16 04:38:43.773 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-16 04:38:43.775 -05:00 [INF] Hosting environment: Development
+2021-06-16 04:38:43.776 -05:00 [INF] Content root path: /Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC
+2021-06-16 04:38:44.924 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 04:38:45.067 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:38:45.073 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:38:45.076 -05:00 [INF] Date Time the request came: 06/16/2021 04:38:45
+2021-06-16 04:38:45.076 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:38:45.079 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:38:45.172 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 04:38:45.228 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:38:46.571 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:38:46.760 -05:00 [INF] Executed ViewResult - view Index executed in 1550.8589ms.
+2021-06-16 04:38:46.890 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1640.3732ms
+2021-06-16 04:38:47.354 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:38:49.148 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:38:49.148 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:38:49.148 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:38:49.148 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-06-16 04:38:49.148 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - -
+2021-06-16 04:38:49.215 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-06-16 04:38:49.255 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 4329.4605ms
+2021-06-16 04:38:50.454 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:38:50.454 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/js/site.js'
+2021-06-16 04:38:50.455 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:38:50.560 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 1363.8559ms
+2021-06-16 04:38:50.560 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - - - 200 226 application/javascript 1363.2712ms
+2021-06-16 04:38:50.560 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 1363.2267ms
+2021-06-16 04:38:50.714 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2021-06-16 04:38:50.714 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:38:50.714 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/jquery/dist/jquery.min.js'
+2021-06-16 04:38:50.714 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78635 application/javascript 1500.4325ms
+2021-06-16 04:38:50.714 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 1567.9100ms
+2021-06-16 04:38:50.714 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 1568.0818ms
+2021-06-16 04:38:50.786 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico - -
+2021-06-16 04:38:50.833 -05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/favicon.ico'
+2021-06-16 04:38:50.833 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/favicon.ico - - - 200 32038 image/x-icon 47.4716ms
+2021-06-16 04:38:54.767 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/movie - -
+2021-06-16 04:38:54.816 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:38:54.817 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:38:54.818 -05:00 [INF] Date Time the request came: 06/16/2021 04:38:54
+2021-06-16 04:38:54.818 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:38:54.819 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:38:54.866 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 04:38:54.880 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:39:18.332 -05:00 [INF] Executed DbCommand (112ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 04:39:18.441 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:39:18.443 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:39:18.573 -05:00 [INF] Executed DbCommand (38ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 04:39:20.065 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:39:20.131 -05:00 [INF] Executed ViewResult - view Index executed in 70.7959ms.
+2021-06-16 04:39:20.138 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC) in 25271.1261ms
+2021-06-16 04:39:20.139 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:39:20.151 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/movie - - - 200 - text/html;+charset=utf-8 25383.8521ms
+2021-06-16 04:39:20.320 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:39:20.320 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:39:20.321 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:39:20.694 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:39:20.720 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:39:20.721 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 401.1948ms
+2021-06-16 04:39:20.721 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 375.1347ms
+2021-06-16 04:39:20.748 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:39:20.749 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 429.4150ms
+2021-06-16 04:39:24.816 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Movie?pagenumber=2 - -
+2021-06-16 04:39:24.833 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:39:24.834 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:39:24.834 -05:00 [INF] Date Time the request came: 06/16/2021 04:39:24
+2021-06-16 04:39:24.834 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:39:24.835 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:39:24.837 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 04:39:24.867 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:39:34.215 -05:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 04:39:34.237 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:39:34.237 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:39:34.334 -05:00 [INF] Executed DbCommand (78ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2021-06-16 04:39:35.583 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:39:35.598 -05:00 [INF] Executed ViewResult - view Index executed in 15.3328ms.
+2021-06-16 04:39:35.605 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC) in 10768.2556ms
+2021-06-16 04:39:35.606 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:39:35.606 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/Movie?pagenumber=2 - - - 200 - text/html;+charset=utf-8 10790.3202ms
+2021-06-16 04:39:35.726 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:39:35.726 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:39:35.726 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:39:35.893 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:39:35.925 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 168.1745ms
+2021-06-16 04:39:36.045 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:39:36.046 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 319.4908ms
+2021-06-16 04:39:36.080 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:39:36.080 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 353.9060ms
+2021-06-16 04:45:48.305 -05:00 [INF] User profile is available. Using '/Users/saige/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-06-16 04:45:49.356 -05:00 [INF] Now listening on: https://localhost:5001
+2021-06-16 04:45:49.359 -05:00 [INF] Now listening on: http://localhost:5000
+2021-06-16 04:45:49.431 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-16 04:45:49.432 -05:00 [INF] Hosting environment: Development
+2021-06-16 04:45:49.433 -05:00 [INF] Content root path: /Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC
+2021-06-16 04:45:51.483 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+2021-06-16 04:45:51.644 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:45:51.649 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:45:51.654 -05:00 [INF] Date Time the request came: 06/16/2021 04:45:51
+2021-06-16 04:45:51.654 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:45:51.656 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:45:51.754 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MovieShopApp.MVC.Controllers.HomeController (MovieShopApp.MVC).
+2021-06-16 04:45:51.810 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:45:53.324 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:45:53.483 -05:00 [INF] Executed ViewResult - view Index executed in 1692.6127ms.
+2021-06-16 04:45:53.499 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC) in 1741.5583ms
+2021-06-16 04:45:53.500 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.HomeController.Index (MovieShopApp.MVC)'
+2021-06-16 04:45:55.476 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+2021-06-16 04:45:55.476 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - -
+2021-06-16 04:45:55.476 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-06-16 04:45:55.477 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-06-16 04:45:55.487 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 4004.0451ms
+2021-06-16 04:45:55.550 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - -
+2021-06-16 04:45:55.558 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-16 04:45:55.676 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/js/site.js'
+2021-06-16 04:45:55.755 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - - - 200 226 application/javascript 203.8007ms
+2021-06-16 04:45:56.523 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/css/site.css'
+2021-06-16 04:45:56.523 -05:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/font-awesome/css/all.min.css'
+2021-06-16 04:45:56.606 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 200 1116 text/css 1130.2757ms
+2021-06-16 04:45:56.606 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/font-awesome/css/all.min.css - - - 200 59344 text/css 1129.5924ms
+2021-06-16 04:45:56.849 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2021-06-16 04:45:56.849 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/jquery/dist/jquery.min.js'
+2021-06-16 04:45:56.922 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78635 application/javascript 1401.0214ms
+2021-06-16 04:45:56.922 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 1401.2192ms
+2021-06-16 04:45:57.066 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/saige/RiderProjects/MovieShopApp/MovieShopApp.MVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2021-06-16 04:45:57.068 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 1509.3069ms
+2021-06-16 04:45:58.681 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/movie - -
+2021-06-16 04:45:58.723 -05:00 [INF] Cookies was not authenticated. Failure message: Ticket expired
+2021-06-16 04:45:58.724 -05:00 [INF] Inside the Logger Middleware
+2021-06-16 04:45:58.725 -05:00 [INF] Date Time the request came: 06/16/2021 04:45:58
+2021-06-16 04:45:58.725 -05:00 [INF] Ip Address Of User: ::1
+2021-06-16 04:45:58.725 -05:00 [INF] Executing endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:45:58.777 -05:00 [INF] Route matched with {action = "Index", controller = "Movie"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index(Int32, Int32) on controller MovieShopApp.MVC.Controllers.MovieController (MovieShopApp.MVC).
+2021-06-16 04:45:58.799 -05:00 [INF] Entity Framework Core 5.0.7 initialized 'MovieShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-16 04:46:00.420 -05:00 [INF] Executed DbCommand (139ms) [Parameters=[], CommandType='"Text"', CommandTimeout='300']
+SELECT COUNT(*)
+FROM [Movie] AS [m]
+2021-06-16 04:46:00.499 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:46:00.501 -05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2021-06-16 04:46:00.608 -05:00 [INF] Executed DbCommand (32ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='300']
+SELECT [m].[Id], [m].[BackdropUrl], [m].[Budget], [m].[CreatedBy], [m].[CreatedDate], [m].[ImdbUrl], [m].[OriginalLanguage], [m].[Overview], [m].[PosterUrl], [m].[Price], [m].[ReleaseDate], [m].[Revenue], [m].[RunTime], [m].[Tagline], [m].[Title], [m].[TmdbUrl], [m].[UpdatedBy], [m].[UpdatedDate]
+FROM [Movie] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2021-06-16 04:46:02.180 -05:00 [INF] Executing ViewResult, running view Index.
+2021-06-16 04:46:02.226 -05:00 [INF] Executed ViewResult - view Index executed in 49.3498ms.
+2021-06-16 04:46:02.229 -05:00 [INF] Executed action MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC) in 3452.4043ms
+2021-06-16 04:46:02.230 -05:00 [INF] Executed endpoint 'MovieShopApp.MVC.Controllers.MovieController.Index (MovieShopApp.MVC)'
+2021-06-16 04:46:02.234 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/movie - - - 200 - text/html;+charset=utf-8 3552.2812ms
