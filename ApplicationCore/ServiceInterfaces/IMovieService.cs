@@ -14,6 +14,6 @@ namespace ApplicationCore.ServiceInterfaces
         Task<List<MovieDetailResponseModel>> GetTopRevenueMovies();
         Task<MovieDetailResponseModel> GetMovieDetailsById(int id);
         Task<PaginatedList<MovieDetailResponseModel>> GetMoviesPaginatedList(int pageSize = 30, int page = 1, string title="");
- 
+    
     }
 }

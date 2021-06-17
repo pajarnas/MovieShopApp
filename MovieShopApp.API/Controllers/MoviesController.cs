@@ -34,5 +34,14 @@ namespace MovieShopApp.API.Controllers
             }
             return NotFound("no movies found");
         }
+        
+        // GET: MovieController/Details/5
+        [HttpGet]
+        [Route("Details")]
+        public async Task<ActionResult> Details(int id)
+        {
+            var model = await _movieService.GetMovieDetailsById(id);
+            return Ok(model);
+        }
     }
 }

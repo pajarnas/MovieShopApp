@@ -18,7 +18,7 @@ namespace Infrastructure.Helpers
                 
        
                 CreateMap<Movie, MovieDetailResponseModel>()
-                    .ForMember(md => md.Casts, opt => opt.MapFrom(src => GetCasts(src.MovieCasts)))
+                    .ForMember(md => md.Casts, opt => opt.MapFrom(src => GetCasts(src)))
                     .ForMember(md => md.Genres, opt => opt.MapFrom(src => GetGenres(src.MovieGenres)));
 
            
@@ -67,11 +67,17 @@ namespace Infrastructure.Helpers
 
         }
         
-        private static List<MovieDetailsResponseModel.CastResponseModel> GetCasts(IEnumerable<MovieCast> srcMovieCasts)
+        private static List<MovieDetailResponseModel.CastResponseModel> GetCasts(Movie movie)
         {
-            var movieCast = new List<MovieDetailsResponseModel.CastResponseModel>();
+            IEnumerable<MovieCast> srcMovieCasts = movie.MovieCasts;
+            var movieDetailResponseModel = new MovieDetailResponseModel
+            {
+                Casts = new List<MovieDetailResponseModel.CastResponseModel>(),
+                
+            };
             foreach (var cast in srcMovieCasts)
-                movieCast.Add(new MovieDetailsResponseModel.CastResponseModel
+            {
+                movieDetailResponseModel.Casts.Add(new MovieDetailResponseModel.CastResponseModel
                 {
                     Id = cast.CastId,
                     Gender = cast.Cast.Gender,
@@ -80,15 +86,20 @@ namespace Infrastructure.Helpers
                     TmdbUrl = cast.Cast.TmdbUrl,
                     Character = cast.Character
                 });
-
-            return movieCast;
+            }
+            
+            return movieDetailResponseModel.Casts;
         }
         
         private static List<MovieDetailResponseModel.GenreResponseModel> GetGenres(IEnumerable<MovieGenre> srcMovieGenres)
         {
-            var movieGenres = new List<MovieDetailResponseModel.GenreResponseModel>();
+            var movieDetailResponseModel = new MovieDetailResponseModel
+            {
+                Genres = new List<MovieDetailResponseModel.GenreResponseModel>(),
+                
+            };
             foreach (var genre in srcMovieGenres)
-                movieGenres.Add(new MovieDetailResponseModel.GenreResponseModel
+                movieDetailResponseModel.Genres.Add(new MovieDetailResponseModel.GenreResponseModel
                 {
                     Id = genre.GenreId,
                    
@@ -96,7 +107,7 @@ namespace Infrastructure.Helpers
                     
                 });
 
-            return movieGenres;
+            return movieDetailResponseModel.Genres;
         }
 
         //private List<Genre> GetMovieGenres(IEnumerable<MovieGenre> srcGenres)

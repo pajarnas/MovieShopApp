@@ -49,7 +49,7 @@ namespace Infrastructure.Services
             string title = "")
         {
             //get PaginatedList<Movie>
-            var pagedData = await _movieRepository.GetPagedData(page, pageSize);
+            var pagedData = await _movieRepository.GetPagedDataAsync(page, pageSize);
             //mapping it to PaginatedList<MovieDetailResponseModel>
             var mappedPagedData = _mapper.Map<PaginatedList<MovieDetailResponseModel>>(pagedData);
             var pagedModels = new PaginatedList<MovieDetailResponseModel>(mappedPagedData,count:pagedData.TotalCount,page=page,pageSize=pageSize);
@@ -58,8 +58,9 @@ namespace Infrastructure.Services
 
         public async Task<MovieDetailResponseModel> GetMovieDetailsById(int id)
         {
-            var movie = await _movieRepository.GetMovieWithRelatedData(id);
-            var movieDetailResponseModel = _mapper.Map<MovieDetailResponseModel>(movie);
+            var movie = await _movieRepository.GetMovieWithGenresAndCast(id);
+            movie.Rating = await _reviewRepository.GetAvgReviewRatingByMovie(id);
+            var movieDetailResponseModel = _mapper.Map<Movie,MovieDetailResponseModel>(movie);
             return movieDetailResponseModel;
         }
 

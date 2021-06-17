@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using ApplicationCore.Helpers;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.DataContext;
+using Microsoft.EntityFrameworkCore.Query;
+
 namespace Infrastructure.Repositories
 {
     public class EfRepository<T> : IAsyncRepository<T> where T : class
@@ -19,6 +21,63 @@ namespace Infrastructure.Repositories
             dbContext.Database.SetCommandTimeout(300); 
             _dbContext = dbContext;
         }
+
+        public virtual async Task<T> GetByIdAsync(int id)
+        {
+            return await _dbContext.Set<T>().FindAsync(id);
+        }
+        
+        public virtual async Task<T> GetByIdWithIncludesAsync(int id,Expression<Func<T, bool>> filter, Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null)
+        {
+            var query = _dbContext.Set<T>().AsQueryable();
+
+            if (include != null)
+                query = include(query);
+            
+            if (filter != null)
+                query = query.Where(filter);
+
+            return await query.SingleOrDefaultAsync();
+        }
+
+        public async Task<IEnumerable<T>> ListAllAsync()
+        {
+            return await _dbContext.Set<T>().ToListAsync();
+        }
+
+        public async Task<IEnumerable<T>> ListWithWhereAsync(Expression<Func<T, bool>> filter)
+        {
+            var query = _dbContext.Set<T>().AsQueryable();
+
+            if (filter != null)
+                query = query.Where(filter);
+
+            return await query.ToListAsync();
+        }
+        public async Task<IEnumerable<T>> ListWithIncludesAsync(Expression<Func<T, bool>> filter, params Expression<Func<T, object>>[] includes)
+        {
+            var query = _dbContext.Set<T>().AsQueryable();
+
+            if (includes != null)
+                foreach (Expression<Func<T, object>> navigationProperty in includes)
+                    query = query.Include(navigationProperty);
+            
+            if (filter != null)
+                query = query.Where(filter);
+
+            return await query.ToListAsync();
+        }
+       
+        public virtual async Task<PaginatedList<T>> GetPagedDataAsync(int pageIndex, int pageSize,
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderedQuery = null,
+            Expression<Func<T, bool>> filter = null, params Expression<Func<T, object>>[] includes)
+        {
+            var pagedList =
+                await PaginatedList<T>.GetPaged(_dbContext.Set<T>(), pageIndex, pageSize, orderedQuery, filter, includes);
+            return pagedList;
+        }
+
+      
 
         public virtual async Task<T> AddAsync(T entity)
         {
@@ -33,51 +92,11 @@ namespace Infrastructure.Repositories
             await _dbContext.SaveChangesAsync();
             return entity;
         }
-        public async Task<IEnumerable<T>> ListAllWithIncludesAsync(Expression<Func<T, bool>> @where,
-          params Expression<Func<T, object>>[] includes)
-        {
-            var query = _dbContext.Set<T>().AsQueryable();
-
-            if (includes != null)
-                foreach (Expression<Func<T, object>> navigationProperty in includes)
-                    query = query.Include(navigationProperty);
-
-            return await query.Where(@where).ToListAsync();
-        }
+        
         public virtual async Task DeleteAsync(T entity)
         {
             _dbContext.Set<T>().Remove(entity);
             await _dbContext.SaveChangesAsync();
-        }
-
-        public virtual async Task<PaginatedList<T>> GetPagedData(int pageIndex, int pageSize,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderedQuery = null,
-            Expression<Func<T, bool>> filter = null, params Expression<Func<T, object>>[] includes)
-        {
-            var pagedList =
-                await PaginatedList<T>.GetPaged(_dbContext.Set<T>(), pageIndex, pageSize, orderedQuery, filter, includes);
-            return pagedList;
-        }
-
-        public virtual async Task<T> GetById(int id)
-        {
-            var entity = await _dbContext.Set<T>().FindAsync(id);
-            return entity;
-        }
-
-        public virtual async Task<T> GetByIdAsync(int id)
-        {
-            return await _dbContext.Set<T>().FindAsync(id);
-        }
-
-        public async Task<IEnumerable<T>> ListAllAsync()
-        {
-            return await _dbContext.Set<T>().ToListAsync();
-        }
-
-        public async Task<IEnumerable<T>> ListAsync(Expression<Func<T, bool>> filter)
-        {
-            return await _dbContext.Set<T>().Where(filter).ToListAsync();
         }
 
         public async Task<int> GetCountAsync(Expression<Func<T, bool>> filter)

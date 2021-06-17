@@ -80,7 +80,7 @@
 
                     <li class="list-group-item">
                         <a class="btn btn-light btn-lg btn-block btn-sm" asp-route-id="@Model.Id" asp-controller="User" asp-action="PurchaseMovie">
-                            BUY @Model.Price
+                            BUY $@Model.Price
                         </a>
 
                         <a class="btn btn-light btn-lg btn-block btn-sm" asp-route-id="@Model.Id" asp-controller="User" asp-action="PurchaseMovie">
@@ -109,7 +109,7 @@
                     <span class="badge badge-pill badge-dark">@Model.RunTime.Value m</span>
                 </li>
                 <li class="list-group-item">
-                    <i class="far fa-money-bill-alt"></i> Box Office
+                    <i class="far fa-money-bill-alt fa-usd"></i> Box Office
                     <span class="badge badge-pill badge-pill badge-dark">
                         
                         @Model.Revenue?.ToString("C0")
