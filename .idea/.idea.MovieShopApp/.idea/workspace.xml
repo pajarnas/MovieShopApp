@@ -5,26 +5,36 @@
     <projectFile>MovieShopApp.MVC/MovieShopApp.MVC.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment="Add Log">
-      <change afterPath="$PROJECT_DIR$/MovieShopApp.MVC/20210616" afterDir="false" />
+    <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment="Refactoring Low level Core">
+      <changelist_data name="Saige Zhang" email="saigezhang17@gmail.com" />
+      <change afterPath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IPurchaseService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IReviewService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Services/PurchaseService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Services/ReviewService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Genre.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/Entities/Movie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Entities/Movie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/Models/Response/MovieDetailResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Models/Response/MovieDetailResponseModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Helpers/PaginatedList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Helpers/PaginatedList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Models/Response/ResponseModels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Models/Response/ResponseModels.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IAsyncRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IAsyncRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IGenreRepository.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IMovieRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IMovieRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IPurchaseRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IReviewRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IGenreService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IGenreService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IMovieService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IMovieService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IReviewService.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Helper/ServiceCollectionExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Helper/ServiceCollectionExtension.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Repositories/EfRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repositories/EfRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Repositories/GenreRepository.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Repositories/MovieRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repositories/MovieRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Repositories/PurchaseRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Repositories/ReviewRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repositories/ReviewRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Services/GenreService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/GenreService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Services/MovieService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/MovieService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Services/ReviewService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.API/Controllers/MoviesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.API/Controllers/MoviesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/ApplicationData\LogFiles\log20210616.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/ApplicationData\LogFiles\log20210616.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/movies/movie-details/movie-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/movies/movie-details/movie-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Admin/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Admin/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +63,12 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Saige Zhang &lt;saigezhang17@gmail.com&gt;" />
+        <option value="Shiqi Zhang &lt;saigezhang17@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -73,46 +89,62 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AE604AFE-B657-4617-A94D-F2A743C6288E/14/Profile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/24FF2AD3-F0EE-415E-922A-ECFDF6EF6846/90/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Infrastructure/DataContext/MovieShopDbContext.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Repositories/AdminRepository.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Repositories/CastRepository.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Repositories/GenreRepository.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Repositories/PurchaseRepository.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Repositories/ReviewRepository.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Repositories/UserRepository.cs" />
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" />
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Startup.cs" />
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/_SuccessPage.cshtml" />
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/Error.cshtml" />
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/UserController.cs" />
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/Success.cshtml" />
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/_MovieDetail.cshtml" />
-      <option value="$PROJECT_DIR$/ApplicationCore/Helpers/PaginatedList.cs" />
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" />
       <option value="$PROJECT_DIR$/ApplicationCore/Helpers/PaginatedResultSet.cs" />
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Index.cshtml" />
       <option value="$PROJECT_DIR$/MovieShopApp.API/Startup.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.API/appsettings.json" />
       <option value="$PROJECT_DIR$/MovieShopApp.API/Controllers/MoviesController.cs" />
-      <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IMovieService.cs" />
-      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IMovieRepository.cs" />
       <option value="$PROJECT_DIR$/ApplicationCore/Models/Response/MovieDetailResponseModel.cs" />
       <option value="$PROJECT_DIR$/ApplicationCore/Entities/Movie.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Repositories/EfRepository.cs" />
-      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IAsyncRepository.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Repositories/MovieRepository.cs" />
       <option value="$PROJECT_DIR$/ApplicationCore/Entities/MovieGenre.cs" />
-      <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IReviewService.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Services/ReviewService.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Services/MovieService.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/appsettings.json" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/wwwroot/css/site.css" />
+      <option value="$PROJECT_DIR$/ApplicationCore/Models/Response/ResponseModels.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Admin/Index.cshtml" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IReviewRepository.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Repositories/GenreRepository.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IPurchaseRepository.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Repositories/PurchaseRepository.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Repositories/MovieRepository.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/Helpers/PaginatedList.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IAsyncRepository.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IRelationRepository.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IEntityRepository.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IPaginatedRepository.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/BaseInterfaces/IEntityRepository.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/BaseInterfaces/IRelationRepository.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/ICastRepository .cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IUserRepository.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Repositories/RelationRepository.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IMovieRepository.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Repositories/EfRepository.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/BaseInterfaces/IPaginatedRepository.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IMovieService.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IReviewService.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Repositories/ReviewRepository.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Services/AdminService.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Services/MovieService.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Services/CurrentUserService.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Repositories/PurchaseService.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IPurchaseService.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Services/PurchaseService.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Services/GenreService.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IGenreService.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Genre.cshtml" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/_ProfileDroplistPartial.cshtml" />
+      <option value="$PROJECT_DIR$/Infrastructure/Helper/ServiceCollectionExtension.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Services/ReviewService.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Shared/_MovieDetail.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tziZQWKEnxpl0t3SqjOQBy9epa" />
@@ -134,8 +166,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.46336207" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/MovieShopSPA/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MovieShopApp.MVC">
@@ -210,7 +242,7 @@
       <updated>1623778391451</updated>
       <workItem from="1623778409576" duration="1558000" />
       <workItem from="1623779986109" duration="13976000" />
-      <workItem from="1623855745438" duration="18152000" />
+      <workItem from="1623855745438" duration="33302000" />
     </task>
     <task id="LOCAL-00001" summary="Migrant To MAC">
       <created>1623797480045</created>
@@ -247,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623836876812</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updating Profile and Repository Refactor">
+      <created>1623891566145</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623891566145</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +351,9 @@
     <MESSAGE value="Adding Success Page" />
     <MESSAGE value="Adding Pagination" />
     <MESSAGE value="Add Log" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Log" />
+    <MESSAGE value="Updating Profile and Repository Refactor" />
+    <MESSAGE value="Refactoring Low level Core" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Low level Core" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

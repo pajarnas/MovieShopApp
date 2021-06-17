@@ -12,77 +12,74 @@ using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using ApplicationCore.Helpers;
 
+using Microsoft.EntityFrameworkCore.Query;
+
 namespace Infrastructure.Services
 {
     public class MovieService : IMovieService
     {
         private readonly IMovieRepository _movieRepository;
-        private readonly IGenreRepository _genreRepository;
+        private readonly IEntityRepository<Genre> _genreRepository;
         private readonly ICastRepository _castRepository;
-        private readonly IReviewRepository _reviewRepository;
+        private readonly IEntityRepository<Review> _reviewRepository;
+        private readonly IRelationRepository<MovieGenre> _movieGenreRepository;
+        private readonly IReviewService _reviewService;
         private readonly IMapper _mapper;
-        public MovieService(IMovieRepository movieRepository,IGenreRepository genreRepository, ICastRepository castRepository,IReviewRepository reviewRepository,IMapper mapper)
+        public MovieService(IMovieRepository movieRepository,IEntityRepository<Review> reviewRepository, ICastRepository castRepository,IEntityRepository<Genre> genreRepository,IMapper mapper,IReviewService reviewService,IRelationRepository<MovieGenre> movieGenreRepository)
         {
             _movieRepository = movieRepository;
             _genreRepository = genreRepository;
             _castRepository = castRepository;
             _reviewRepository = reviewRepository;
+            _reviewService = reviewService;
+            _movieGenreRepository = movieGenreRepository;
             _mapper = mapper;
         }
-        public async Task<List<MovieDetailResponseModel>> GetAllMovieModelList()
-        {
-            var moviesAsync = await _movieRepository.ListAllAsync();
-            var movies = moviesAsync.Take(30).ToList();
-            List<MovieDetailResponseModel> models = new List<MovieDetailResponseModel>();
-            foreach (var movie in movies)
-            {
-                models.Add(new MovieDetailResponseModel
-                {
-                    Id = movie.Id,PosterUrl=movie.PosterUrl,ReleaseDate=movie.ReleaseDate,Title=movie.Title
-                }); 
-            }
-          
-            return models;
-        }
-
-        public async Task<PaginatedList<MovieDetailResponseModel>> GetMoviesPaginatedList(int pageSize = 30, int page = 1,
-            string title = "")
+       
+        public async Task<PaginatedList<MovieResponseModel>> GetMovieCardsPaginatedList(int pageSize = 30, int page = 1,
+            IQueryable<Movie> source = null, string title = "")
         {
             //get PaginatedList<Movie>
-            var pagedData = await _movieRepository.GetPagedDataAsync(page, pageSize);
-            //mapping it to PaginatedList<MovieDetailResponseModel>
-            var mappedPagedData = _mapper.Map<PaginatedList<MovieDetailResponseModel>>(pagedData);
-            var pagedModels = new PaginatedList<MovieDetailResponseModel>(mappedPagedData,count:pagedData.TotalCount,page=page,pageSize=pageSize);
+            var pagedData = await _movieRepository.GetPagedDataAsync(pageIndex:page, pageSize:pageSize,source);
+            //mapping it to PaginatedList<MovieResponseModel>
+            var mappedPagedData = _mapper.Map<PaginatedList<MovieResponseModel>>(pagedData);
+            var pagedModels = new PaginatedList<MovieResponseModel>(mappedPagedData,count:pagedData.TotalCount,page=page,pageSize=pageSize);
             return pagedModels;
         }
 
         public async Task<MovieDetailResponseModel> GetMovieDetailsById(int id)
         {
-            var movie = await _movieRepository.GetMovieWithGenresAndCast(id);
-            movie.Rating = await _reviewRepository.GetAvgReviewRatingByMovie(id);
+            var movie = await _movieRepository.GetMovieWithGenresAndCasts(id);
+            movie.Rating = await _reviewService.GetAvgReviewRatingByMovie(id);
             var movieDetailResponseModel = _mapper.Map<Movie,MovieDetailResponseModel>(movie);
             return movieDetailResponseModel;
         }
 
-        public async Task<List<MovieDetailResponseModel>> GetTopRevenueMovies()
+        public async Task<List<MovieResponseModel>> GetTopRevenueMovies()
         {
-            var moviesAsync = await _movieRepository.ListAllAsync();
-            var movies = moviesAsync.OrderByDescending(m=>m.Revenue).Take(30).ToList();
-            List<MovieDetailResponseModel> models = new List<MovieDetailResponseModel>();
-            foreach (var movie in movies)
-            {
-                models.Add(new MovieDetailResponseModel
-                {
-                    Id = movie.Id,
-                    PosterUrl = movie.PosterUrl,
-                    ReleaseDate = movie.ReleaseDate,
-                    Title = movie.Title
-                });
-            }
-
+            var ordered = await _movieRepository.ListWithOrderedAsync(m=>m.OrderByDescending(m=>m.Revenue));
+            var movies = ordered.Take(30).ToList();
+            var models = _mapper.Map<List<MovieResponseModel>>(movies);
             return models;
         }
+        
+        
+    
 
-   
+        public async Task<PaginatedList<MovieResponseModel>> GetMovieCardsPaginatedListByGenre(int genreId, int pageSize = 30,
+            int page = 1, string title = "")
+        {
+            
+            var movieGenres = await _movieGenreRepository.ListWithIncludesAsync(mg=>mg.Include(m=>m.Movie).Include(m=>m.Genre),mg=>mg.GenreId==genreId);
+            
+            var movies = movieGenres.AsQueryable().Select(c => c.Movie);
+
+            
+
+            var pagedModels = GetMovieCardsPaginatedList( pageSize:pageSize , page:page,source:movies);
+
+            return await pagedModels;
+
+        }
     }
 }

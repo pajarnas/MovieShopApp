@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Query;
 
 namespace Infrastructure.Repositories
 {
-    public class EfRepository<T> : IAsyncRepository<T> where T : class
+    public class EfRepository<T> : IEntityRepository<T> , IPaginatedRepository<T> , IRelationRepository<T> where T : class
     {
         protected readonly MovieShopDbContext _dbContext;
 
@@ -54,28 +54,35 @@ namespace Infrastructure.Repositories
 
             return await query.ToListAsync();
         }
-        public async Task<IEnumerable<T>> ListWithIncludesAsync(Expression<Func<T, bool>> filter, params Expression<Func<T, object>>[] includes)
+
+        public async Task<IEnumerable<T>> ListWithOrderedAsync(Func<IQueryable<T>, IOrderedQueryable<T>> orderedQuery = null)
         {
             var query = _dbContext.Set<T>().AsQueryable();
 
-            if (includes != null)
-                foreach (Expression<Func<T, object>> navigationProperty in includes)
-                    query = query.Include(navigationProperty);
+            if (orderedQuery != null)
+                query = orderedQuery(query);
+
+            return await query.ToListAsync();
+        }
+
+        public async Task<IEnumerable<T>> ListWithIncludesAsync( Func<IQueryable<T>, IIncludableQueryable<T, object>> include,Expression<Func<T, bool>> filter)
+        {
+            var query = _dbContext.Set<T>().AsQueryable();
+
+            if (include != null)
+                query = include(query);
             
             if (filter != null)
                 query = query.Where(filter);
 
             return await query.ToListAsync();
         }
+
        
-        public virtual async Task<PaginatedList<T>> GetPagedDataAsync(int pageIndex, int pageSize,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderedQuery = null,
-            Expression<Func<T, bool>> filter = null, params Expression<Func<T, object>>[] includes)
-        {
-            var pagedList =
-                await PaginatedList<T>.GetPaged(_dbContext.Set<T>(), pageIndex, pageSize, orderedQuery, filter, includes);
-            return pagedList;
-        }
+
+        
+       
+        
 
       
 
@@ -110,6 +117,15 @@ namespace Infrastructure.Repositories
         {
             if (filter == null) return false;
             return await _dbContext.Set<T>().Where(filter).AnyAsync();
+        }
+
+       
+        public async Task<PaginatedList<T>> GetPagedDataAsync(int pageIndex, int pageSize, IQueryable<T> source = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderedQuery = null, Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> include = null)
+        {
+            if (source == null)
+                source = _dbContext.Set<T>();
+               
+            return  await PaginatedList<T>.GetPaged(source, pageIndex, pageSize, orderedQuery, filter, include);;
         }
     }
 }

@@ -8,31 +8,32 @@ using ApplicationCore.RepositoryInterfaces;
 using System.Linq;
 using AutoMapper;
 using ApplicationCore.Models.Response;
+using ApplicationCore.Entities;
 namespace Infrastructure.Services
 {
     public class GenreService : IGenreService
     {
-        private readonly IGenreRepository _genreRepository;
+        private readonly IEntityRepository<Genre> _genreRepository;
         private readonly IMapper _mapper;
-        public GenreService(IGenreRepository genreRepository,IMapper mapper)
+        public GenreService(IEntityRepository<Genre> genreRepository,IMapper mapper)
         {
             _genreRepository = genreRepository;
             _mapper = mapper;
         }
-        public async Task<IEnumerable<Genre>> GetAllGenreList()
+        public async Task<IEnumerable<Genre>> GetAll()
         {
             return await _genreRepository.ListAllAsync();
         }
 
+        public async Task<string> GetNameById(int id)
+        {
+            return  _genreRepository.GetByIdAsync(id).Result.Name;
+        }
+        
         public async Task<List<AssignedGenreModel>> GetAssignedGenreModelAsync()
         {
-            var generesEntities = await GetAllGenreList();
-            List<AssignedGenreModel> assignedGenreModels = new List<AssignedGenreModel>();
-            foreach (var item in generesEntities)
-            {
-                assignedGenreModels.Add(_mapper.Map<AssignedGenreModel>(item));
-            }
-             
+            var generesEntities = await _genreRepository.ListAllAsync();
+            var assignedGenreModels = _mapper.Map<List<AssignedGenreModel>>(generesEntities);
             return assignedGenreModels;
         }
 

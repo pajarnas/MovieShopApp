@@ -29,7 +29,7 @@ namespace Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<Movie> GetMovieWithGenresAndCast(int id)
+        public async Task<Movie> GetMovieWithGenresAndCasts(int id)
         {
             
             var movie = GetByIdWithIncludesAsync(id: id, filter: m => m.Id == id, 
@@ -40,7 +40,8 @@ namespace Infrastructure.Repositories
                     .ThenInclude(mg=>mg.Genre) );
             return await movie;
         }
-
+        
+        
 
 
     }

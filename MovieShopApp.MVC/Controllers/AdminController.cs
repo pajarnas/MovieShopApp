@@ -29,7 +29,7 @@ namespace MovieShopApp.MVC.Controllers
         // GET: AdminController
         public async Task<ActionResult> Index()
         {
-            var details = await _movieService.GetAllMovieModelList();
+            var details = await _movieService.GetMovieCardsPaginatedList();
             return View(details);
         }
         

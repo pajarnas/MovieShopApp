@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
-using ApplicationCore.Entities;
+using System.Collections.Generic;
 using ApplicationCore.Models.Response;
+using ApplicationCore.Entities;
+
+
 namespace ApplicationCore.ServiceInterfaces
 {
-    public interface IGenreService 
+    public interface IGenreService
     {
-        Task<IEnumerable<Genre>> GetAllGenreList();
 
-        Task<List<AssignedGenreModel>> GetAssignedGenreModelAsync();
+        Task<IEnumerable<Genre>> GetAll();
+
+        Task<string> GetNameById(int id);
+
+         Task<List<AssignedGenreModel>> GetAssignedGenreModelAsync();
+
     }
 }

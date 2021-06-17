@@ -31,7 +31,7 @@ namespace ApplicationCore.Helpers
             IQueryable<T> source, int pageIndex, int pageSize,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderedQuery = null,
             Expression<Func<T, bool>> filter = null, 
-            params Expression<Func<T, object>>[] includes)
+            Func<IQueryable<T>, IOrderedQueryable<T>> include = null)
         {
             // source query which implemented IQuerable
             var query = source;
@@ -44,9 +44,8 @@ namespace ApplicationCore.Helpers
             if (orderedQuery != null) query = orderedQuery(query);
             
             //Assign Lambda expressions Includes to Expression Tree
-            if (includes != null)
-                foreach (Expression<Func<T, object>> navigationProperty in includes)
-                    query = query.Include(navigationProperty);
+            if (include != null)
+                    query = include(query);
 
             var count = await query.CountAsync();
             var items = await query.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
