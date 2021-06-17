@@ -16,6 +16,11 @@ using Microsoft.OpenApi.Models;
 using Infrastructure.Helpers;
 using Microsoft.Extensions.DependencyInjection;
 using Infrastructure.DataContext;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.AspNetCore.Authorization;
+
 namespace MovieShopApp.API
 {
     public class Startup
@@ -45,6 +50,28 @@ namespace MovieShopApp.API
             ConfigureDependencyInjection(services);
        
             services.AddHttpContextAccessor();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
+                options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = false,
+                        ValidateAudience = false,
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey =
+                            new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["MovieShopSecretKey"]))
+                    };
+                }
+            );
+
+            services.AddAuthorization(options =>
+            {
+                var defaultAuthorizationPolicyBuilder =
+                    new AuthorizationPolicyBuilder(JwtBearerDefaults.AuthenticationScheme);
+                defaultAuthorizationPolicyBuilder = defaultAuthorizationPolicyBuilder.RequireAuthenticatedUser();
+                options.DefaultPolicy = defaultAuthorizationPolicyBuilder.Build();
+            });
+
         }
 
         private void ConfigureDependencyInjection(IServiceCollection services)

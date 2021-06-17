@@ -167,6 +167,11 @@ namespace Infrastructure.Services
             return userRespones2;
         }
 
+        public async Task<MovieResponseModel> GetPurchased()
+        {
+
+        }
+
     
     }
 }
