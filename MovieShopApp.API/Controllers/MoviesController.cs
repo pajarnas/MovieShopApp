@@ -16,10 +16,12 @@ namespace MovieShopApp.API.Controllers
     public class MoviesController : ControllerBase
     {
         private readonly IMovieService _movieService;
+        private readonly IGenreService _genreService;
 
-        public MoviesController(IMovieService movieService)
+        public MoviesController(IMovieService movieService, IGenreService genreService)
         {
             _movieService = movieService;
+            _genreService = genreService;
         }
 
         [HttpGet]
@@ -43,5 +45,6 @@ namespace MovieShopApp.API.Controllers
             var model = await _movieService.GetMovieDetailsById(id);
             return Ok(model);
         }
+        
     }
 }
