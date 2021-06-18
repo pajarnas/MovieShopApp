@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {UserService} from '../../services/user.service'
+import {UserResponse} from "../../../shared/models/UserResponse";
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+
+  isAuth!:boolean;
+  currentUserModel!:UserResponse;
+  constructor(private userService:UserService) { }
 
   ngOnInit(): void {
+    this.userService.isAuthenticatedSubject.subscribe(auth => {
+      this.isAuth = auth;
+    });
+    this.userService.currentUser.subscribe(user => {
+      this.currentUserModel = user;
+
+      console.log(this.currentUserModel);
+    });
   }
+
 
 }

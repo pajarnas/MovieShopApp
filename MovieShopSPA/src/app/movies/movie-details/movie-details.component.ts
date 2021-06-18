@@ -30,7 +30,7 @@ export class MovieDetailsComponent implements OnInit {
 
             this.movie = m;
             this.movie.releaseDate = m.releaseDate;
-            console.log(this.movie);
+
 
           }
       );

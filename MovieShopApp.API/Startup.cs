@@ -94,6 +94,7 @@ namespace MovieShopApp.API
             app.UseCors(builder =>
             {
                 builder.WithOrigins(Configuration.GetValue<string>("AngularSPAClientUrl")).AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                builder.WithOrigins(Configuration.GetValue<string>("AngularSPAClientDebugUrl")).AllowAnyHeader().AllowAnyMethod().AllowCredentials();
             });
             app.UseHttpsRedirection();
 

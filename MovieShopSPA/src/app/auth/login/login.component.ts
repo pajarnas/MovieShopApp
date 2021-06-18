@@ -1,5 +1,12 @@
+// noinspection DuplicatedCode
+
 import { Component, OnInit } from '@angular/core';
+import {LoginRequest} from "../../shared/models/LoginRequest";
+
+
 import {
+
+
   AbstractControl,
   FormBuilder,
   FormControl,
@@ -9,6 +16,7 @@ import {
   Validators
 } from "@angular/forms";
 import {UserService} from "../../core/services/user.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -17,25 +25,63 @@ import {UserService} from "../../core/services/user.service";
 })
 export class LoginComponent   {
 
-  LoginForm: FormGroup;
-  Email: AbstractControl;
-  Password:AbstractControl;
-  private Token! : string;
-  constructor(fb: FormBuilder,private userService:UserService) {
+  UserLogin: LoginRequest = {
+    email:"",
+    password : ""
+  };
+
+
+  constructor(fb: FormBuilder,private userService:UserService,private router:Router) {
 
     this.LoginForm = fb.group({
       'Email':  ['', Validators.required],
       'Password':['',Validators.required]
     });
 
-    this.Email = this.LoginForm.controls['Email'];
-    this.Password = this.LoginForm.controls['Password'];
   }
+
+  ngOnInit(): void{
+
+  }
+
+  login( ):void{
+    this.userService.login(this.UserLogin).subscribe(m=>{
+
+      if(m){
+
+
+        this.router.navigate(['/']).then(r => r);
+        this.isInvalidLogin = false;
+      }
+      else {
+        this.isInvalidLogin = true;
+      }
+
+    });
+
+  }
+
+  // Login By formValue
+  LoginForm: FormGroup;
+
+  isInvalidLogin!: boolean ;
+
   onSubmit(form: any): void {
-    console.log('you submitted value:', form);
-    this.userService.login(form).subscribe(m=>{
-      console.log(m);
-      this.Token=m['token'];
+
+    this.UserLogin.email=form.Email;
+    this.UserLogin.password=form.Password;
+    this.userService.login(this.UserLogin).subscribe(m=>{
+
+      if(m){
+
+
+        this.router.navigate(['/']).then(r => r);
+        this.isInvalidLogin = false;
+      }
+      else {
+        this.isInvalidLogin = true;
+      }
+
     });
 
 

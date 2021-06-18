@@ -10,6 +10,10 @@ import { RegisterComponent } from './auth/register/register.component';
 import { HomeComponent } from './home/home.component';
 import { MovieDetailsComponent } from './movies/movie-details/movie-details.component';
 import { MovieListComponent } from './movies/movie-list/movie-list.component';
+import {ProfileComponent} from "./user/profile/profile.component";
+import {PurchasesComponent} from "./user/purchases/purchases.component";
+import {ReviewsComponent} from "./user/reviews/reviews.component";
+import {FavoritesComponent} from "./user/favorites/favorites.component";
 
 const routes: Routes = [
     {path:"",component:HomeComponent},
@@ -19,7 +23,10 @@ const routes: Routes = [
     {path:"admin/createcast",component:CreateCastComponent},
     {path:"generes/:id/movies",component:MovieListComponent},
     {path:"movies/:id",component:MovieDetailsComponent},
-
+  {path:"user/:id/profile",component:ProfileComponent},
+  {path:"user/:id/purchases",component:PurchasesComponent},
+  {path:"user/:id/reviews",component:ReviewsComponent},
+  {path:"user/:id/favorites",component:FavoritesComponent},
 ];
 
 @NgModule({

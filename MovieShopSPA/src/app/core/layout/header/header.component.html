@@ -10,14 +10,26 @@
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          
-          <a [routerLink]= "[ '/login']" class="nav-link">Login</a>
+        <li class="nav-item" *ngIf="!isAuth">
+          <a [routerLink]="['/login']" class="nav-link">Login</a>
         </li>
+        <li class="nav-item dropdown " *ngIf="isAuth">
+          <a class="nav-link dropdown-toggle" href="#" id="profileDropDownList" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Hello {{currentUserModel.familyName}}, {{currentUserModel.givenName}}
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item"  href="#" [routerLink]="['/user/:id/profile']">Profile</a>
+            <a class="dropdown-item" href="#" [routerLink]="['/user/:id/purchases']">Purchases</a>
+            <a class="dropdown-item" href="#" [routerLink]="['/ser/:id/reviews']">Reviews</a>
+            <a class="dropdown-item"  href="#" [routerLink]="['/user/:id/favorites']">Favorites</a>
+          </div>
+        </li>
+
         <!-- Directives in angular -->
         <!-- Angular has lot of built-in directives you can use, it is custom html tag attributes -->
         <li class="nav-item">
-          
+
             <a [routerLink]= "[ '/register']" class="nav-link">Register</a>
           </li>
         <li class="nav-item dropdown">

@@ -6,27 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/core/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IPurchaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IPurchaseService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IUserService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Services/PurchaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/PurchaseService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.API/Controllers/MovieController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.API/Controllers/MovieController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.API/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.API/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.API/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.API/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/shared/models/UserRegisterRequest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/shared/models/UserResponse.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopApp.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.API/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopApp.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/20210616" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/MovieShopApp.MVC.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/MovieShopApp.MVC.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.MVC/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.MVC/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopSPA/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopSPA/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/movies/movie-details/movie-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/movies/movie-details/movie-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/shared/models/MovieDetail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/shared/models/MovieDetail.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/core/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/core/layout/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/core/layout/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/core/layout/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/core/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/core/services/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,9 +124,9 @@
       <option value="$PROJECT_DIR$/MovieShopApp.API/Properties/launchSettings.json" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Properties/launchSettings.json" />
       <option value="$PROJECT_DIR$/MovieShopApp.API/Controllers/MovieController.cs" />
-      <option value="$PROJECT_DIR$/MovieShopApp.API/Startup.cs" />
-      <option value="$PROJECT_DIR$/MovieShopApp.API/appsettings.json" />
       <option value="$PROJECT_DIR$/MovieShopApp.API/bin/Debug/net5.0/appsettings.json" />
+      <option value="$PROJECT_DIR$/MovieShopApp.API/appsettings.json" />
+      <option value="$PROJECT_DIR$/MovieShopApp.API/Startup.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tziZQWKEnxpl0t3SqjOQBy9epa" />
@@ -237,7 +227,7 @@
       <workItem from="1623855745438" duration="35477000" />
       <workItem from="1623916043346" duration="5583000" />
       <workItem from="1623955615264" duration="28000" />
-      <workItem from="1623961601083" duration="8626000" />
+      <workItem from="1623961601083" duration="13302000" />
     </task>
     <task id="LOCAL-00001" summary="Migrant To MAC">
       <created>1623797480045</created>
