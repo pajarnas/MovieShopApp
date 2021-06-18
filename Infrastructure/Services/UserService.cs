@@ -167,9 +167,10 @@ namespace Infrastructure.Services
             return userRespones2;
         }
 
-        public async Task<MovieResponseModel> GetPurchased()
+        public async Task<PurchaseResponseModel> GetPurchasedMovieByUser(int id)
         {
-
+            var purchasedMovies = _purchaseService.GetPurchasedMoviesByUser(id);
+            return await purchasedMovies;
         }
 
     

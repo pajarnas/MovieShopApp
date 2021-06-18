@@ -22,21 +22,28 @@ namespace MovieShop.API.Controllers
     {
         private readonly IUserService _userService;
         private readonly IConfiguration _configuration;
-        public UserController(IUserService userService, IConfiguration configuration)
+        private readonly ICurrentUserService _currentUserService;
+        public UserController(IUserService userService, IConfiguration configuration,ICurrentUserService currentUserService)
         {
             _userService = userService;
             _configuration = configuration;
+            _currentUserService = currentUserService;
         }
 
         [Authorize]
         [HttpGet("{id:int}/purchases")]
-        [Route("")]
-        public async Task<IActionResult> GetUserPurchasedMovies(int id)
+        
+        public async Task<ActionResult> GetUserPurchasedMovies(int id)
         {
-            var movives = _userService.get
+            if (_currentUserService.UserId != id)
+            {
+                return Unauthorized("please send correct id");
+            }
+            var purchased = await _userService.GetPurchasedMovieByUser(id);
+            return  Ok(purchased);
             
-            return BadRequest("Please check the data you entered");
         }
+    
 
 
         

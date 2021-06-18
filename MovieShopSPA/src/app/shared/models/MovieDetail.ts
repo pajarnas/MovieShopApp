@@ -1,4 +1,4 @@
- 
+
 
     export interface MovieDetail {
         id: number;
@@ -11,7 +11,7 @@
         posterUrl: string;
         backdropUrl: string;
         originalLanguage: string;
-        releaseDate: string;
+        releaseDate: Date;
         runTime: number;
         price: number;
         createdDate?: any;
@@ -21,7 +21,7 @@
         rating: number;
         casts: Cast[];
         genres: Genre[];
-        
+
     }
     export interface Cast {
         id: number;
@@ -37,4 +37,3 @@
         name: string;
     }
 
- 

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\img\black-plus-icon-24.jpeg" />
+    <Content Remove="ApplicationData\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +49,18 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ApplicationData\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ApplicationData\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ApplicationData\**" />
   </ItemGroup>
 
 </Project>

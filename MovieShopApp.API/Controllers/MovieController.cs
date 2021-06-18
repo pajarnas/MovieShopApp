@@ -13,12 +13,12 @@ namespace MovieShopApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MoviesController : ControllerBase
+    public class MovieController : ControllerBase
     {
         private readonly IMovieService _movieService;
         private readonly IGenreService _genreService;
 
-        public MoviesController(IMovieService movieService, IGenreService genreService)
+        public MovieController(IMovieService movieService, IGenreService genreService)
         {
             _movieService = movieService;
             _genreService = genreService;

@@ -8,18 +8,20 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using ApplicationCore.Models.Request;
 using ApplicationCore.ServiceInterfaces;
+using AutoMapper;
 
 namespace Infrastructure.Repositories
 {
     public class PurchaseService:IPurchaseService
     {
-        private IRelationRepository<Purchase> _relationRepository;
-        private IEntityRepository<Purchase> _purchaseRepository;
-
-        public PurchaseService(IRelationRepository<Purchase> repository, IEntityRepository<Purchase> purchaseRepository)
+        private readonly IRelationRepository<Purchase> _relationRepository;
+        private readonly IEntityRepository<Purchase> _purchaseRepository;
+        private readonly IMapper _mapper;
+        public PurchaseService(IRelationRepository<Purchase> repository, IEntityRepository<Purchase> purchaseRepository,IMapper mapper)
         {
             _relationRepository = repository;
             _purchaseRepository = purchaseRepository;
+            _mapper = mapper;
         }
 
         public async Task PurchaseMovie(Purchase purchase)
@@ -58,11 +60,12 @@ namespace Infrastructure.Repositories
             return count;
         }
 
-        public async Task<MovieResponseModel> GetPurchasedMoviesByUser(int id)
+        public async Task<PurchaseResponseModel> GetPurchasedMoviesByUser(int id)
         {
             var purchases = await _relationRepository.ListWithIncludesAsync(p => p.Include(m => m.Movie).Include(m => m.User),
                 p => p.UserId == id);
-            return purchases;
+            var purchaseModel = _mapper.Map<PurchaseResponseModel>(purchases);
+            return purchaseModel;
         }
     }
 }

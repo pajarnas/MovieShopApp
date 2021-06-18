@@ -100,7 +100,8 @@ namespace Infrastructure.Helpers
                     PosterUrl = purchase.Movie.PosterUrl,
                     PurchaseDateTime = purchase.PurchaseDateTime,
                     Id = purchase.MovieId,
-                    Title = purchase.Movie.Title
+                    Title = purchase.Movie.Title,
+                    ReleaseDate = purchase.Movie.ReleaseDate
                 });
 
             return purchaseResponse.PurchasedMovies;

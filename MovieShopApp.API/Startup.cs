@@ -50,6 +50,7 @@ namespace MovieShopApp.API
             ConfigureDependencyInjection(services);
        
             services.AddHttpContextAccessor();
+            
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
                 options =>
                 {

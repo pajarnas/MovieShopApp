@@ -1,15 +1,15 @@
 <div class="container-fluid mt-1">
     <main role="main" class="pb-3">
-        
 
-<div class="bg-image" style="background-image: url({{movie.backdropUrl}})">
+
+<div class="bg-image" [ngStyle] ="{'background-image':'url('+movie.backdropUrl+')'}">
 
     <div class="row">
         <div class="col-md-3 offset-2">
 
             <!-- Movie Card row -->
             <div>
-                <img src="{{movie.posterUrl}}" class="card-img-top">
+                <img src="{{movie.posterUrl}}" alt="posterImg" class="card-img-top">
             </div>
 
         </div>
@@ -30,10 +30,10 @@
                 </div>
                 <div class="col-8" *ngFor="let genre of movie.genres">
 
-                        <a class="badge badge-pill badge-dark ml-1" href="/Movie/Genre/1">
+                        <a class="badge badge-pill badge-dark ml-1" >
                             {{genre.name}}
                         </a>
-                        
+
                 </div>
             </div>
 
@@ -73,11 +73,11 @@
                 </li>
 
                 <li class="list-group-item">
-                    <a class="btn btn-light btn-lg btn-block btn-sm" href="/User/PurchaseMovie/2">
+                    <a class="btn btn-light btn-lg btn-block btn-sm" >
                         BUY $9.90
                     </a>
 
-                    <a class="btn btn-light btn-lg btn-block btn-sm" href="/User/PurchaseMovie/2">
+                    <a class="btn btn-light btn-lg btn-block btn-sm" >
                         WATCH MOVIE
                     </a>
                 </li>
@@ -105,7 +105,7 @@
             <li class="list-group-item">
                 <i class="far fa-money-bill-alt fa-usd"></i> Box Office
                 <span class="badge badge-pill badge-pill badge-dark">
-                    
+
                     $ {{movie.revenue}}
                 </span>
             </li>
@@ -113,7 +113,7 @@
             <li class="list-group-item">
                 <i class="fas fa-dollar-sign mr-2"></i> Budget
                 <span class="badge badge-pill badge-dark">
-                    
+
                     $ {{movie.budget}}
                 </span>
             </li>
@@ -144,7 +144,7 @@
                         <td> {{item.name}} </td>
                         <td> {{item.character}}</td>
                     </tr>
-                    
+
             </tbody>
         </table>
 

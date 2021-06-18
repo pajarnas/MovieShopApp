@@ -4,12 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {HttpClientModule} from '@angular/common/http'
 import {DatePipe} from '@angular/common';
+
+//Form Related
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 //routing user-defined
 import { AppRoutingModule } from './app-routing.module';
 
 //app app-root
 import { AppComponent } from './app.component';
-//Home 
+//Home
 import { HomeComponent } from './home/home.component';
 //Generes
 import { GeneresComponent } from './generes/generes.component';
@@ -43,7 +47,7 @@ import { MovieListComponent } from './movies/movie-list/movie-list.component';
     MovieCardComponent,
     HeaderComponent,
     FooterComponent,
-    
+
     CreateMovieComponent,
     CreateCastComponent,
     UpdateMovieComponent,
@@ -54,12 +58,15 @@ import { MovieListComponent } from './movies/movie-list/movie-list.component';
     ProfileComponent,
     ReviewsComponent,
     MovieDetailsComponent,
-    MovieListComponent
+    MovieListComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,// <-- routes Added the imported into this 
-    HttpClientModule
+    AppRoutingModule,// <-- routes Added the imported into this
+    HttpClientModule,
+    FormsModule,         // <-- add this
+    ReactiveFormsModule
   ],
   providers: [HttpClientModule,DatePipe],
   bootstrap: [AppComponent]

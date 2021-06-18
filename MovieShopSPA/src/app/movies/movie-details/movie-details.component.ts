@@ -14,7 +14,7 @@ export class MovieDetailsComponent implements OnInit {
 
   id!: number;
   movie!:MovieDetail;
-  
+
   ngOnInit(): void {
     // read the id from the Route
     console.log('inside Movie details page');
@@ -27,11 +27,11 @@ export class MovieDetailsComponent implements OnInit {
         // call the MovieService that will call the Movie Details API.
         this.movieService.getMovieDetails(this.id).subscribe(
           m=>{
-            
+
             this.movie = m;
-            this.movie.releaseDate = m.releaseDate.slice(0,4);
+            this.movie.releaseDate = m.releaseDate;
             console.log(this.movie);
-           
+
           }
       );
       }
