@@ -29,7 +29,7 @@
 
         <!-- Directives in angular -->
         <!-- Angular has lot of built-in directives you can use, it is custom html tag attributes -->
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="!isAuth">
 
             <a [routerLink]= "[ '/register']" class="nav-link">Register</a>
           </li>

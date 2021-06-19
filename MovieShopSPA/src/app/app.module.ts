@@ -38,6 +38,8 @@ import { ReviewsComponent } from './user/reviews/reviews.component';
 import { MovieDetailsComponent } from './movies/movie-details/movie-details.component';
 import { MovieListComponent } from './movies/movie-list/movie-list.component';
 
+import { PurchasedMovieItemComponent } from './shared/components/purchased-movie-item/purchased-movie-item.component';
+
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { MovieListComponent } from './movies/movie-list/movie-list.component';
     ReviewsComponent,
     MovieDetailsComponent,
     MovieListComponent,
+
+    PurchasedMovieItemComponent,
 
   ],
   imports: [

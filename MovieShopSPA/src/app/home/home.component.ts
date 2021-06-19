@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../core/services/movie.service';
-import { MovieCard } from '../shared/models/MovieCard';
+import {MovieCard} from "../shared/models/MovieCard";
+
 
 @Component({
   selector: 'app-home',

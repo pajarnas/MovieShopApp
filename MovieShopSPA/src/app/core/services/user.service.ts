@@ -1,8 +1,8 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient , HttpHeaders} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable,BehaviorSubject } from 'rxjs';
 import {catchError, map} from 'rxjs/operators';
-import { MovieCard } from 'src/app/shared/models/MovieCard';
+
 import { MovieDetail } from 'src/app/shared/models/MovieDetail';
 import { MovieDetailsComponent } from 'src/app/movies/movie-details/movie-details.component';
 import { environment } from 'src/environments/environment';
@@ -11,6 +11,9 @@ import {TokenModel} from "../../shared/models/TokenModel";
 import {UserResponse} from "../../shared/models/UserResponse";
 import {JwtHelperService} from "@auth0/angular-jwt";
 import {tryCatch} from "rxjs/internal-compatibility";
+
+import {JwtStorageService} from "./jwt-storage-service.service";
+import {MovieCard} from "../../shared/models/MovieCard";
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +28,7 @@ export class UserService {
   public isAuthenticatedSubject = new BehaviorSubject<boolean>(false);
   public isAuthenticated = this.isAuthenticatedSubject.asObservable();
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private jwtService:JwtStorageService) { }
 
   getTopRevenueMovies(): Observable<MovieCard[]> {
     //  call the API to get the json data
@@ -42,21 +45,23 @@ export class UserService {
       .pipe(map((res:any)=>
       {
 
-           localStorage.setItem('jwtToken',res.token);
+
+           this.jwtService.saveToken(res.token)
            this.populateUserResponse();
            return true;
     }));
   }
 
   logout(): void{
-     localStorage.removeItem("jwtToken");
+
+     this.jwtService.destroyToken();
     this.populateUserResponse();
   }
 
   populateUserResponse():void{
     //get the token from localstorage and decode the token and convert to userRespone object and push it to currentUserObject
 
-    const myJwtToken = localStorage.getItem("jwtToken");
+    const myJwtToken = this.jwtService.getToken();
     const helper = new JwtHelperService();
     if(myJwtToken != null && !helper.isTokenExpired(myJwtToken)){
 

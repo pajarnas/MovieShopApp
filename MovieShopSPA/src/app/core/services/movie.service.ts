@@ -2,10 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { MovieCard } from 'src/app/shared/models/MovieCard';
+
 import { MovieDetail } from 'src/app/shared/models/MovieDetail';
 import { MovieDetailsComponent } from 'src/app/movies/movie-details/movie-details.component';
 import { environment } from 'src/environments/environment';
+import {MovieCard} from "../../shared/models/MovieCard";
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +24,7 @@ export class MovieService {
 
   getTopRevenueMovies(): Observable<MovieCard[]> {
     //  call the API to get the json data
-   
+
     return this.http.get(`${environment.apiUrl}${'movie/toprevenue'}`)
     .pipe(map(resp => resp as MovieCard[]))
 
@@ -31,7 +32,7 @@ export class MovieService {
 
   getMovieDetails(id:Number): Observable<MovieDetail> {
     //  call the API to get the json data
-   
+
     return this.http.get(`${environment.apiUrl}${'movie/details?id='}${id}`)
     .pipe(map(resp => resp as MovieDetail))
 

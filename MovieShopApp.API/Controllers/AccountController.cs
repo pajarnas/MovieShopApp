@@ -10,6 +10,7 @@ using ApplicationCore.Models.Response;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
@@ -42,6 +43,16 @@ namespace MovieShop.API.Controllers
             // 400
             return BadRequest("Please check the data you entered");
         }
+        
+        [Authorize]
+        [HttpGet]
+        [Route("Profile")]
+        public async Task<IActionResult> Profile()
+        {
+            var model = await this._userService.GetUserProfile();
+            return Ok(model);
+        }
+
 
 
         [HttpPost]

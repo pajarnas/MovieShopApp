@@ -20,10 +20,9 @@ export class MovieDetailsComponent implements OnInit {
     console.log('inside Movie details page');
     this.route.paramMap.subscribe(
       params => {
-        console.log(params);
-        console.log(params.get('id'));
+
         this.id = Number(params.get('id'));
-        console.log('Movie Id:' + this.id);
+
         // call the MovieService that will call the Movie Details API.
         this.movieService.getMovieDetails(this.id).subscribe(
           m=>{

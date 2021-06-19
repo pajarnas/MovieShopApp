@@ -23,7 +23,7 @@ namespace Infrastructure.Helpers
                 .ForMember(p => p.UserId, opt => opt.MapFrom(src => src.FirstOrDefault().UserId));
 
             CreateMap<IEnumerable<Purchase>, UserProfileResponseModel>().
-                ForMember(p => p.PurchasedMovies, opt => opt.MapFrom(src => GetPurchasedMoviesForProfile(src)));
+                ForMember(p => p.PurchasedMovies, opt => opt.MapFrom(src => GetPurchasedMovies(src)));
             
             CreateMap<User, UserProfileResponseModel>();
           
@@ -86,16 +86,16 @@ namespace Infrastructure.Helpers
             return movieDetailResponseModel.Genres;
         }
         
-        private List<PurchaseResponseModel.PurchasedMovieResponseModel> GetPurchasedMovies(
+        private List<PurchasedMovieResponseModel> GetPurchasedMovies(
             IEnumerable<Purchase> purchases)
         {
             var purchaseResponse = new PurchaseResponseModel
             {
                 PurchasedMovies =
-                    new List<PurchaseResponseModel.PurchasedMovieResponseModel>()
+                    new List<PurchasedMovieResponseModel>()
             };
             foreach (var purchase in purchases)
-                purchaseResponse.PurchasedMovies.Add(new PurchaseResponseModel.PurchasedMovieResponseModel
+                purchaseResponse.PurchasedMovies.Add(new PurchasedMovieResponseModel
                 {
                     PosterUrl = purchase.Movie.PosterUrl,
                     PurchaseDateTime = purchase.PurchaseDateTime,
@@ -107,25 +107,7 @@ namespace Infrastructure.Helpers
             return purchaseResponse.PurchasedMovies;
         }
 
-        private List<UserProfileResponseModel.PurchasedMovieResponseModel> GetPurchasedMoviesForProfile(IEnumerable<Purchase> purchases)
-        {
-            var userProfileResponseModel = new UserProfileResponseModel
-            {
-                PurchasedMovies =
-                    new List<UserProfileResponseModel.PurchasedMovieResponseModel>()
-            };
-            foreach (var purchase in purchases)
-                userProfileResponseModel.PurchasedMovies.Add(new UserProfileResponseModel.PurchasedMovieResponseModel
-                {
-                    PosterUrl = purchase.Movie.PosterUrl,
-                    PurchaseDateTime = purchase.PurchaseDateTime,
-                    Id = purchase.MovieId,
-                    Title = purchase.Movie.Title
-
-                });
-
-            return userProfileResponseModel.PurchasedMovies;
-        }
+        
 
     }
 }

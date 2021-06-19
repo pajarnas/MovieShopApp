@@ -9,6 +9,7 @@ using ApplicationCore.ServiceInterfaces;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MovieShop.MVC.Controllers
 {
@@ -48,7 +49,14 @@ namespace MovieShop.MVC.Controllers
             return View();
         }
 
-
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> Profile()
+        {
+            var model = await this._userService.GetUserProfile();
+            return View(model);
+        }
+        
         [HttpPost]
         public async Task<IActionResult> Login(LoginRequestModel model)
         {
@@ -100,11 +108,6 @@ namespace MovieShop.MVC.Controllers
             return RedirectToAction("Login");
         }
 
-        public async Task<IActionResult> Profile()
-        {
-            var userProfileResponseModel = await _userService.GetUserProfile();
-            return View(userProfileResponseModel);
-        }
-
+   
     }
 }
