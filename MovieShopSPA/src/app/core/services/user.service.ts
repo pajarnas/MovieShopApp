@@ -46,7 +46,11 @@ export class UserService {
            this.populateUserResponse();
            return true;
     }));
+  }
 
+  logout(): void{
+     localStorage.removeItem("jwtToken");
+    this.populateUserResponse();
   }
 
   populateUserResponse():void{
@@ -64,18 +68,18 @@ export class UserService {
       this.userResponse.familyName = decodedToken['family_name'];
       this.userResponse.email = decodedToken['email'];
 
-      console.log(decodedToken);
-      console.log(this.userResponse);
+
         this.currentUserSubject.next(this.userResponse);
       this.isAuthenticatedSubject.next(true);
+    }else {
+      this.isAuthenticatedSubject.next(false);
+      this.currentUserSubject.next(new UserResponse());
     }
 
 
   }
 
-  logout():void{
 
-  }
 
 
 }
