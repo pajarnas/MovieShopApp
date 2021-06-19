@@ -18,14 +18,13 @@ namespace Infrastructure.Helpers
                     .ForMember(md => md.Genres, opt => opt.MapFrom(src => GetGenres(src.MovieGenres)));
             CreateMap<Movie, MovieResponseModel>();
 
-           CreateMap<IEnumerable<Purchase>, PurchaseResponseModel>()
+           CreateMap<List<Purchase>, UserPurchasesResponseModel>()
                 .ForMember(p => p.PurchasedMovies, opt => opt.MapFrom(src => GetPurchasedMovies(src)))
                 .ForMember(p => p.UserId, opt => opt.MapFrom(src => src.FirstOrDefault().UserId));
 
-            CreateMap<IEnumerable<Purchase>, UserProfileResponseModel>().
-                ForMember(p => p.PurchasedMovies, opt => opt.MapFrom(src => GetPurchasedMovies(src)));
-            
-            CreateMap<User, UserProfileResponseModel>();
+              CreateMap<User, UserProfileResponseModel>();
+
+      
           
 
             CreateMap<Purchase, MovieResponseModel>().ForMember(p => p.Id, opt => opt.MapFrom(src => src.Movie.Id))
@@ -89,13 +88,11 @@ namespace Infrastructure.Helpers
         private List<PurchasedMovieResponseModel> GetPurchasedMovies(
             IEnumerable<Purchase> purchases)
         {
-            var purchaseResponse = new PurchaseResponseModel
-            {
-                PurchasedMovies =
-                    new List<PurchasedMovieResponseModel>()
-            };
+
+            var purchasedMovieResponseModel = new List<PurchasedMovieResponseModel>();
+      
             foreach (var purchase in purchases)
-                purchaseResponse.PurchasedMovies.Add(new PurchasedMovieResponseModel
+                purchasedMovieResponseModel.Add(new PurchasedMovieResponseModel
                 {
                     PosterUrl = purchase.Movie.PosterUrl,
                     PurchaseDateTime = purchase.PurchaseDateTime,
@@ -104,8 +101,11 @@ namespace Infrastructure.Helpers
                     ReleaseDate = purchase.Movie.ReleaseDate
                 });
 
-            return purchaseResponse.PurchasedMovies;
+            return  purchasedMovieResponseModel;
         }
+
+        
+       
 
         
 

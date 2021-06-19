@@ -10,8 +10,8 @@ namespace ApplicationCore.ServiceInterfaces
         Task PurchaseMovie(Purchase purchase);
         Task<bool> IsMoviePurchased(PurchaseRequestModel purchaseRequest);
         Task<int> GetPurchasedMoviesCountByUser(int id);
-        Task<IEnumerable<Purchase>> GetAllPurchases(int userId);
+        Task<IEnumerable<Purchase>> GetPurchasesByUser(int userId);
 
-        Task<PurchaseResponseModel> GetPurchasedMoviesByUser(int id);
+        Task<UserPurchasesResponseModel> GetUserPurchasesByUser(int id);
     }
 }

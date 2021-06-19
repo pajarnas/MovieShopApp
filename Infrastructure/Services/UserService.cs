@@ -158,18 +158,22 @@ namespace Infrastructure.Services
 
         public async Task<UserProfileResponseModel> GetUserProfile()
         {
-            
+            //get user detail
+            //get user purchased List
+            var profile = new UserProfileResponseModel();
             var user = await _userRepository.GetByIdAsync(_currentUserService.UserId.Value);
-            var userRespones = _mapper.Map<User, UserProfileResponseModel>(user);
-            var moviePurchased = await _purchaseService.GetAllPurchases(user.Id);
+            profile = _mapper.Map<UserProfileResponseModel>(user);
+            var purchases = await _purchaseService.GetPurchasesByUser(user.Id);
             /* Pass the created destination to the second map call: */
-            var userRespones2 = _mapper.Map<IEnumerable<Purchase>, UserProfileResponseModel>(moviePurchased, userRespones);
-            return userRespones2;
+            var userPurchased = _mapper.Map<UserPurchasesResponseModel>(purchases);
+            profile.PurchasedMovies = userPurchased.PurchasedMovies;
+            return profile;
         }
 
-        public async Task<PurchaseResponseModel> GetPurchasedMovieByUser(int id)
+        public async Task<UserPurchasesResponseModel> GetUserPurchasesByUser()
         {
-            var purchasedMovies = _purchaseService.GetPurchasedMoviesByUser(id);
+            var user = await _userRepository.GetByIdAsync(_currentUserService.UserId.Value);   
+            var purchasedMovies = _purchaseService.GetUserPurchasesByUser(user.Id);
             return await purchasedMovies;
         }
 

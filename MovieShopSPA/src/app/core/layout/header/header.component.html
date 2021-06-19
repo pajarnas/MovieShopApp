@@ -19,11 +19,11 @@
           </a>
 
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item"  href="#" [routerLink]="['/user/:id/profile']">Profile</a>
-            <a class="dropdown-item" href="#" [routerLink]="['/user/:id/purchases']">Purchases</a>
-            <a class="dropdown-item" href="#" [routerLink]="['/ser/:id/reviews']">Reviews</a>
-            <a class="dropdown-item"  href="#" [routerLink]="['/user/:id/favorites']">Favorites</a>
-            <a class="dropdown-item" [routerLink]="['/']" (click)="logout()">Log Out</a>
+            <a class="dropdown-item"  href="#" [routerLink]="['/profile']">Profile</a>
+            <a class="dropdown-item" href="#" [routerLink]="['/purchases']">Purchases</a>
+            <a class="dropdown-item" href="#" [routerLink]="['/reviews']">Reviews</a>
+            <a class="dropdown-item"  href="#" [routerLink]="['/favorites']">Favorites</a>
+            <a class="dropdown-item" [routerLink]="['/logout']" (click)="logout()">Log Out</a>
           </div>
         </li>
 

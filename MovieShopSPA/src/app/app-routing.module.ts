@@ -23,10 +23,10 @@ const routes: Routes = [
     {path:"admin/createcast",component:CreateCastComponent},
     {path:"generes/:id/movies",component:MovieListComponent},
     {path:"movies/:id",component:MovieDetailsComponent},
-  {path:"user/:id/profile",component:ProfileComponent},
-  {path:"user/:id/purchases",component:PurchasesComponent},
-  {path:"user/:id/reviews",component:ReviewsComponent},
-  {path:"user/:id/favorites",component:FavoritesComponent},
+  {path:"profile",component:ProfileComponent},
+  {path:"purchases",component:PurchasesComponent},
+  {path:"reviews",component:ReviewsComponent},
+  {path:"favorites",component:FavoritesComponent},
 ];
 
 @NgModule({

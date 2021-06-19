@@ -31,16 +31,23 @@ namespace MovieShop.API.Controllers
         }
 
         [Authorize]
-        [HttpGet("{id:int}/purchases")]
+        [HttpGet("purchases")]
         
-        public async Task<ActionResult> GetUserPurchasedMovies(int id)
+        public async Task<ActionResult> GetUserPurchasedMovies()
         {
-            if (_currentUserService.UserId != id)
-            {
-                return Unauthorized("please send correct id");
-            }
-            var purchased = await _userService.GetPurchasedMovieByUser(id);
+            
+            var purchased = await _userService.GetUserPurchasesByUser();
             return  Ok(purchased);
+            
+        }
+        
+        [Authorize]
+        [HttpGet]
+        public async Task<ActionResult> GetProfile()
+        {
+            
+            var profile = await _userService.GetUserProfile();
+            return  Ok(profile);
             
         }
     

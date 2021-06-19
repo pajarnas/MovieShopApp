@@ -19,6 +19,7 @@ export class ProfileComponent implements OnInit {
   }
 
   profile():void{
+    this.userService.profile().subscribe(m=>this.profileResponse=m);
 
   }
 

@@ -29,10 +29,10 @@ namespace Infrastructure.Repositories
             
             await _purchaseRepository.AddAsync(purchase);
         }
-        public async Task<IEnumerable<Purchase>> GetAllPurchases(int userId)
+        public async Task<IEnumerable<Purchase>> GetPurchasesByUser(int userId)
         {
             var purchaseList =
-                await _relationRepository.ListWithIncludesAsync(p => p.Include(m => m.Movie), m => m.UserId == userId);
+                await _relationRepository.ListWithIncludesAsync(p => p.Include(m => m.Movie).Include(m=>m.User), m => m.UserId == userId);
    
             return purchaseList;
         }
@@ -54,17 +54,15 @@ namespace Infrastructure.Repositories
         
         public async Task<int> GetPurchasedMoviesCountByUser(int id)
         {
-            var purchases = await _relationRepository.ListWithIncludesAsync(p => p.Include(m => m.Movie).Include(m => m.User),
-                p => p.UserId == id);
+            var purchases = await GetPurchasesByUser(id);
             var count =  purchases.Count();
             return count;
         }
 
-        public async Task<PurchaseResponseModel> GetPurchasedMoviesByUser(int id)
+        public async Task<UserPurchasesResponseModel> GetUserPurchasesByUser(int id)
         {
-            var purchases = await _relationRepository.ListWithIncludesAsync(p => p.Include(m => m.Movie).Include(m => m.User),
-                p => p.UserId == id);
-            var purchaseModel = _mapper.Map<PurchaseResponseModel>(purchases);
+            var purchases = await GetPurchasesByUser(id);
+            var purchaseModel = _mapper.Map<UserPurchasesResponseModel>(purchases);
             return purchaseModel;
         }
     }

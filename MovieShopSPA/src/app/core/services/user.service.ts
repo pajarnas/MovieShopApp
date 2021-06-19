@@ -14,12 +14,13 @@ import {tryCatch} from "rxjs/internal-compatibility";
 
 import {JwtStorageService} from "./jwt-storage-service.service";
 import {MovieCard} from "../../shared/models/MovieCard";
+import {ProfileResponse} from "../../shared/models/ProfileResponse";
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-
+  private headers: HttpHeaders;
   private currentUserSubject = new BehaviorSubject(<UserResponse>({} as UserResponse));
 
   public currentUser = this.currentUserSubject.asObservable();
@@ -28,7 +29,10 @@ export class UserService {
   public isAuthenticatedSubject = new BehaviorSubject<boolean>(false);
   public isAuthenticated = this.isAuthenticatedSubject.asObservable();
 
-  constructor(private http: HttpClient,private jwtService:JwtStorageService) { }
+  constructor(private http: HttpClient,private jwtService:JwtStorageService) { this.headers = new HttpHeaders();
+    this.headers.append('Content-Type', 'application/json');
+
+  }
 
   getTopRevenueMovies(): Observable<MovieCard[]> {
     //  call the API to get the json data
@@ -57,6 +61,19 @@ export class UserService {
      this.jwtService.destroyToken();
     this.populateUserResponse();
   }
+
+  profile(): Observable<ProfileResponse>{
+
+
+    let str = this.jwtService.getToken();
+    str = "bearer "+str;
+    console.log(str);
+    this.headers = this.headers.append("Authorization",str);
+
+    return this.http.get(`${environment.apiUrl}${'Account/profile'}`,{headers:this.headers}).pipe(map(res=> res as ProfileResponse));
+  }
+
+
 
   populateUserResponse():void{
     //get the token from localstorage and decode the token and convert to userRespone object and push it to currentUserObject

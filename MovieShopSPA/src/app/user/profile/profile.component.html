@@ -7,7 +7,7 @@
         <div class="d-flex justify-content-start">
 
           <div class="userData ml-3">
-            <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold">{{profileResponse.FirstName}}, {{profileResponse.LastName}}</h2>
+            <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold">{{profileResponse.firstName}}, {{profileResponse.lastName}}</h2>
 
           </div>
 
@@ -21,7 +21,7 @@
               <a class="nav-link active" id="basicInfo-tab" data-toggle="tab" href="#basicInfo" role="tab" aria-controls="basicInfo" aria-selected="true">Basic Info</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" role="tab" aria-controls="connectedServices" aria-selected="false">Connected Services</a>
+              <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" role="tab" aria-controls="connectedServices" aria-selected="false">Purchased Movies</a>
             </li>
           </ul>
           <div class="tab-content ml-1" id="myTabContent">
@@ -33,7 +33,7 @@
                   <label style="font-weight:bold;">First Name</label>
                 </div>
                 <div class="col-md-8 col-6">
-                  {{profileResponse.FirstName}}
+                  {{profileResponse.firstName}}
                 </div>
               </div>
               <hr />
@@ -43,7 +43,7 @@
                   <label style="font-weight:bold;">Last Name</label>
                 </div>
                 <div class="col-md-8 col-6">
-                  {{profileResponse.LastName}}
+                  {{profileResponse.lastName}}
                 </div>
               </div>
               <hr />
@@ -74,46 +74,55 @@
                   <label style="font-weight:bold;">Last Login Date Time</label>
                 </div>
                 <div class="col-md-8 col-6">
-                  @(Model.LastLoginDateTime == null ? "" : Model.LastLoginDateTime)
+                  {{profileResponse.lastLoginDateTime}}
                 </div>
               </div>
               <hr />
-              <div class="row">
-                <div class="col-sm-3 col-md-2 col-5">
-                  <label style="font-weight:bold;">Purchased Movies</label>
-                </div>
-                <div class="col-md-8 col-6">
 
-
-                  <table class="table">
-                    <thead>
-                    <tr>
-                      <th>
-                        Title
-                      </th>
-                      <th>
-                        Purchased Time
-                      </th>
-                      <th>
-                        Link
-                      </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr *ngFor="let item of (profileResponse.purchasedMovies)">
-                      <app-purchased-movie-item [purasedMovie]="item"></app-purchased-movie-item>
-                    </tr>
-
-                    </tbody>
-                  </table>
-
-                </div>
-              </div>
-              <hr />
 
             </div>
             <div class="tab-pane fade" id="connectedServices" role="tabpanel" aria-labelledby="ConnectedServices-tab">
-              Facebook, Google, Twitter Account that are connected to this account
+              <table class="table table-striped table-advance table-hover">
+                <tbody>
+
+                <tr>
+                  <th>
+                    Title
+                  </th>
+                  <th>
+                    Purchased Time
+                  </th>
+                  <th>
+                    Link
+                  </th>
+                </tr>
+
+
+                <tr *ngFor="let item of (profileResponse.purchasedMovies)">
+
+                  <td>
+                    {{item.title}}
+                  </td>
+                  <td>
+                    {{item.purchaseDateTime}}
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <a class="btn btn-primary" [routerLink]="['/movies', item.id]" >
+                        <i class="icon_plus_alt2">DETAIL</i>
+                      </a>
+
+                    </div>
+                  </td>
+
+
+
+                </tr>
+
+                </tbody>
+
+              </table>
+
             </div>
           </div>
         </div>
