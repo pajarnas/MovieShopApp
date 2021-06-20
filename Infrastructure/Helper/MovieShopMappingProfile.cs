@@ -23,7 +23,7 @@ namespace Infrastructure.Helpers
                 .ForMember(p => p.UserId, opt => opt.MapFrom(src => src.FirstOrDefault().UserId));
 
               CreateMap<User, UserProfileResponseModel>();
-              CreateMap<UserProfileResponseModel,User>();
+               
 
 
 

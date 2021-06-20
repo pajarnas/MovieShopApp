@@ -179,7 +179,12 @@ namespace Infrastructure.Services
 
         public async Task UpdateProfile(UserProfileResponseModel profile)
         {
-            var user = _mapper.Map<User>(profile); 
+            var user = await _userRepository.GetByIdAsync(profile.Id);
+            user.Email = profile.Email;
+            user.FirstName = profile.FirstName;
+            user.LastName = profile.LastName;
+            user.PhoneNumber = profile.PhoneNumber;
+            user.DateOfBirth = profile.DateOfBirth;
             await _userRepository.UpdateAsync(user);
              
         }

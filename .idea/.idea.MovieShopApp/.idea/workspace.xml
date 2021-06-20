@@ -6,23 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/edit-profile/edit-profile.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/edit-profile/edit-profile.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/edit-profile/edit-profile.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/edit-profile/edit-profile.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IUserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.API/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.API/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopApp.API/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.API/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/core/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/core/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/shared/models/ProfileResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/shared/models/ProfileResponse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/user/favorites/favorites.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/favorites/favorites.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/user/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/profile/profile.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/user/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/profile/profile.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,13 +59,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AE604AFE-B657-4617-A94D-F2A743C6288E/14/Profile.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/saige/RiderProjects/MovieShopApp/Infrastructure/Services/UserService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/24FF2AD3-F0EE-415E-922A-ECFDF6EF6846/90/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Controllers/MovieController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/24FF2AD3-F0EE-415E-922A-ECFDF6EF6846/90/Int32.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Details.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -129,11 +114,11 @@
       <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IPurchaseService.cs" />
       <option value="$PROJECT_DIR$/ApplicationCore/Models/Response/ResponseModels.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Account/Profile.cshtml" />
-      <option value="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" />
-      <option value="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" />
       <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IUserService.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.API/Controllers/UserController.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.API/Controllers/AccountController.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" />
+      <option value="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tziZQWKEnxpl0t3SqjOQBy9epa" />
@@ -235,6 +220,7 @@
       <workItem from="1623916043346" duration="5583000" />
       <workItem from="1623955615264" duration="28000" />
       <workItem from="1623961601083" duration="13302000" />
+      <workItem from="1624152457486" duration="2329000" />
     </task>
     <task id="LOCAL-00001" summary="Migrant To MAC">
       <created>1623797480045</created>
@@ -355,6 +341,101 @@
     <option name="LAST_COMMIT_MESSAGE" value="Refactoring Low level Core" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Services/UserService.cs</url>
+          <line>90</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" initialLine="90" containingFunctionPresentation="method 'Login'">
+            <startOffsets>
+              <option value="3459" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3501" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Services/UserService.cs</url>
+          <line>94</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" initialLine="94" containingFunctionPresentation="method 'Login'">
+            <startOffsets>
+              <option value="3652" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3692" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Services/UserService.cs</url>
+          <line>95</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" initialLine="95" containingFunctionPresentation="method 'Login'">
+            <startOffsets>
+              <option value="3713" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3992" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Services/UserService.cs</url>
+          <line>91</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" initialLine="91" containingFunctionPresentation="method 'Login'">
+            <startOffsets>
+              <option value="3518" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3519" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Services/UserService.cs</url>
+          <line>93</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" initialLine="93" containingFunctionPresentation="method 'Login'">
+            <startOffsets>
+              <option value="3593" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3631" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Services/UserService.cs</url>
+          <line>88</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" initialLine="88" containingFunctionPresentation="method 'Login'">
+            <startOffsets>
+              <option value="3378" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3441" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Services/UserService.cs</url>
+          <line>122</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" initialLine="122" containingFunctionPresentation="method 'CreateHashedPassword'">
+            <startOffsets>
+              <option value="4504" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4730" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#ApplicationCore.Models.Response.UserProfileResponseModel" memberName="UserDetail" />
