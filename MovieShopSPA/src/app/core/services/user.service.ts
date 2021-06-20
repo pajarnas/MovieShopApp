@@ -15,6 +15,7 @@ import {tryCatch} from "rxjs/internal-compatibility";
 import {JwtStorageService} from "./jwt-storage-service.service";
 import {MovieCard} from "../../shared/models/MovieCard";
 import {ProfileResponse} from "../../shared/models/ProfileResponse";
+import {PurchasedMovie, UserPurchasedMoviesResponse} from "../../shared/models/UserPurchasedMoviesResponse";
 
 @Injectable({
   providedIn: 'root'
@@ -53,6 +54,15 @@ export class UserService {
            this.populateUserResponse();
            return true;
     }));
+  }
+
+  purchases():Observable<UserPurchasedMoviesResponse>{
+    let headers: HttpHeaders;
+    headers = new HttpHeaders();
+    headers.append('Content-Type', 'application/json');
+    headers = headers.append("Authorization","bearer "+this.jwtService.getToken());
+    return this.http.get(`${environment.apiUrl}${'User/purchases'}`,{headers:headers})
+      .pipe(map(res=> res as UserPurchasedMoviesResponse));
   }
 
   logout(): void{
