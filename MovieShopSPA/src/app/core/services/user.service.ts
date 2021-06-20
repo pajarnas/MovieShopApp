@@ -20,7 +20,7 @@ import {ProfileResponse} from "../../shared/models/ProfileResponse";
   providedIn: 'root'
 })
 export class UserService {
-  private headers: HttpHeaders;
+
   private currentUserSubject = new BehaviorSubject(<UserResponse>({} as UserResponse));
 
   public currentUser = this.currentUserSubject.asObservable();
@@ -29,8 +29,7 @@ export class UserService {
   public isAuthenticatedSubject = new BehaviorSubject<boolean>(false);
   public isAuthenticated = this.isAuthenticatedSubject.asObservable();
 
-  constructor(private http: HttpClient,private jwtService:JwtStorageService) { this.headers = new HttpHeaders();
-    this.headers.append('Content-Type', 'application/json');
+  constructor(private http: HttpClient,private jwtService:JwtStorageService) {
 
   }
 
@@ -64,13 +63,31 @@ export class UserService {
 
   profile(): Observable<ProfileResponse>{
 
+      let headers: HttpHeaders;
+      headers = new HttpHeaders();
+      headers.append('Content-Type', 'application/json');
+      headers = headers.append("Authorization","bearer "+this.jwtService.getToken());
 
-    let str = this.jwtService.getToken();
-    str = "bearer "+str;
-    console.log(str);
-    this.headers = this.headers.append("Authorization",str);
 
-    return this.http.get(`${environment.apiUrl}${'Account/profile'}`,{headers:this.headers}).pipe(map(res=> res as ProfileResponse));
+
+
+
+    return this.http.get(`${environment.apiUrl}${'Account/profile'}`,{headers:headers}).pipe(map(res=> res as ProfileResponse));
+  }
+
+  edit_profile(requestBody:ProfileResponse): Observable<boolean>{
+
+
+    let headers: HttpHeaders;
+    headers = new HttpHeaders();
+    headers.append('Content-Type', 'application/json');
+    headers = headers.append("Authorization","bearer "+this.jwtService.getToken());
+
+
+    return this.http.post(`${environment.apiUrl}${'Account/EditProfile'}`,requestBody,{headers:headers}).pipe(map(res=> {
+      return true;
+    }));
+
   }
 
 

@@ -52,6 +52,15 @@ namespace MovieShop.API.Controllers
             var model = await this._userService.GetUserProfile();
             return Ok(model);
         }
+        
+        [Authorize]
+        [HttpPost]
+        [Route("EditProfile")]
+        public async Task<IActionResult> EditProfile([FromBody]UserProfileResponseModel profile)
+        {
+            await _userService.UpdateProfile(profile); 
+            return Ok();
+        }
 
 
 

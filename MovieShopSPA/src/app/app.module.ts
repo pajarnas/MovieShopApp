@@ -37,6 +37,7 @@ import { ReviewsComponent } from './user/reviews/reviews.component';
 //movies
 import { MovieDetailsComponent } from './movies/movie-details/movie-details.component';
 import { MovieListComponent } from './movies/movie-list/movie-list.component';
+import { EditProfileComponent } from './user/edit-profile/edit-profile.component';
 
 
 
@@ -61,6 +62,7 @@ import { MovieListComponent } from './movies/movie-list/movie-list.component';
     ReviewsComponent,
     MovieDetailsComponent,
     MovieListComponent,
+    EditProfileComponent,
 
 
 

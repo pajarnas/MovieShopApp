@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import {UserService} from "../../core/services/user.service";
 import {ProfileResponse} from "../../shared/models/ProfileResponse";
+import {Router} from "@angular/router";
 
 
 @Component({
@@ -12,8 +13,8 @@ import {ProfileResponse} from "../../shared/models/ProfileResponse";
 export class ProfileComponent implements OnInit {
 
   profileResponse!: ProfileResponse
-  constructor(private userService:UserService) { }
-
+  constructor(private userService:UserService,private router:Router) { }
+  selectedProfileResponse:ProfileResponse = new ProfileResponse();
   ngOnInit(): void {
       this.profile();
   }
@@ -23,4 +24,20 @@ export class ProfileComponent implements OnInit {
 
   }
 
+  update(profile:ProfileResponse) {
+    console.log("222")
+    this.profileResponse = profile;
+    let isSucceed = false;
+    this.userService.edit_profile(profile).subscribe(m=>isSucceed=m);
+    if(isSucceed){
+      console.log("successful");
+      this.router.navigate(["/profile"]);
+    }
+
+  }
+
+  edit() {
+    Object.assign(this.selectedProfileResponse,this.profileResponse)
+
+  }
 }

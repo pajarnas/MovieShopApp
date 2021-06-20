@@ -1,6 +1,6 @@
 // noinspection DuplicatedCode
 
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {LoginRequest} from "../../shared/models/LoginRequest";
 
 
@@ -30,6 +30,19 @@ export class LoginComponent   {
     password : ""
   };
 
+  counter:number = 0;
+
+  increment(){
+    this.counter++;
+
+  }
+
+  couterModel:number = 0;
+  increment2(){
+    this.couterModel++;
+
+
+  }
 
   constructor(fb: FormBuilder,private userService:UserService,private router:Router) {
 

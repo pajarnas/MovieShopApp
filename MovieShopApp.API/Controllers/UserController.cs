@@ -10,6 +10,7 @@ using ApplicationCore.Models.Response;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authorization;
@@ -50,7 +51,8 @@ namespace MovieShop.API.Controllers
             return  Ok(profile);
             
         }
-    
+        
+         
 
 
         

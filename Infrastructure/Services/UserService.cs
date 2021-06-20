@@ -177,6 +177,12 @@ namespace Infrastructure.Services
             return await purchasedMovies;
         }
 
+        public async Task UpdateProfile(UserProfileResponseModel profile)
+        {
+            var user = _mapper.Map<User>(profile); 
+            await _userRepository.UpdateAsync(user);
+             
+        }
     
     }
 }

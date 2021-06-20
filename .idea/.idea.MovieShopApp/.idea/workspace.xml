@@ -6,21 +6,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33cfe65e-ac6f-4807-a190-47ee15b91c17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShopApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/Models/Response/ResponseModels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Models/Response/ResponseModels.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IPurchaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IPurchaseService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/edit-profile/edit-profile.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/edit-profile/edit-profile.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/edit-profile/edit-profile.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/edit-profile/edit-profile.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IUserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Services/PurchaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/PurchaseService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopApp.API/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.API/Controllers/AccountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopApp.API/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopApp.API/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/core/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/core/layout/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/core/services/jwt-storage-service.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/core/services/jwt-storage-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/core/services/jwt-storage-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/auth/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/core/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/core/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/shared/components/purchased-movie-item/purchased-movie-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/shared/components/purchased-movie-item/purchased-movie-item.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/shared/models/ProfileResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/shared/models/ProfileResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/user/favorites/favorites.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/favorites/favorites.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/user/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/profile/profile.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopSPA/src/app/user/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopSPA/src/app/user/profile/profile.component.ts" afterDir="false" />
     </list>
@@ -83,7 +83,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Movie/Index.cshtml" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Controllers/AdminController.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Admin/Index.cshtml" />
       <option value="$PROJECT_DIR$/ApplicationCore/RepositoryInterfaces/IReviewRepository.cs" />
@@ -128,12 +127,13 @@
       <option value="$PROJECT_DIR$/MovieShopApp.API/Startup.cs" />
       <option value="$PROJECT_DIR$/Infrastructure/Services/PurchaseService.cs" />
       <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IPurchaseService.cs" />
-      <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IUserService.cs" />
-      <option value="$PROJECT_DIR$/MovieShopApp.API/Controllers/UserController.cs" />
       <option value="$PROJECT_DIR$/ApplicationCore/Models/Response/ResponseModels.cs" />
       <option value="$PROJECT_DIR$/MovieShopApp.MVC/Views/Account/Profile.cshtml" />
       <option value="$PROJECT_DIR$/Infrastructure/Helper/MovieShopMappingProfile.cs" />
       <option value="$PROJECT_DIR$/Infrastructure/Services/UserService.cs" />
+      <option value="$PROJECT_DIR$/ApplicationCore/ServiceInterfaces/IUserService.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.API/Controllers/UserController.cs" />
+      <option value="$PROJECT_DIR$/MovieShopApp.API/Controllers/AccountController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tziZQWKEnxpl0t3SqjOQBy9epa" />

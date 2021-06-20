@@ -23,6 +23,9 @@
             <li class="nav-item">
               <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" role="tab" aria-controls="connectedServices" aria-selected="false">Purchased Movies</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" id="editProfile-tab" data-toggle="tab" href="#editProfile" role="tab" aria-controls="editProfile" aria-selected="false">Edit Profile</a>
+            </li>
           </ul>
           <div class="tab-content ml-1" id="myTabContent">
             <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
@@ -71,6 +74,16 @@
 
               <div class="row">
                 <div class="col-sm-3 col-md-2 col-5">
+                  <label style="font-weight:bold;">Phone Number</label>
+                </div>
+                <div class="col-md-8 col-6">
+                  {{profileResponse.phoneNumber}}
+                </div>
+              </div>
+              <hr />
+
+              <div class="row">
+                <div class="col-sm-3 col-md-2 col-5">
                   <label style="font-weight:bold;">Last Login Date Time</label>
                 </div>
                 <div class="col-md-8 col-6">
@@ -78,7 +91,12 @@
                 </div>
               </div>
               <hr />
+              <div class="row">
+                <div class="col-sm-3 col-md-2 col-5">
+                  <button (click)="edit()">Edit</button>
+                </div>
 
+              </div>
 
             </div>
             <div class="tab-pane fade" id="connectedServices" role="tabpanel" aria-labelledby="ConnectedServices-tab">
@@ -124,6 +142,12 @@
               </table>
 
             </div>
+            <div class="tab-pane fade" id="editProfile" role="tabpanel" aria-labelledby="editProfile-tab-tab">
+              <app-edit-profile [profileResponse]="selectedProfileResponse" (profileResponseChange)="update($event)" ></app-edit-profile>
+
+            </div>
+
+
           </div>
         </div>
       </div>

@@ -23,11 +23,11 @@ namespace Infrastructure.Helpers
                 .ForMember(p => p.UserId, opt => opt.MapFrom(src => src.FirstOrDefault().UserId));
 
               CreateMap<User, UserProfileResponseModel>();
+              CreateMap<UserProfileResponseModel,User>();
 
-      
-          
 
-            CreateMap<Purchase, MovieResponseModel>().ForMember(p => p.Id, opt => opt.MapFrom(src => src.Movie.Id))
+
+              CreateMap<Purchase, MovieResponseModel>().ForMember(p => p.Id, opt => opt.MapFrom(src => src.Movie.Id))
                 .ForMember(p => p.Title, opt => opt.MapFrom(src => src.Movie.Title))
                 .ForMember(p => p.PosterUrl, opt => opt.MapFrom(src => src.Movie.PosterUrl));
 

@@ -7,7 +7,19 @@
 
   <div class="col-md-4 ">
     <h3>Login</h3>
+    <div>
+      <p>
+        Count: {{ counter }}
+        <input type="number" class="form-control" [(ngModel)]="counter" formControlName="OverRideRate">
 
+      </p>
+    </div>
+    <div>
+      <p>
+        Count: {{ couterModel }}
+        <button  (click)="increment2()">Increment2</button>
+      </p>
+    </div>
     <div *ngIf="isInvalidLogin" class="text-danger">
          invalid login
     </div>
@@ -29,6 +41,8 @@
       <button type="submit" class="btn btn-primary">Submit</button>
 
   </form>
+
+
 
     <form   (ngSubmit)="login()">
 
