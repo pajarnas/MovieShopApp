@@ -82,8 +82,9 @@ namespace Infrastructure.Services
 
         public async Task<List<MovieDetailResponseModel>> GetTopRevenueMovies()
         {
-            var moviesAsync = await _movieRepository.ListAllAsync();
-            var movies = moviesAsync.OrderByDescending(m=>m.Revenue).Take(30).ToList();
+            /*    var moviesAsync = await _movieRepository.ListAllAsync();
+                var movies = moviesAsync.OrderByDescending(m=>m.Revenue).Take(30).ToList();*/
+            var movies = await _movieRepository.GetHighestRevenueMovies();
             List<MovieDetailResponseModel> models = new List<MovieDetailResponseModel>();
             foreach (var movie in movies)
             {
