@@ -13,7 +13,7 @@ namespace ApplicationCore.ServiceInterfaces
     {
   
         // method for getting top 30 highest revenue movies..
-        Task<List<MovieResponseModel>> GetTopRevenueMovies();
+        Task<IEnumerable<Movie>> GetTopRevenueMovies();
         Task<MovieDetailResponseModel> GetMovieDetailsById(int id);
         Task<PaginatedList<MovieResponseModel>> GetMovieCardsPaginatedList(int pageSize = 30, int page = 1, IQueryable<Movie> source=null,string title="");
         Task<PaginatedList<MovieResponseModel>> GetMovieCardsPaginatedListByGenre(int genreId,int pageSize = 30, int page = 1, string title="");

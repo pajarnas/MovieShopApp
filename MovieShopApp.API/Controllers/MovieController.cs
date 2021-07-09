@@ -24,6 +24,10 @@ namespace MovieShopApp.API.Controllers
             _genreService = genreService;
         }
 
+        public MovieController()
+        {
+        }
+
         [HttpGet]
         [Route("toprevenue")]
         public async Task<IActionResult> GetHighestGrossingMovies()

@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationCore", "Applicat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{23420884-97DA-4294-ADCE-C0C69FD15D94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieShopApp.API", "MovieShopApp.API\MovieShopApp.API.csproj", "{1E48DD39-1589-433B-B7B8-742669AB0BE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShopApp.API", "MovieShopApp.API\MovieShopApp.API.csproj", "{1E48DD39-1589-433B-B7B8-742669AB0BE4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShopApp.MVC", "MovieShopApp.MVC\MovieShopApp.MVC.csproj", "{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsTest", "MsTest\MsTest.csproj", "{7D93A46D-9435-47F8-840B-AFF61BC0737F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,9 +33,13 @@ Global
 		{1E48DD39-1589-433B-B7B8-742669AB0BE4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1803BDDB-4BC1-4357-87C9-C5784B7B84E4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7D93A46D-9435-47F8-840B-AFF61BC0737F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D93A46D-9435-47F8-840B-AFF61BC0737F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D93A46D-9435-47F8-840B-AFF61BC0737F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D93A46D-9435-47F8-840B-AFF61BC0737F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

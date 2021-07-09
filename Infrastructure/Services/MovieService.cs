@@ -35,7 +35,13 @@ namespace Infrastructure.Services
             _movieGenreRepository = movieGenreRepository;
             _mapper = mapper;
         }
-       
+
+        public MovieService(IMovieRepository movieRepository)
+        {
+            _movieRepository = movieRepository;
+
+        }
+
         public async Task<PaginatedList<MovieResponseModel>> GetMovieCardsPaginatedList(int pageSize = 30, int page = 1,
             IQueryable<Movie> source = null, string title = "")
         {
@@ -55,12 +61,14 @@ namespace Infrastructure.Services
             return movieDetailResponseModel;
         }
 
-        public async Task<List<MovieResponseModel>> GetTopRevenueMovies()
+        public async Task<IEnumerable<Movie>> GetTopRevenueMovies()
         {
-            var ordered = await _movieRepository.ListWithOrderedAsync(m=>m.OrderByDescending(m=>m.Revenue));
-            var movies = ordered.Take(30).ToList();
-            var models = _mapper.Map<List<MovieResponseModel>>(movies);
-            return models;
+            /* var ordered = await _movieRepository.ListWithOrderedAsync(m=>m.OrderByDescending(m=>m.Revenue));
+             var movies = ordered.Take(30).ToList();*/
+            var movies = await _movieRepository.GetHighestRevenueMovies();
+          
+           
+            return movies;
         }
         
         
