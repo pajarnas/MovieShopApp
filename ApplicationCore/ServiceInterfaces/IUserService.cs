@@ -14,8 +14,9 @@ namespace ApplicationCore.ServiceInterfaces
 
         Task PurchaseMovie(PurchaseRequestModel purchase);
         Task<UserProfileResponseModel> GetUserProfile();
+        Task<UserPurchasesResponseModel> GetUserPurchasesByUser( );
 
-
+        Task UpdateProfile(UserProfileResponseModel profile);
         // delete
         // EditUser
         // Change Password

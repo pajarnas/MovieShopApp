@@ -16,14 +16,14 @@ namespace Infrastructure.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
-        private readonly IPurchaseRepository _purchaseRepository;
+        private readonly IPurchaseService _purchaseService;
         private readonly IMovieService _movieService;
         private readonly ICurrentUserService _currentUserService;
         private readonly IMapper _mapper;
-        public UserService(IUserRepository userRepository,IPurchaseRepository purchaseRepository, IMovieService movieService, ICurrentUserService currentUserService, IMapper mapper)
+        public UserService(IUserRepository userRepository, IPurchaseService purchaseService, IMovieService movieService, ICurrentUserService currentUserService, IMapper mapper)
         {
             _userRepository = userRepository;
-            _purchaseRepository = purchaseRepository;
+            _purchaseService = purchaseService;
             _movieService = movieService;
             _currentUserService = currentUserService;
             _mapper = mapper;
@@ -146,29 +146,48 @@ namespace Infrastructure.Services
             // Get Movie Price from Movie Table
             var movie = await _movieService.GetMovieDetailsById(purchaseRequest.MovieId);
             purchaseRequest.TotalPrice = movie.Price;
-
             var purchase = _mapper.Map<Purchase>(purchaseRequest);
-            await _purchaseRepository.AddAsync(purchase);
+            await _purchaseService.PurchaseMovie(purchase);
 
         }
 
         public async Task<bool> IsMoviePurchased(PurchaseRequestModel purchaseRequest)
         {
-            return await _purchaseRepository.GetExistsAsync(p =>
-                p.UserId == purchaseRequest.UserId && p.MovieId == purchaseRequest.MovieId);
+            return await _purchaseService.IsMoviePurchased(purchaseRequest);
         }
 
         public async Task<UserProfileResponseModel> GetUserProfile()
         {
-            
+            //get user detail
+            //get user purchased List
+            var profile = new UserProfileResponseModel();
             var user = await _userRepository.GetByIdAsync(_currentUserService.UserId.Value);
-            var userRespones = _mapper.Map<User, UserProfileResponseModel>(user);
-            var moviePurchased = await _purchaseRepository.GetAllPurchases(user.Id);
+            profile = _mapper.Map<UserProfileResponseModel>(user);
+            var purchases = await _purchaseService.GetPurchasesByUser(user.Id);
             /* Pass the created destination to the second map call: */
-            var userRespones2 = _mapper.Map<IEnumerable<Purchase>, UserProfileResponseModel>(moviePurchased, userRespones);
-            return userRespones2;
+            var userPurchased = _mapper.Map<UserPurchasesResponseModel>(purchases);
+            profile.PurchasedMovies = userPurchased.PurchasedMovies;
+            return profile;
         }
 
+        public async Task<UserPurchasesResponseModel> GetUserPurchasesByUser()
+        {
+            var user = await _userRepository.GetByIdAsync(_currentUserService.UserId.Value);   
+            var purchasedMovies = _purchaseService.GetUserPurchasesByUser(user.Id);
+            return await purchasedMovies;
+        }
+
+        public async Task UpdateProfile(UserProfileResponseModel profile)
+        {
+            var user = await _userRepository.GetByIdAsync(profile.Id);
+            user.Email = profile.Email;
+            user.FirstName = profile.FirstName;
+            user.LastName = profile.LastName;
+            user.PhoneNumber = profile.PhoneNumber;
+            user.DateOfBirth = profile.DateOfBirth;
+            await _userRepository.UpdateAsync(user);
+             
+        }
     
     }
 }

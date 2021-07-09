@@ -13,8 +13,8 @@ namespace Infrastructure.Services
     {
         private readonly IMovieRepository _movieRepository;
         private readonly IAdminRepository _adminRepository;
-        private readonly IGenreRepository _genreRepository;
-        public AdminService(IMovieRepository movieRepository, IAdminRepository adminRepository, IGenreRepository genreRepository)
+        private readonly IEntityRepository<Genre> _genreRepository;
+        public AdminService(IMovieRepository movieRepository, IAdminRepository adminRepository, IEntityRepository<Genre> genreRepository)
         {
             _movieRepository = movieRepository;
             _adminRepository = adminRepository;

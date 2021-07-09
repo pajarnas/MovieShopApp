@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using ApplicationCore.Entities;
 using ApplicationCore.ServiceInterfaces;
 using Microsoft.AspNetCore.Http;
 using ApplicationCore.RepositoryInterfaces;
@@ -12,11 +13,11 @@ namespace Infrastructure.Services
     public class CurrentUserService : ICurrentUserService
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly IPurchaseRepository _purchaseRepository;
-        public CurrentUserService(IHttpContextAccessor httpContextAccessor, IPurchaseRepository purchaseRepository)
+        private readonly IPurchaseService _purchaseRService;
+        public CurrentUserService(IHttpContextAccessor httpContextAccessor, IPurchaseService purchaseService)
         {
             _httpContextAccessor = httpContextAccessor;
-            _purchaseRepository = purchaseRepository;
+            _purchaseRService = purchaseService;
         }
 
         // access HttpContext 
@@ -33,15 +34,15 @@ namespace Infrastructure.Services
                                       .FirstOrDefault(c => c.Type == ClaimTypes.GivenName)?.Value + " " +
                                   _httpContextAccessor.HttpContext?.User.Claims
                                       .FirstOrDefault(c => c.Type == ClaimTypes.Surname)?.Value;
-        public int MyMoviesCount => GetUserPurchasedMovieCount();
+        public int MyMoviesCount => GetUserPurchasedMovieCount().Result;
         public bool? IsAdmin { get; }
         public IEnumerable<string> Roles { get; }
 
 
-        public int GetUserPurchasedMovieCount()
+        public async Task<int> GetUserPurchasedMovieCount()
         {
-            int count = _purchaseRepository.GetPurchasedMoviesCountByUser(UserId.Value);
-            return count;
+            var count = _purchaseRService.GetPurchasedMoviesCountByUser(UserId.Value);
+            return await count;
         }
 
 

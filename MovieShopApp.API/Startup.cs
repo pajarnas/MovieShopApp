@@ -15,6 +15,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Infrastructure.Helpers;
 using Microsoft.Extensions.DependencyInjection;
+using Infrastructure.DataContext;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MovieShopApp.API
 {
@@ -45,6 +50,29 @@ namespace MovieShopApp.API
             ConfigureDependencyInjection(services);
        
             services.AddHttpContextAccessor();
+            
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
+                options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = false,
+                        ValidateAudience = false,
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey =
+                            new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["MovieShopSecretKey"]))
+                    };
+                }
+            );
+
+            services.AddAuthorization(options =>
+            {
+                var defaultAuthorizationPolicyBuilder =
+                    new AuthorizationPolicyBuilder(JwtBearerDefaults.AuthenticationScheme);
+                defaultAuthorizationPolicyBuilder = defaultAuthorizationPolicyBuilder.RequireAuthenticatedUser();
+                options.DefaultPolicy = defaultAuthorizationPolicyBuilder.Build();
+            });
+
         }
 
         private void ConfigureDependencyInjection(IServiceCollection services)
@@ -63,7 +91,11 @@ namespace MovieShopApp.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MovieShop.API v1"));
             }
 
-    
+            app.UseCors(builder =>
+            {
+                builder.WithOrigins(Configuration.GetValue<string>("AngularSPAClientUrl")).AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                builder.WithOrigins(Configuration.GetValue<string>("AngularSPAClientDebugUrl")).AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();

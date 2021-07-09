@@ -4,22 +4,25 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.RepositoryInterfaces;
 using ApplicationCore.ServiceInterfaces;
 namespace MovieShopApp.MVC.Controllers
 {
     public class MovieController : Controller
     {
         private readonly IMovieService _movieService;
+        private readonly IGenreService _genreService;
 
-        public MovieController(IMovieService movieService)
+        public MovieController(IMovieService movieService, IGenreService genreService)
         {
             _movieService = movieService;
+            _genreService = genreService;
         }
 
         // GET: MovieController
-        public async Task<ActionResult> Index()
+        public async Task<ActionResult> Index(int pageSize=30,int pageNumber = 1)
         {
-            var details = await _movieService.GetTopRevenueMovies();           
+            var details = await _movieService.GetMovieCardsPaginatedList(pageSize,pageNumber);           
             return View(details);
         }
 
@@ -30,67 +33,15 @@ namespace MovieShopApp.MVC.Controllers
             return View(model);
         }
 
-        // GET: MovieController/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Genre(int genreId)
         {
-            return View();
+            var movies = await _movieService.GetMovieCardsPaginatedListByGenre(genreId);
+            ViewBag.GenreName = _genreService.GetNameById(genreId);
+            return View(movies);
         }
 
-        // POST: MovieController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+  
 
-        // GET: MovieController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: MovieController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: MovieController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: MovieController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+     
     }
 }

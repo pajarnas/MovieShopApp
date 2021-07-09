@@ -12,7 +12,7 @@ using Infrastructure.Services;
 using ApplicationCore.RepositoryInterfaces;
 using ApplicationCore.ServiceInterfaces;
 using Infrastructure.Repositories;
-using Infrastructure;
+using Infrastructure.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -76,7 +76,8 @@ namespace MovieShopApp.MVC
             
             if (env.IsDevelopment())
             {
-                app.UseMovieShopExceptionMiddleware();
+                //app.UseMovieShopExceptionMiddleware();
+                app.UseDeveloperExceptionPage();
             }
             else
             {

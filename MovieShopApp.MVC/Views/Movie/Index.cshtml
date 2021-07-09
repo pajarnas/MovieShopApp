@@ -1,4 +1,4 @@
-﻿@model List<ApplicationCore.Models.Response.MovieDetailResponseModel>
+﻿@model ApplicationCore.Helpers.PaginatedList<ApplicationCore.Models.Response.MovieResponseModel>
 
 
 @{
@@ -8,13 +8,32 @@
 
 <div class="rounded">
     <div class="container-fluid bg-light">
-        <div class="row">
+        <div class="row ">
             @foreach (var movie in Model)
             {
                 <div class="col-6 col-lg-3 col-sm-4 col-xl-2">
                     <partial name="_MovieDetail" model="movie" />
                 </div>
             }
+            
+            @{
+                var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+            }
+            
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center">
+                <li class="page-item  @prevDisabled" >
+                  <a class="page-link" asp-action="index" asp-route-pagenumber="@(Model.PageIndex-1)" >Previous</a>
+                </li>
+                @* <li class="page-item"><a class="page-link" href="#">1</a></li> *@
+                @* <li class="page-item"><a class="page-link" href="#">2</a></li> *@
+                @* <li class="page-item"><a class="page-link" href="#">3</a></li> *@
+                <li class="page-item @nextDisabled">
+                    <a class="page-link" asp-route-pagenumber="@(Model.PageIndex+1)" >Next</a>
+                </li>
+              </ul>
+            </nav>
         </div>
     </div>
 </div>

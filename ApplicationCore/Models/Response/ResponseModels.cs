@@ -11,26 +11,9 @@ namespace ApplicationCore.Models.Response
         public string LastName { get; set; }
     }
 
-    public class UserProfileResponseModel
-    {
-        public int Id { get; set; }
-        public string Email { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public DateTime? DateOfBirth { get; set; }
-        public string PhoneNumber { get; set; }
-        public DateTime? LastLoginDateTime { get; set; }
+   
 
-        public List<PurchasedMovieResponseModel> PurchasedMovies { get; set; }
-
-        public class PurchasedMovieResponseModel : MovieResponseModel
-        {
-            public DateTime PurchaseDateTime { get; set; }
-
-            public int MovieId { get; set; }
-            public decimal Price { get; set; }
-        }
-    }
+     
 
     public class UserLoginResponseModel
     {
@@ -48,15 +31,31 @@ namespace ApplicationCore.Models.Response
         public string Name { get; set; }
     }
 
-    public class PurchaseResponseModel
+    public class UserPurchasesResponseModel
     {
         public int UserId { get; set; }
         public List<PurchasedMovieResponseModel> PurchasedMovies { get; set; }
 
-        public class PurchasedMovieResponseModel : MovieResponseModel
-        {
-            public DateTime PurchaseDateTime { get; set; }
-        }
+        
+    }
+    
+    public class UserProfileResponseModel
+    {
+        public int Id { get; set; }
+        public string Email { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+        public DateTime? DateOfBirth { get; set; }
+        public string PhoneNumber { get; set; }
+        public DateTime? LastLoginDateTime { get; set; }
+        public List<PurchasedMovieResponseModel> PurchasedMovies { get; set; }
+
+       
+    }
+    public   class PurchasedMovieResponseModel : MovieResponseModel
+    {
+        public DateTime PurchaseDateTime { get; set; }
     }
 
     public class MovieResponseModel
@@ -64,47 +63,14 @@ namespace ApplicationCore.Models.Response
         public int Id { get; set; }
         public string Title { get; set; }
         public string PosterUrl { get; set; }
-        public DateTime ReleaseDate { get; set; }
-    }
-
-    public class MovieDetailsResponseModel
-    {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string PosterUrl { get; set; }
-        public string BackdropUrl { get; set; }
-
-        public decimal? Rating { get; set; }
-        public string Overview { get; set; }
-        public string Tagline { get; set; }
-        public decimal? Budget { get; set; }
-        public decimal? Revenue { get; set; }
-        public string ImdbUrl { get; set; }
-        public string TmdbUrl { get; set; }
         public DateTime? ReleaseDate { get; set; }
-        public int? RunTime { get; set; }
-        public decimal? Price { get; set; }
-        public int FavoritesCount { get; set; }
-        public List<CastResponseModel> Casts { get; set; }
-        public List<GenreModel> Genres { get; set; }
-
-        public class CastResponseModel
-        {
-            public int Id { get; set; }
-            public string Name { get; set; }
-            public string Gender { get; set; }
-            public string TmdbUrl { get; set; }
-            public string ProfilePath { get; set; }
-            public string Character { get; set; }
-        }
     }
+    
 
     public class GenreModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-        
     }
 
     public class AssignedGenreModel

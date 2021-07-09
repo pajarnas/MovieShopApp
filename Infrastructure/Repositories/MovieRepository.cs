@@ -7,7 +7,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
-
+using Infrastructure.DataContext;
 namespace Infrastructure.Repositories
 {
     public class MovieRepository : EfRepository<Movie>, IMovieRepository
@@ -29,16 +29,19 @@ namespace Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<Movie> GetMovieWithRelatedData(int id)
+        public async Task<Movie> GetMovieWithGenresAndCasts(int id)
         {
-            var movie = _dbContext.Movie
-                             .Include(m => m.Favorites)
-                             .Include(m => m.MovieCasts)
-                             .Where(m=>m.Id==id)
-                             .FirstOrDefaultAsync();
+            
+            var movie = GetByIdWithIncludesAsync(id: id, filter: m => m.Id == id, 
+                include:m =>m
+                    .Include( m=>m.MovieCasts)
+                    .ThenInclude(mc=>mc.Cast)
+                    .Include(m=>m.MovieGenres)
+                    .ThenInclude(mg=>mg.Genre) );
             return await movie;
         }
-
+        
+        
 
 
     }
